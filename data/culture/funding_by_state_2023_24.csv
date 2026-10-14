@@ -1,0 +1,9 @@
+state,state_abbr,population_dec2023,state_govt_m,state_govt_pp,local_govt_m,local_govt_pp,state_plus_local_pp,note
+New South Wales,NSW,8422043,1010.5,119.98,650.5,77.24,197.22,
+Victoria,VIC,6900490,726.8,105.33,656.0,95.07,200.4,
+Queensland,QLD,5526677,582.1,105.33,374.4,67.74,173.07,
+South Australia,SA,1866388,373.7,200.25,214.4,114.89,315.14,
+Western Australia,WA,2928807,376.0,128.39,237.5,81.1,209.49,
+Tasmania,TAS,574543,88.4,153.88,23.2,40.38,194.26,
+Northern Territory,NT,253909,80.4,316.47,1.6,6.49,322.96,
+Australian Capital Territory,ACT,469992,98.5,209.62,,,209.62,ACT has no local government; ACT Government funds local services such as libraries

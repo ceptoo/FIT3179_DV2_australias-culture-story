@@ -1,0 +1,835 @@
+code,name,state,lat,lon
+A1,Nyaki Nyaki / Njaki Njaki,Western Australia,-32.3909,118.7551
+A101,Naaguja,Western Australia,-28.1355,114.7645
+A102,Pindiini,Western Australia,-29.466,127.7663
+A103,Wangkatja,Western Australia,-29.8659,122.6987
+A11,Waljen,Western Australia,-29.2312,122.723
+A12,Wangkatha,Western Australia,-29.7783,121.9181
+A13,Widi,Western Australia,-28.8268,116.7215
+A14,Badimaya,Western Australia,-28.5933,117.1853
+A16,Kuwarra,Western Australia,-28.182,120.3454
+A17,Nangadadjara / Nyanganyatjara,Western Australia,-28.6837,124.8034
+A2,Kalarku,Western Australia,-32.1102,121.4876
+A20,Wilyara,Western Australia,-26.7996,120.4157
+A21,Gula,Western Australia,-27.9905,122.702
+A22,Marawa,Western Australia,-28.7715,125.3464
+A24,Gurduwanga,Western Australia,-25.6688,117.5474
+A26,Djalgandi,Western Australia,-27.6457,122.9731
+A27,Mudalga,Western Australia,-27.7522,123.6549
+A28,Bunggura,South Australia,-27.2861,130.4634
+A29,Wawula,Western Australia,-25.0101,121.1196
+A3,Ngadjumaya / Ngadju,Western Australia,-32.3247,123.7412
+A30,Ngadawanga,Western Australia,-26.4017,119.5797
+A31,Tjupan,Western Australia,-27.118,120.5664
+A32,Nakako,Western Australia,-27.2228,128.5109
+A33,Mantjintjarra,Western Australia,-27.2539,126.0846
+A34,Mangu,Western Australia,-25.5799,119.775
+A37,Nanadjara,Western Australia,-26.0641,123.4876
+A38,Ngaanyatjarra,Western Australia,-25.8004,127.3535
+A39,Wajarri / Wadjarri,Western Australia,-26.1002,116.9931
+A4,Kalaamaya,Western Australia,-30.2637,119.013
+A43,Ngaatjatjarra,Western Australia,-25.0811,128.542
+A48,Ngarla,Western Australia,-23.7997,117.6074
+A49,Wirdinya,Western Australia,-23.8336,120.4708
+A5,Nungara,Western Australia,-30.2887,120.595
+A50,Nyiyaparli,Western Australia,-22.9242,120.1965
+A51,Kartujarra,Western Australia,-23.283,122.0625
+A51.1,Manyjilyjarra,Western Australia,-22.5738,124.9062
+A52,Kiyajarra,Western Australia,-23.5104,125.9527
+A53,Banyjima,Western Australia,-22.7431,118.373
+A54,Putijarra,Western Australia,-26.5589,120.9084
+A55,Palyku,Western Australia,-22.2391,120.1608
+A56,Dargudi,Western Australia,-23.0694,121.0457
+A58,Nyamal,Western Australia,-21.2202,120.0294
+A59,Ibarga,Western Australia,-21.2418,122.3087
+A6,Maduwongga,Western Australia,-23.3509,123.6684
+A60,Widagari,Western Australia,-21.328,120.6394
+A61,Nyangumarta,Western Australia,-20.4794,122.029
+A62,Warnman,Western Australia,-22.2348,123.0524
+A64,Karajarri,Western Australia,-18.8174,122.3226
+A65,Mangala,Western Australia,-19.6399,123.9677
+A66,Walmajarri,Western Australia,-19.4674,126.1513
+A67,Yulparija,Western Australia,-21.184,124.9545
+A68,Kukatja,Western Australia,-20.4894,127.0239
+A69,Bunara,Northern Territory,-20.7093,129.0465
+A7,Tjeraridjal,Western Australia,-30.4319,123.7832
+A71,Nhugarn,Western Australia,-25.805,115.4762
+A72,Ngurlipartu,Western Australia,-21.2433,122.3285
+A73,Walyirli,Western Australia,-20.0585,121.8962
+A74,Frazer Range,Western Australia,-32.1754,123.4745
+A75,Bundjuwanga,Western Australia,-21.0876,119.3972
+A76,Pantikura,Western Australia,-22.5578,118.5043
+A77,Mijaranypa,Western Australia,-22.9997,118.1453
+A78,Ju'una,Western Australia,-22.0008,119.4554
+A79,Yinhawangka / Innawonga,Western Australia,-24.4558,119.0783
+A8,Murunitja,Western Australia,-30.3024,126.0307
+A80,Western Desert language,Western Australia,-26.3373,127.1081
+A82,Wirdjaragandja,South Australia,-26.3049,131.9111
+A83,Njangadjadjara,South Australia,-30.6822,131.4921
+A85,Kurajarra,Western Australia,-22.9096,122.3629
+A87,Wangkajunga,Western Australia,-20.5765,126.5032
+A88,Juwaliny,Western Australia,-20.6437,124.6988
+A89,Pililuna,Western Australia,-19.6667,127.6005
+A9,Mirning,Western Australia,-31.293,128.1535
+A91,Nyardi,Western Australia,-18.623,125.2755
+A92,Tjapanmay,Western Australia,-30.9639,117.0541
+A93,Nhanhagardi,Western Australia,-29.2176,115.275
+A94,Witjaari,Western Australia,-31.756,116.2101
+A95,Natingero,Western Australia,-29.3738,118.367
+A96,Mandara,Western Australia,-23.3644,119.2811
+A97,Cheangwa language,Western Australia,-27.4991,116.4016
+A99,Norseman,Western Australia,-32.2415,121.7626
+C1,Wirangu,South Australia,-31.536,133.5221
+C10,Pintupi,Western Australia,-23.3701,127.5817
+C12,Antekerrepenhe,Northern Territory,-22.7539,137.6206
+C13,Kaytetye,Northern Territory,-21.0199,134.0695
+C14,Alyawarr,Northern Territory,-21.9484,135.5344
+C15,Warlpiri,Northern Territory,-20.4336,131.0524
+C15.1,Wakirti Warlpiri,Northern Territory,-20.6721,133.0945
+C16,Wakaya,Northern Territory,-20.1529,136.1691
+C17,Warlmanpa,Northern Territory,-19.2496,132.871
+C18,Warumungu,Northern Territory,-19.6027,134.5052
+C19,Wambaya,Northern Territory,-18.1731,135.4311
+C2,Ngalia,South Australia,-29.1984,129.48
+C20,Gurindji,Northern Territory,-17.4621,129.8076
+C22,Jingulu,Northern Territory,-17.3508,133.7015
+C23,Gunindirri,Northern Territory,-17.6692,136.8447
+C25,Mudburra,Northern Territory,-17.4403,131.9096
+C26,Gudanji,Northern Territory,-16.9806,135.2557
+C27,Ngarinyman,Northern Territory,-16.5904,130.2552
+C28,Akarre,Northern Territory,-22.8425,135.363
+C29,Lower Arrernte,Northern Territory,-25.9546,135.3928
+C3,Kokatha,South Australia,-29.6594,133.4154
+C30,Eastern Gurindji,Northern Territory,-17.7485,130.4059
+C31,Eastern Mudburra,Northern Territory,-17.5575,131.9955
+C32,Eastern Ngarinyman,Northern Territory,-16.556,130.5118
+C33,Karranga,Northern Territory,-16.2146,131.3606
+C34,Kartangarurru,Northern Territory,-19.2503,130.4807
+C35,Kuwarranyji,Northern Territory,-16.7209,132.3366
+C36,Western Mudburra,Northern Territory,-16.7674,131.4546
+C37,Wurlayi,Northern Territory,-16.3416,129.6478
+C38,Ngardilypa,Northern Territory,-19.6235,129.7356
+C39,Wawulya,Northern Territory,-21.8047,130.0439
+C4,Yankunytjatjara,South Australia,-26.6237,132.2606
+C40,Warnayaka,Northern Territory,-19.7387,130.7031
+C41,Yarlpiri,Northern Territory,-20.4836,132.132
+C42,Warrmarla,Northern Territory,-20.5094,129.7479
+C43,Ngaliya,Northern Territory,-21.8087,131.1867
+C44,Wenamba,Western Australia,-23.7084,128.7492
+C45,Nyiwanawu,Northern Territory,-16.3392,129.6823
+C5,Antikarinya,South Australia,-27.0298,134.0166
+C6,Pitjantjatjara,Northern Territory,-25.6641,130.0655
+C7.1,Luritja,Northern Territory,-24.9471,133.1519
+C8,Arrernte,Northern Territory,-23.9128,134.2609
+C8.1,Anmatyerr,Northern Territory,-22.2547,133.2623
+D1,Wemba Wemba,New South Wales,-35.3412,144.1419
+D10,Wiradjuri,New South Wales,-33.9092,147.2573
+D11,Pulaali,New South Wales,-31.4896,141.7698
+D12,Paakantyi / Paakantji / Barkindji,New South Wales,-31.6332,142.778
+D14,Thangkaali,South Australia,-33.1941,140.5364
+D15,Guyinbaraay,New South Wales,-31.0838,149.6
+D16,Wilyakali,South Australia,-31.948,140.9902
+D17,Pantyikali,New South Wales,-30.4904,142.6847
+D18,Wangaaypuwan,New South Wales,-31.4133,145.8191
+D19,Nhaawuparlku,New South Wales,-30.9705,144.1662
+D2,Yorta Yorta,Victoria,-36.0939,145.2636
+D20,Wayilwan,New South Wales,-31.0181,148.0268
+D21,Wanyuparlku,New South Wales,-31.901,142.3425
+D22,Ngiyampaa / Ngempa,New South Wales,-31.2703,146.7046
+D23,Gamilaraay / Gamilaroi / Kamilaroi,New South Wales,-29.7231,149.8334
+D24,Southern Anaiwan,New South Wales,-30.7099,151.3525
+D25,Kurnu,New South Wales,-29.7598,145.3308
+D26,Barranbinya,New South Wales,-29.7802,146.2687
+D27,Yuwaalaraay,New South Wales,-29.3131,148.2755
+D28,Wiriyaraay,New South Wales,-29.1129,150.6214
+D29,Gambuwal,Queensland,-28.6189,151.4416
+D3,Ngunawal / Ngunnawal,New South Wales,-34.9803,149.0871
+D30,Kullilli,Queensland,-28.3661,143.5315
+D31,Budjari / Badjiri,Queensland,-28.4336,145.2278
+D32,Muruwari / Murrawarri,New South Wales,-29.0682,145.7981
+D33,Kooma / Guwamu,Queensland,-28.4146,147.7249
+D34,Bigambul,Queensland,-28.1414,150.1748
+D35,Guyambal,New South Wales,-29.3405,151.2486
+D36,Geynyan,Queensland,-28.1835,152.1836
+D37,Gunggari,Queensland,-27.3681,146.9602
+D38,Kogai,Queensland,-27.4234,147.9422
+D39,Gawambaraay,New South Wales,-28.6219,150.3249
+D4,Wadi Wadi,New South Wales,-35.0866,143.3705
+D40,Barunggam,Queensland,-26.7951,150.4468
+D41,Giabal,Queensland,-27.6904,151.7555
+D42,Margany / Mardigan,Queensland,-27.2729,144.5774
+D43,Gunya,Queensland,-26.7847,146.1613
+D44,Mandandanji,Queensland,-27.0177,148.5017
+D45,Wadjalang / Dharawala,Queensland,-25.6353,145.2719
+D46,Nguri,Queensland,-25.6023,147.8024
+D47,Paaruntyi,New South Wales,-29.4582,144.3146
+D48,Parrintyi,New South Wales,-32.8179,143.5271
+D49,Kungakuri,New South Wales,-29.1055,146.3952
+D5,Barababaraba,New South Wales,-35.6737,144.6114
+D50,Nuntukuri,New South Wales,-29.8717,145.9524
+D51,Purukuri,New South Wales,-29.7204,144.2665
+D52,Thinuntu,New South Wales,-29.8393,146.3257
+D53,Kuntakuri,New South Wales,-29.2973,146.9079
+D54,Yuwaalayaay,New South Wales,-29.6044,147.5403
+D58,Jeithi,New South Wales,-35.512,145.9813
+D59,Milpulo,New South Wales,-31.8085,142.4142
+D6,Marrawarra,New South Wales,-33.6664,141.4486
+D6.1,Kureinji,New South Wales,-34.2314,142.4217
+D61,Southern Paakantyi,New South Wales,-32.7216,142.5651
+D62,Canberra language,Australian Capital Territory,-35.475,148.9985
+D64,Northern Anaiwan,New South Wales,-30.1276,151.4763
+D65,Wirraayaraay,New South Wales,-32.0984,148.5865
+D66,Wirraay-wirraay,Queensland,-28.2195,148.1971
+D7,Yitha Yitha,New South Wales,-33.8732,143.9409
+D8,Mutti Mutti / Muthi Muthi,New South Wales,-33.7532,142.7217
+D9,Nari Nari,New South Wales,-34.4187,144.4
+E1,Geawegal,New South Wales,-32.5198,151.2117
+E10,Yaygirr,New South Wales,-29.6867,153.1878
+E11,Yugambal,New South Wales,-29.7574,151.0501
+E12,Bundjalung,New South Wales,-29.2513,153.0752
+E14,Gidhabal,New South Wales,-28.5011,152.3203
+E15,Galibal,New South Wales,-28.5333,152.8668
+E15.1,Wiyabal,New South Wales,-28.7326,153.2361
+E16,Wiyabal,New South Wales,-29.308,152.2282
+E16.1,Dinggabal,New South Wales,-28.7378,152.2844
+E16.2,Wahlubal,New South Wales,-28.8876,152.5079
+E17,Yugambeh,Queensland,-28.0945,152.9813
+E18,Minyangbal,New South Wales,-28.5544,153.4981
+E19,Jandai,Queensland,-27.7729,153.3991
+E2,Warrimay,New South Wales,-32.4868,151.9969
+E20,Duungidjawu,Queensland,-26.9731,152.5741
+E21,Moondjan,Queensland,-27.4722,153.4691
+E22,Ngoera,Queensland,-27.0691,152.3593
+E23,Yugara,Queensland,-27.7085,152.5468
+E24,Buyibara,Queensland,-27.2211,152.9282
+E25,Dalla,Queensland,-26.7754,152.6684
+E26,Guwar,Queensland,-27.1677,153.4003
+E27,Djagunda,Queensland,-26.0503,150.8351
+E28,Wakka Wakka,Queensland,-26.4513,151.903
+E29,Gubbi Gubbi,Queensland,-26.0056,152.6675
+E3,Birrbay,New South Wales,-31.647,152.134
+E30,Butchulla,Queensland,-25.3372,153.0328
+E31,Yiman,Queensland,-25.589,149.5771
+E32,Gooreng Gooreng,Queensland,-24.9048,151.7903
+E33,Taribelang,Queensland,-24.8073,152.0389
+E35,Gungabula,Queensland,-25.5996,148.6437
+E36,Goeng Goeng,Queensland,-24.2669,151.6817
+E37,Bidjara / Bidyara,Queensland,-24.9032,147.1213
+E38,Garaynbal,Queensland,-23.3302,149.1337
+E39,Wadjigu,Queensland,-24.8085,148.5734
+E4,Ngaku,New South Wales,-31.0695,152.934
+E40,Gangulu,Queensland,-24.1861,150.1514
+E41,Tulua,Queensland,-24.3899,150.999
+E42,Baiali,Queensland,-23.6437,150.8852
+E43,Yagalingu,Queensland,-23.1569,146.6329
+E44,Gayiri,Queensland,-23.794,147.8977
+E45,Gabulbarra,Queensland,-22.8686,148.7252
+E46,Darumbal,Queensland,-22.7157,150.06
+E47,Wangan,Queensland,-22.7972,147.6086
+E48,Baradha,Queensland,-21.9824,148.9253
+E49,Guwinmal,Queensland,-22.2797,149.7962
+E5,Ngambaa,New South Wales,-30.8151,152.8905
+E50,Miyan,Queensland,-21.8125,146.1838
+E51,Yambina,Queensland,-22.314,147.4753
+E52,Yangga,Queensland,-20.9284,147.2563
+E53,Baranha,Queensland,-22.0806,148.1985
+E55,Yilba,Queensland,-20.7668,146.048
+E56,Biri,Queensland,-20.5081,147.9886
+E57,Wiri,Queensland,-21.2986,148.7038
+E58,Giya,Queensland,-20.4018,148.4629
+E59,Ngaro,Queensland,-20.2955,148.9347
+E6,Dhanggati / Dunghutti,New South Wales,-30.9064,152.4169
+E60,Gudjal,Queensland,-19.7075,145.436
+E61,Bindal,Queensland,-19.5636,147.1106
+E62,Yuru,Queensland,-19.8272,147.6746
+E63,Yetimarala / Yetimarla,Queensland,-22.8938,149.4836
+E64,Ganulu,Queensland,-23.6554,149.011
+E65,Mandalgu,Queensland,-24.466,149.3824
+E66,Yugarabul,Queensland,-27.2776,153.0253
+E67,Gathang,New South Wales,-31.9826,152.4156
+E68,Ngarbal,New South Wales,-29.5278,151.7815
+E7,Gumbaynggirr,New South Wales,-30.0876,152.4457
+E70,Burrgati,New South Wales,-30.4224,151.9407
+E72,Birihn,New South Wales,-29.048,152.8589
+E73,Casino language,New South Wales,-28.854,152.9874
+E75,Nyangbal,New South Wales,-28.9215,153.4218
+E76,Mananjahli,Queensland,-28.1265,152.9147
+E77,Nerang Creek,Queensland,-28.0826,153.2408
+E78,Nganduwal,New South Wales,-28.3516,153.3036
+E79,Ngarahgwal,Queensland,-27.8861,153.3279
+E8,Baanbay,New South Wales,-30.059,152.1111
+E80,Wehlubal,New South Wales,-29.2244,152.5518
+E81,Jarowair,Queensland,-27.2117,151.6778
+E82,Wapabara,Queensland,-23.1914,150.9668
+E83,Rakiwara,Queensland,-23.0692,150.7807
+E84,Karunbara,Queensland,-23.5321,150.1
+E85,Gambalamam,New South Wales,-30.3784,152.6715
+E86,Turrbal,Queensland,-27.5074,153.0519
+E87,Dungibara,Queensland,-27.201,152.5522
+E88,Garumngar,Queensland,-27.353,152.6951
+E89,Wulli Wulli,Queensland,-25.3033,150.6356
+E9,Yunggaya,New South Wales,-29.4638,153.2158
+E90,Nalbo,Queensland,-26.7693,152.8859
+E91,Marbal,New South Wales,-29.1135,151.8741
+E92,Ngarabal,New South Wales,-29.4857,152.6829
+E95,Guringay,New South Wales,-32.5135,151.6993
+G1,Wangkamanha / Wankamadla,Northern Territory,-24.3308,137.4244
+G10,Waluwarra,Queensland,-21.7622,138.4286
+G12,Ayerrerenge,Northern Territory,-21.3938,137.4154
+G12.1,Bularnu,Queensland,-20.6567,138.2747
+G13,Kalkatungu / Kalkadoon,Queensland,-20.8865,139.89
+G14,Indjilandji,Northern Territory,-19.3271,137.4624
+G15,Wakabunga,Queensland,-19.5389,139.0648
+G16,Mayi-thakurti / Mitakoodi,Queensland,-19.9469,140.6895
+G16.1,Wunumara,Queensland,-20.9131,141.8533
+G17,Ngawun,Queensland,-19.8027,141.9629
+G19,Nguburinji,Queensland,-18.5336,139.0358
+G20,Mayi-yapi,Queensland,-19.0756,140.4472
+G21,Mbara,Queensland,-19.8499,143.3951
+G23,Waanyi,Northern Territory,-18.3132,137.6209
+G24,Mayi-kutuna,Queensland,-19.1208,139.8963
+G25,Mayi-kulan,Queensland,-18.7804,141.8124
+G26,Mingginda,Queensland,-18.0225,139.5527
+G28,Kukatj,Queensland,-18.1321,140.3651
+G29,Gundara,Queensland,-16.0524,141.8156
+G3,Kunkalanya,Queensland,-23.6377,139.288
+G31,Gkuthaarn,Queensland,-17.3688,141.1151
+G33,Kurtjar,Queensland,-16.7473,141.4176
+G34,Yukulta / Ganggalidda,Queensland,-17.3412,138.7513
+G35,Kayardild,Queensland,-17.0306,139.4892
+G36,Walangama,Queensland,-17.8857,141.9347
+G37,Yangkaal,Queensland,-16.9049,138.9811
+G38,Lardil,Queensland,-16.5643,139.4589
+G4,Rakaya,Queensland,-23.4243,140.1372
+G40,Ngulupulu,Queensland,-24.0564,139.8176
+G41,Parnkarra,Queensland,-21.2603,138.8105
+G42,Dhidhani,Queensland,-20.4774,138.2621
+G43,Kapula,Queensland,-22.1328,138.5961
+G44,Mayi-yali,Queensland,-18.9415,139.7479
+G45,Marrago,Queensland,-18.2706,140.1666
+G46,Bundjil,Queensland,-20.048,146.3134
+G47,Jangrala,Queensland,-17.8514,138.6827
+G5,Wangka-yutjurru,Queensland,-22.8817,138.5657
+G6,Pitta Pitta,Queensland,-22.6284,139.7247
+G7,Ringu Ringu,Queensland,-22.8793,140.2648
+G8,Yalarnnga,Queensland,-21.8218,139.7133
+G9,Yanda,Queensland,-22.0847,140.7388
+G9.1,Guwa,Queensland,-22.0369,142.3194
+K1,Yawuru,Western Australia,-17.9439,122.6253
+K10,Warrwa,Western Australia,-17.276,124.0136
+K11,Walki,Western Australia,-17.8461,127.063
+K12,Jaru,Western Australia,-18.5173,128.2276
+K13,Nyul Nyul,Western Australia,-17.028,122.7057
+K14,Unggumi,Western Australia,-17.0888,124.8691
+K15,Bardi,Western Australia,-16.6682,122.9023
+K16,Jawi,Western Australia,-16.4424,123.2676
+K17,Worrorra,Western Australia,-15.6213,124.8759
+K18,Ngarinyin,Western Australia,-16.0038,126.0054
+K19,Guwij,Western Australia,-15.2895,127.0497
+K2,Jugun,Western Australia,-17.7866,122.445
+K20,Gija / Kija,Western Australia,-17.424,127.3911
+K21,Wanyjirra,Northern Territory,-18.1059,129.7059
+K22,Wunambal,Western Australia,-14.8794,125.4638
+K23,Andedja,Western Australia,-17.3486,126.1281
+K25,Munumburu,Western Australia,-15.2778,127.5277
+K26,Wolyamidi,Western Australia,-15.6369,127.3644
+K29,Miriwoong / Miriuwung,Western Australia,-15.8863,128.8677
+K3,Nyikina,Western Australia,-18.2594,124.0608
+K30,Malngin,Northern Territory,-17.2352,129.3537
+K32,Yiiji,Western Australia,-15.139,127.9889
+K33,Kuluwarrang,Western Australia,-16.3771,127.9779
+K34,Jiyil,Northern Territory,-17.2171,130.5394
+K35,Wilawila,Western Australia,-15.078,127.0231
+K36,Gunin,Western Australia,-14.6268,127.6671
+K37.1,Gajirrawoong,Northern Territory,-15.293,129.2747
+K39,Gambera,Western Australia,-14.2181,126.3425
+K4,Ngumbarl,Western Australia,-17.5152,122.4915
+K43,Worla,Western Australia,-16.4277,127.2189
+K44,Miwa,Western Australia,-14.1273,127.0418
+K48,Julbayi,Western Australia,-18.1967,122.5361
+K49,Umida,Western Australia,-16.3228,123.8597
+K5,Bunuba,Western Australia,-17.7247,125.6052
+K50,Doolboong,Western Australia,-15.0364,128.4572
+K51,Wawarl,Western Australia,-18.2703,127.8501
+K52,Ngarnawu,Western Australia,-16.1876,127.2888
+K53,Yawijibaya,Western Australia,-16.0307,124.1488
+K54,Marangan,Western Australia,-17.9701,122.9972
+K55,Unggarrangu,Western Australia,-16.6936,123.6707
+K56,Winjarumi,Western Australia,-15.3024,124.2594
+K6,Gooniyandi,Western Australia,-18.591,126.179
+K62,Bayimbarr,Western Australia,-15.6327,127.9739
+K63,Giwajbem,Western Australia,-16.3095,128.2514
+K7,Nyininy,Western Australia,-18.0693,128.5857
+K8,Jabirr Jabirr,Western Australia,-17.2324,122.5274
+K9,Nimanburru,Western Australia,-17.2647,123.1342
+L1,Narungga,South Australia,-34.4819,137.591
+L10,Adnyamathanha,South Australia,-30.3502,138.8826
+L11,Pirlatapa,South Australia,-29.8394,140.1004
+L12,Wadigali,New South Wales,-29.2608,141.2096
+L13,Arabana,South Australia,-28.4169,136.0837
+L14,Dhirari,South Australia,-28.5983,137.7748
+L15,Karenggapa,New South Wales,-29.1757,142.6689
+L16,Gungadidji,Queensland,-26.3519,142.0253
+L17,Dieri,South Australia,-28.2281,139.0584
+L18,Yandruwandha,South Australia,-28.3258,140.3919
+L19,Dhiraila,Queensland,-28.0144,142.2387
+L2,Nauo / Nawu,South Australia,-33.704,135.4397
+L20,Mambangurra,Queensland,-28.6017,141.763
+L22,Ngamini,South Australia,-26.9438,138.9612
+L23,Yawarrawarrka,South Australia,-26.5344,140.4391
+L25,Wangkumara,Queensland,-27.5705,141.8854
+L26,Punthamara,Queensland,-27.3429,143.5024
+L27,Wangkangurru,Northern Territory,-25.8863,137.1818
+L28,Karangura,Queensland,-25.9749,138.7338
+L29,Kunandaburi,Queensland,-26.6347,142.5939
+L3,Kaurna,South Australia,-34.4271,138.4085
+L30,Ngandangara,Queensland,-26.8235,143.2389
+L31,Yarluyandi,Queensland,-25.9045,139.4987
+L32,Karanya,Queensland,-24.3855,139.8671
+L33,Marula,Queensland,-25.3559,141.6236
+L34,Mithaka,Queensland,-25.273,139.7383
+L35,Karuwali,Queensland,-24.9599,141.0307
+L36,Pirriya,Queensland,-25.4916,142.4902
+L38,Kungkari,Queensland,-24.5383,144.2752
+L39,Wadjabangai,Queensland,-24.1056,145.8108
+L4,Nukunu,South Australia,-32.8178,138.0694
+L40,Maiawali,Queensland,-23.4192,141.5875
+L41,Iningai,Queensland,-23.0856,144.8747
+L42,Yirandali,Queensland,-21.1571,144.2829
+L43,Bidjara,Queensland,-28.3857,143.0055
+L44,Yandjibara,Queensland,-24.6563,145.6109
+L45,Parlpamardramardra,Queensland,-27.5133,141.244
+L46,Nhirrpi,South Australia,-26.9553,140.8402
+L47,Matja,South Australia,-27.3228,139.9625
+L48,Ngananhina,South Australia,-26.3392,140.9601
+L49,Marunuda,Queensland,-24.938,139.5024
+L5,Ngadjuri,South Australia,-32.9302,139.0812
+L50,Midlaliri,South Australia,-29.1867,135.3838
+L51,Mikiri-nganha,Northern Territory,-25.7302,137.1439
+L52,Wangkakupa,South Australia,-28.9143,136.1604
+L53,Piltapalta,South Australia,-27.7222,136.0259
+L54,Wangkatyaka,South Australia,-27.4945,137.5855
+L55,Wailpi,South Australia,-30.9484,138.583
+L56,Yarrumada,Queensland,-25.9743,143.8487
+L57,Minkabari,Queensland,-28.8731,142.6017
+L6,Parnkalla,South Australia,-32.6884,136.8101
+L62,Malintji,Queensland,-23.5345,142.9529
+L65,Ngurunta,South Australia,-30.7332,140.4829
+L66,Parlpakurnu,Queensland,-26.2572,143.0399
+L7,Yadliawara,South Australia,-31.0978,139.8041
+L8,Malyangapa,New South Wales,-30.5562,141.5673
+L9,Kuyani,South Australia,-29.9993,137.9422
+N10,Kuwema,Northern Territory,-12.8574,130.4251
+N102,Marri Ngarr,Northern Territory,-14.2107,129.8507
+N104,Ritharrŋu,Northern Territory,-12.9762,135.3968
+N11,Pungupungu,Northern Territory,-13.3773,130.4467
+N112,Marra,Northern Territory,-15.0413,135.4116
+N116,Dhuwaya,Northern Territory,-12.2661,136.8701
+N118,Dhay'yi,Northern Territory,-13.3736,135.762
+N12,Matngala,Northern Territory,-13.7886,130.4336
+N120,Warndarrang,Northern Territory,-15.0429,135.3451
+N121,Ngarnka,Northern Territory,-16.4517,134.8263
+N128,Wubuy / Nunggubuyu,Northern Territory,-13.8698,135.5886
+N13,Maranunggu,Northern Territory,-13.7585,130.2716
+N138,Binbinka,Northern Territory,-16.3614,136.0457
+N14,Gungarakayn,Northern Territory,-13.2333,130.8252
+N15,Emmi,Northern Territory,-13.5168,130.1162
+N151,Anindilyakwa,Northern Territory,-13.9311,136.5854
+N152,Walu,Northern Territory,-15.7212,137.0277
+N153,Yanyuwa,Northern Territory,-15.8021,136.8079
+N155,Garrwa,Northern Territory,-16.8568,137.2738
+N157,Ngan'gi,Northern Territory,-14.2284,130.3643
+N158,Murrinh-kura,Northern Territory,-14.7159,129.9465
+N159,Murrinhdiminin,Northern Territory,-14.4051,129.8169
+N16,Maramanindji,Northern Territory,-13.9706,130.4182
+N160,Ngan'gimerri,Northern Territory,-14.0046,130.6119
+N161,Marri Tjevin,Northern Territory,-13.8928,129.8491
+N162,Marri Amu,Northern Territory,-13.8117,129.81
+N163,Magati Ke,Northern Territory,-14.0876,129.7153
+N164,Mariyedi,Northern Territory,-13.721,130.0513
+N169,Kerniyn'mi,Northern Territory,-13.6537,133.5851
+N17,Ngen'giwumirri,Northern Territory,-14.2456,130.4613
+N171,Kundedjnjenghmi,Northern Territory,-12.6788,133.4295
+N173,Kuninjku,Northern Territory,-12.2677,134.0414
+N175,Galduyh,Northern Territory,-13.5656,134.3889
+N176,Letpurrirt,Northern Territory,-14.1553,132.2538
+N177,Ngarlahmi,Northern Territory,-14.0884,132.36
+N178,Ngorrkgowo,Northern Territory,-13.4518,131.678
+N179,Ngardawuli,Northern Territory,-11.2898,131.9323
+N18,Jaminjung,Northern Territory,-15.154,130.3903
+N180,Urrirrk,Northern Territory,-11.9177,132.6487
+N181,Wurdang,Northern Territory,-11.2871,131.9235
+N182,Gidjurra,Northern Territory,-12.1328,132.9372
+N183,Manangkarri,Northern Territory,-11.5555,133.1725
+N184,Ilgar,Northern Territory,-11.0709,132.9074
+N185,Burdinmanduwij,Northern Territory,-11.3103,131.9291
+N186,Bininj Gun-wok / Bininj Kunwok,Northern Territory,-12.578,133.5566
+N188,Garig,Northern Territory,-11.2458,132.4184
+N189,Mukngirru,Northern Territory,-12.9276,130.5375
+N19,Ngaliwurru,Northern Territory,-16.0726,130.5423
+N190,Gun-narda,Northern Territory,-12.1279,134.6619
+N191,Gun-narta,Northern Territory,-12.1071,134.4884
+N192,Dhangu,Northern Territory,-12.427,136.6073
+N198,Dhuwal,Northern Territory,-12.7125,136.0099
+N199,Dhuwala,Northern Territory,-12.654,135.9581
+N20,Tiwi,Northern Territory,-11.5634,130.7597
+N201,Gumadir,Northern Territory,-12.4811,133.5636
+N202,Djangu,Northern Territory,-12.1474,136.4213
+N21,Larrakia,Northern Territory,-12.5176,130.8414
+N211,Nhangu,Northern Territory,-11.8532,135.7022
+N215,Marranj,Northern Territory,-13.6528,130.0737
+N22,Malak Malak,Northern Territory,-13.5488,130.5524
+N220,Giimbiyu,Northern Territory,-12.4808,133.0564
+N221,Muralidban,Northern Territory,-12.2412,134.1824
+N223,Wandangbag,Northern Territory,-12.3127,132.9782
+N224,Gonbudj,Northern Territory,-12.4534,132.1565
+N226,Giyug,Northern Territory,-13.1682,130.0535
+N229,Ngalarrunga,Northern Territory,-15.9009,133.1973
+N25,Warray,Northern Territory,-13.1632,131.2538
+N26,Yunggor,Northern Territory,-13.5973,130.4134
+N27,Wagiman,Northern Territory,-14.0122,131.1694
+N28,Nungali,Northern Territory,-15.5902,130.8571
+N29,Wuna,Northern Territory,-12.4752,131.373
+N3,Murrinh-patha,Northern Territory,-14.7473,130.0035
+N31,Batjamalh,Northern Territory,-13.2088,130.274
+N32,Wulwulam,Northern Territory,-13.6417,132.0546
+N33,Kamu,Northern Territory,-13.6126,130.7785
+N35,Wardaman,Northern Territory,-15.3569,131.527
+N36,Bilinarra,Northern Territory,-16.9669,130.745
+N37,Wurrugu,Northern Territory,-11.3614,132.0931
+N37.1,Uwinymil,Northern Territory,-13.3115,131.7755
+N38,Dagoman,Northern Territory,-14.441,131.8776
+N39,Iwaidja,Northern Territory,-11.6129,132.6962
+N40,Ngaduk,Northern Territory,-12.2117,132.596
+N40.1,Ngomburr,Northern Territory,-12.7936,132.1296
+N42,Limilngan,Northern Territory,-12.5256,131.724
+N42.1,Bugurnidja,Northern Territory,-12.7659,132.7021
+N43,Mbukarla,Northern Territory,-12.983,132.3666
+N44,Mayali,Northern Territory,-14.0803,132.4537
+N45,Marrku,Northern Territory,-11.1577,132.5602
+N47,Amurdak,Northern Territory,-11.9503,132.8736
+N50,Gaagudju,Northern Territory,-12.4341,132.6716
+N51,Wada,Northern Territory,-12.4699,132.5637
+N53,Mengerrdji,Northern Territory,-12.351,133.0238
+N55,Erre,Northern Territory,-12.4261,133.0652
+N57,Jawoyn,Northern Territory,-13.8973,133.0385
+N6,Menthe,Northern Territory,-13.6377,129.9207
+N60,Dalabon,Northern Territory,-13.3163,134.0293
+N64,Mawng,Northern Territory,-11.8139,133.364
+N65,Kunwinjku,Northern Territory,-12.1735,133.4827
+N66,Urningangk,Northern Territory,-12.5457,133.0565
+N68,Yangman,Northern Territory,-15.4143,132.4995
+N69,Kunbarlang,Northern Territory,-11.9322,133.8939
+N7,Marrithiyel,Northern Territory,-13.8346,130.0129
+N70,Kune,Northern Territory,-12.398,134.3866
+N71,Gundjeihmi,Northern Territory,-12.9259,132.8746
+N72,Yan-nhangu,Northern Territory,-12.0077,135.2364
+N73,Rembarrnga,Northern Territory,-13.231,134.4541
+N74,Ndjébbana,Northern Territory,-12.1555,134.2744
+N75,Gurr-goni,Northern Territory,-12.2284,134.2867
+N77,Ngalakgan,Northern Territory,-14.284,134.2708
+N78,Mangarrayi,Northern Territory,-14.8912,133.6192
+N8,Ngan'gikurunggurr,Northern Territory,-14.1856,130.1037
+N80,Nakkara,Northern Territory,-12.0845,134.3642
+N81,Gun-nartpa,Northern Territory,-12.2192,134.5503
+N82,Burarra,Northern Territory,-12.1618,134.5807
+N85,Yugul,Northern Territory,-14.7462,134.8307
+N9,Marridan,Northern Territory,-13.9993,130.1768
+N90,Ngandi,Northern Territory,-14.0086,134.9064
+N92,Alawa,Northern Territory,-15.5237,134.4796
+N94.1,Djinang,Northern Territory,-12.3379,134.8635
+N97,Djinba,Northern Territory,-12.7619,135.0046
+N99,Wilingura,Northern Territory,-15.7086,135.9307
+P3,Broome Pearling Lugger Pidgin,Western Australia,-17.93,122.2989
+S1,Warki,South Australia,-35.46,138.8509
+S10,Ngawadj,South Australia,-34.2245,140.2256
+S11,Tanganekald,South Australia,-36.0894,139.5691
+S12,Yirawirung,South Australia,-34.2671,140.5328
+S13,Bungandidj,South Australia,-37.2253,140.5117
+S15,Bindjali / Bodaruwitj,South Australia,-36.4229,140.4916
+S16,Mardidjali,Victoria,-36.9678,141.6431
+S17,Wergaia,Victoria,-35.8685,142.1207
+S18,Ngintait,Victoria,-34.373,141.1084
+S19,Yuyu,Victoria,-34.0988,140.9993
+S2,Ramindjeri,South Australia,-35.4607,138.7112
+S20,Dhauwurd Wurrung,Victoria,-38.1556,141.5397
+S22,Djadjala,Victoria,-35.5605,141.6828
+S24,Jari Jari,Victoria,-34.7661,141.7283
+S25,Keerray Woorroong,Victoria,-38.0398,142.8801
+S26,Djab Wurrung,Victoria,-37.7742,142.3366
+S26.1,Knenknenwurrung,Victoria,-37.0667,142.8594
+S27,Jardwadjali,Victoria,-36.7233,142.5689
+S28,Dadi Dadi,Victoria,-34.7776,142.8385
+S29,Wathaurong,Victoria,-37.8382,143.9212
+S3,Portaulun,South Australia,-35.3517,139.2043
+S30,Gulidjan,Victoria,-38.2282,143.6956
+S31.1,Dja Dja Wurrung,Victoria,-36.7956,143.6749
+S33,Weki Weki,New South Wales,-35.0367,143.3622
+S35,Boonwurrung,Victoria,-38.4596,145.5753
+S36,Woiwurrung,Victoria,-37.7422,145.2932
+S37,Taungurung,Victoria,-37.0316,145.4797
+S38,Jabulajabula / Yabula Yabula,New South Wales,-35.711,145.1071
+S39,Brataualung,Victoria,-38.7158,146.4478
+S4,Ngaralda,South Australia,-35.0189,139.2284
+S41,Brayakaulung,Victoria,-37.8725,146.5796
+S42,Tatungalung,Victoria,-38.0876,147.4409
+S43,Gundungerre / Yaithmathang,Victoria,-36.7236,147.5219
+S44,Dhudhuroa,Victoria,-36.3642,147.6926
+S45,Brabralung,Victoria,-37.4986,147.3284
+S46,Ngarigu / Ngarigo,New South Wales,-35.9022,148.7674
+S47,Walgalu,New South Wales,-35.6961,148.6051
+S48,Krauatungalang,Victoria,-37.5932,148.3379
+S49,Bidawal,Victoria,-37.3831,149.053
+S5,Peramangk,South Australia,-34.8626,138.8922
+S51,Dyirringañ,New South Wales,-36.6938,149.7216
+S52,Thawa,New South Wales,-37.1671,149.5988
+S53,Dhurga,New South Wales,-35.6191,150.0947
+S54,Walbunja,New South Wales,-35.8239,149.8854
+S56,Dharamba,New South Wales,-35.151,150.3412
+S59,Dharawal / Tharawal,New South Wales,-34.5658,150.6794
+S6,Ngangaruku,South Australia,-34.8315,139.4514
+S60,Gundungurra / Gandangara,New South Wales,-34.3976,149.7245
+S61,Eora,New South Wales,-33.7777,151.1755
+S63,Wonnarua / Wanaruah,New South Wales,-32.2396,150.9248
+S64,Dharug / Darug,New South Wales,-33.8896,150.0484
+S65,Darkinyung,New South Wales,-33.0351,150.8287
+S66,Awabakal,New South Wales,-33.0551,151.5267
+S68,Gunai / Kurnai,Victoria,-37.9751,146.9726
+S69,Ngarrindjeri,South Australia,-35.7582,139.2691
+S7,Ngayawang,South Australia,-34.4033,139.5016
+S70,Buibadjali,Victoria,-35.7149,142.4199
+S71,Gadubanud,Victoria,-38.6182,143.644
+S73,Djargurd Wurrong,Victoria,-38.1754,143.2568
+S74,Gaiwurrung,Victoria,-38.0241,142.3483
+S75,Koornkopanoot,Victoria,-38.1699,142.329
+S77,Bi:gwurrung,Victoria,-38.2938,142.2743
+S8,Yaraldi,South Australia,-35.4513,139.3755
+S80,Wirngilgnad Dhalinanong,Victoria,-38.4882,143.0211
+S81,Wulluwurrung,Victoria,-37.8432,141.6342
+S83,Ngurai-illamwurrung,Victoria,-36.4728,145.0817
+S84,Jagwadjali,Victoria,-36.3216,142.6847
+S85,Biwadjali,Victoria,-36.3059,141.7857
+S86,Pirtpirtwurrung,Victoria,-37.4139,142.7988
+S87,Nundadjali,Victoria,-37.3893,141.8005
+S88,Wotjobaluk,Victoria,-35.7241,142.9996
+S9,Ngarkat,South Australia,-35.3611,140.3522
+S90,Minjambuta,Victoria,-36.8102,146.6342
+S96,Hawkesbury River - Broken Bay language,New South Wales,-33.5057,151.219
+T1,Northern Tasmanian,Tasmania,-41.3251,146.0336
+T10,South-western Tasmanian,Tasmania,-43.4004,146.0713
+T11,Robbins Island Tasmanian,Tasmania,-40.667,144.9557
+T12,Circular Head Tasmanian,Tasmania,-40.8568,145.3737
+T13,Port Sorell Tasmanian,Tasmania,-41.2755,146.5681
+T14,Piper River Tasmanian,Tasmania,-41.1358,147.4024
+T15,Little Swanport Tasmanian,Tasmania,-42.4406,147.9565
+T2,Oyster Bay Tasmanian,Tasmania,-42.5036,147.7687
+T3,North-western Tasmanian,Tasmania,-41.2456,144.8721
+T4,North Midlands Tasmanian,Tasmania,-41.6677,147.1881
+T5,South-eastern Tasmanian,Tasmania,-43.2255,146.9977
+T8,Big River Tasmanian,Tasmania,-42.4251,146.7589
+T9,Cape Portland Tasmanian,Tasmania,-41.0825,148.0593
+W1,Bibulman,Western Australia,-34.4187,115.9466
+W10,Ballardong,Western Australia,-31.5555,117.1317
+W11,Yuat,Western Australia,-30.8574,115.9194
+W12,Amangu,Western Australia,-29.4733,115.5298
+W13,Watjanti,Western Australia,-28.1005,114.688
+W14,Nhanda / Nanda,Western Australia,-26.7246,113.9744
+W15,Daguda,Western Australia,-27.1697,114.7991
+W17,Buluguda,Western Australia,-26.057,113.8053
+W18,Malgana,Western Australia,-26.3669,114.3835
+W19,Yingkarta,Western Australia,-24.9456,114.5358
+W2,Mirnang / Mineng,Western Australia,-34.7218,117.5646
+W20,Maya,Western Australia,-24.422,114.3321
+W21,Tharrkari,Western Australia,-23.7565,114.962
+W22,Warriyangga,Western Australia,-24.6297,115.772
+W23,Bayungu,Western Australia,-23.2095,113.9521
+W24,Burduna,Western Australia,-23.0479,115.1152
+W25,Thiin,Western Australia,-23.7116,116.6801
+W26,Thalanyji,Western Australia,-22.5229,114.9409
+W28,Jiwarli,Western Australia,-23.4973,115.9009
+W3,Wardandi,Western Australia,-33.8569,115.4379
+W30,Nhuwala,Western Australia,-21.5388,115.686
+W33,Jurruru,Western Australia,-23.232,116.9072
+W34,Binigura / Pinikura,Western Australia,-23.0306,116.3728
+W35,Martuthunira,Western Australia,-21.4055,116.4509
+W36,Kurrama,Western Australia,-22.3454,117.1253
+W37,Yindjibarndi,Western Australia,-21.7377,117.8682
+W38,Ngarluma,Western Australia,-20.9822,117.5564
+W39,Kariyarra,Western Australia,-20.8708,118.4788
+W4,Kaniyang,Western Australia,-33.9842,116.6983
+W40,Ngarla,Western Australia,-20.2632,119.7052
+W41,Noongar / Nyungar,Western Australia,-32.9221,117.84
+W44,Janadjina,Western Australia,-24.7355,118.2674
+W45,Watjanmay,Western Australia,-30.4293,119.9874
+W46,Southern Yingkarta,Western Australia,-25.706,114.9369
+W47,Yapurarra,Western Australia,-20.6715,116.6868
+W49,Jadira,Western Australia,-21.8455,116.1885
+W5,Goreng / Koreng,Western Australia,-34.0111,118.4408
+W52,Nokaan,Western Australia,-27.2434,115.168
+W6,Bindjareb / Pinjarup,Western Australia,-32.8984,115.9166
+W7,Wilman,Western Australia,-33.143,117.1282
+W8,Wudjari,Western Australia,-33.6671,120.5919
+W9,Wajuk,Western Australia,-31.9815,116.1239
+Y1,Kala Lagaw Ya,Queensland,-10.1118,142.1929
+Y10,Wuthathi,Queensland,-12.0221,143.0671
+Y100,Koko Kai-kai,Queensland,-16.2473,145.4506
+Y101,Uw Oykangand,Queensland,-15.5997,142.0212
+Y103,Kuku Kulunggur,Queensland,-16.4324,145.3437
+Y104,Kuku Wakura,Queensland,-16.6701,144.2164
+Y106,Djabugay / Tjapukai,Queensland,-16.7372,145.5085
+Y107,Areba,Queensland,-17.0096,142.2228
+Y109,Kuku Djangun / Djungan,Queensland,-17.1059,144.9688
+Y110,Bulway,Queensland,-17.0045,145.5624
+Y111,Yirrgay,Queensland,-16.9412,145.7334
+Y114,Gunggay,Queensland,-16.9618,145.9148
+Y115,Mbabaram,Queensland,-17.265,145.0777
+Y117,Yidinj,Queensland,-17.0871,145.7656
+Y118,Waribarra Mamu,Queensland,-17.5048,145.7718
+Y119,Madjay,Queensland,-17.263,145.857
+Y12,Luthigh,Queensland,-11.9285,142.1165
+Y121,Ngadjon / Ngadjan,Queensland,-17.3638,145.7048
+Y122,Mamu,Queensland,-17.64,145.7485
+Y123,Dyirbal / Jirrbal,Queensland,-17.7402,145.6613
+Y124,Djiru,Queensland,-17.9072,146.0521
+Y125,Tagalaka,Queensland,-18.1973,142.9612
+Y126,Gulngay,Queensland,-17.9618,145.8525
+Y127,Girramay,Queensland,-18.11,145.7326
+Y128,Gugu Badhun,Queensland,-18.6903,145.233
+Y129,Nywaigi,Queensland,-19.1474,146.392
+Y130,Biyay,Queensland,-18.348,146.1694
+Y131,Yanga,Queensland,-19.0858,143.4655
+Y132,Agwamin,Queensland,-17.6757,144.1668
+Y132.1,Wamin,Queensland,-18.7814,144.1412
+Y133,Warrungu,Queensland,-18.034,145.2397
+Y134,Warrgamay,Queensland,-18.4375,145.7979
+Y135,Wulgurukaba,Queensland,-18.865,146.6434
+Y136,Mbarrumbathama,Queensland,-14.8816,143.8343
+Y14,Yangathimri,Queensland,-12.0199,141.8711
+Y149,Jabunbarra Jirrbal,Queensland,-17.8043,145.84
+Y15,Teppathiggi,Queensland,-12.0767,142.0727
+Y150,Walmalbarra,Queensland,-18.059,145.9956
+Y151,Jirribarra Mamu,Queensland,-17.6123,146.0514
+Y152,Gambilbarra Jirrbal,Queensland,-17.6805,145.3898
+Y153,Buluguyban,Queensland,-18.7084,146.5624
+Y154,Mulgu,Queensland,-18.7341,146.6225
+Y155,Coonambella,Queensland,-19.2651,146.8179
+Y156,Marrett River language,Queensland,-14.3936,144.1742
+Y158,China Camp,Queensland,-16.0475,145.2995
+Y16,Ngadhugudi,Queensland,-12.0784,142.3486
+Y160,Guluy,Queensland,-16.9352,145.4466
+Y161,Kuku Jakandji,Queensland,-16.6497,145.2107
+Y162,Nyagali,Queensland,-16.5483,145.4523
+Y163,Kuku Yalaja,Queensland,-16.1209,144.5432
+Y167,Dhalundhirr,Queensland,-15.2538,145.2801
+Y168,Waguurrga,Queensland,-15.1133,144.9246
+Y169,Kuuku I'yu,Queensland,-12.1882,142.8797
+Y17,Itinadyana,Queensland,-12.1263,142.6539
+Y170,Kuuku Yani,Queensland,-13.9216,143.4315
+Y171,Ogh Igadj,Queensland,-16.4026,142.1574
+Y172,Wik Iyanh,Queensland,-14.4299,141.9375
+Y173,Wik-keyangan,Queensland,-14.1895,141.9054
+Y175,Kugu Ugbanh,Queensland,-14.508,141.6347
+Y176,Kugu Uwanh,Queensland,-14.5589,141.6513
+Y178,Kugu Yi'anh,Queensland,-14.4867,141.6549
+Y180,Nhawalgaba,Queensland,-19.2353,146.7891
+Y183,Atampaya,Queensland,-11.5848,142.3287
+Y184,Uradhi,Queensland,-11.8906,142.1591
+Y185,Awngthim,Queensland,-12.7115,141.8213
+Y186,Mpakwithi,Queensland,-12.284,141.9332
+Y187,Mutyanthi,Queensland,-11.9165,142.7867
+Y188,Kokiny,Queensland,-16.4757,141.5859
+Y19,Yuputhimri,Queensland,-12.1535,141.7946
+Y190,Yumukuntyi,Queensland,-10.9149,142.4648
+Y191,Gudang,Queensland,-10.8673,142.5879
+Y192,Andooyomo,Queensland,-10.938,142.6073
+Y193,Uyungkuthi,Queensland,-12.0836,142.6557
+Y194,Utyangikwathiya,Queensland,-11.8922,142.4721
+Y195,Rimanggudinhma,Queensland,-14.4868,143.7825
+Y198,Ogh Ikarranggal,Queensland,-14.6334,143.9419
+Y199,Ogh Alungul,Queensland,-14.6808,144.0763
+Y2,Kalaw Kawaw Ya,Queensland,-9.352,142.4788
+Y20,Anguthimri,Queensland,-12.3777,141.8361
+Y200,Kuuk Yak,Queensland,-14.8772,141.7316
+Y201,Ogh Awarrangg,Queensland,-16.0731,143.0044
+Y203,Koko Babangk,Queensland,-15.8158,141.4834
+Y206,Ogh Undjan,Queensland,-16.2657,142.3918
+Y207,Uw El,Queensland,-15.1455,141.8282
+Y209,Kok Wap,Queensland,-15.3951,141.7235
+Y21,Nyuwathayi,Queensland,-12.4089,142.3132
+Y210,Kirka,Queensland,-14.931,141.6657
+Y211,Uutaalnganu,Queensland,-13.099,143.3406
+Y214,Yirrk Thangalkl,Queensland,-15.3013,141.6169
+Y215,Kuuk Thaayunth,Queensland,-14.9526,141.6462
+Y216,Ngaygungu,Queensland,-17.3853,145.3759
+Y218,Cleveland Bay,Queensland,-19.2935,146.8648
+Y219,Alodja,Queensland,-15.6787,144.8256
+Y22,Kuuku Ya'u,Queensland,-12.5417,143.0339
+Y220,Biyay,Queensland,-18.5775,146.2353
+Y224,Kugu Mu'inh,Queensland,-14.6475,141.6398
+Y229,Adithinngithigh,Queensland,-12.9242,141.7114
+Y23,Wimaranga,Queensland,-12.3799,141.6867
+Y231,Yaraytyana,Queensland,-11.0918,142.7057
+Y232,Yatay,Queensland,-10.6831,142.6241
+Y233,Wakaman,Queensland,-17.2105,144.5984
+Y24,Thaynakwith,Queensland,-12.5582,141.9324
+Y25,Mpalitjanh,Queensland,-12.1023,142.2782
+Y26,Linngithigh,Queensland,-13.173,141.8219
+Y27,Ntrwa'ngayth,Queensland,-13.1007,141.6381
+Y28,Ungawangadi,Queensland,-12.6491,142.0623
+Y29,Yinwum,Queensland,-12.7004,142.7246
+Y3,Meriam Mir,Queensland,-9.6831,143.7754
+Y30,Ladamngid,Queensland,-12.8831,141.833
+Y31,Mamangathi,Queensland,-12.5552,141.9866
+Y32,Alngith,Queensland,-12.6436,141.9267
+Y34,Aritinngithigh,Queensland,-12.9518,141.9332
+Y36,Ngkoth,Queensland,-12.8276,142.0521
+Y37,Trotj,Queensland,-12.7509,142.4059
+Y39,Ntra'ngith,Queensland,-12.5021,142.1093
+Y4,Kulkalgaw Ya,Queensland,-9.9418,143.0394
+Y41,Mbiywom,Queensland,-12.9683,142.1704
+Y43,Kugu Muminh,Queensland,-14.4206,141.651
+Y44,Kaanju / Kaantju,Queensland,-13.3981,142.972
+Y45,Umpila,Queensland,-13.6442,143.4314
+Y46,Wik Adinda,Queensland,-13.4928,141.6108
+Y47,Wik Paach,Queensland,-13.3456,141.6733
+Y48,Wik Ompom,Queensland,-13.3442,142.0863
+Y49,Wik Elken,Queensland,-13.7174,141.5995
+Y5,Kawalgaw Ya,Queensland,-10.6433,142.2143
+Y50,Umpithamu,Queensland,-14.0356,143.4489
+Y51,Wik Ngatharr,Queensland,-13.7539,141.6079
+Y52,Wik Epa,Queensland,-13.8954,141.7888
+Y53,Wik Me'anh,Queensland,-14.0118,141.9278
+Y54,Wik Ngathan,Queensland,-14.0643,141.6479
+Y55,Morrobolam,Queensland,-14.2519,143.535
+Y57,Wik Mungkan,Queensland,-13.7227,142.3263
+Y59,Kugu Nganhcara,Queensland,-14.4898,141.7922
+Y6,Djagaraga,Queensland,-10.8163,142.5203
+Y60,Ayapathu,Queensland,-14.4185,143.2399
+Y63.1,Barrow Point,Queensland,-14.476,144.5944
+Y64,Pakanh,Queensland,-14.5914,142.3477
+Y65,Aghu Tharnggala,Queensland,-14.9227,144.1358
+Y66,Wurangung,Queensland,-14.5999,143.5669
+Y69,Kuuk Thaayorre,Queensland,-14.909,141.787
+Y7,Angkamuthi,Queensland,-11.3145,142.2942
+Y71,Gugu Rarmul,Queensland,-14.7675,144.1097
+Y72,Yir Yoront,Queensland,-15.1257,141.712
+Y73,Uw Olkola,Queensland,-15.3479,142.6986
+Y74,Gugu Yawa,Queensland,-15.3802,144.0314
+Y78,Kuku Yalanji,Queensland,-16.4974,144.6294
+Y79,Guugu-nyiguudyi,Queensland,-14.6536,144.7846
+Y8,Yadhaykenu,Queensland,-11.4838,142.7258
+Y80,Kuku-warra,Queensland,-15.094,144.6123
+Y82,Guugu Yimidhirr,Queensland,-15.0852,144.9428
+Y83,Kunjen,Queensland,-15.7238,142.6543
+Y84,Kuku Thaypan,Queensland,-14.6603,143.9143
+Y85,Koko Bera,Queensland,-15.6349,141.6206
+Y86,Kuku Bididji,Queensland,-15.7488,144.9973
+Y87,Kuku Buyunji,Queensland,-16.2193,145.3425
+Y89,Kuku Tungay,Queensland,-16.0167,145.3479
+Y90,Kuku Nyungkul,Queensland,-15.7503,145.2513
+Y93,Koko Dhawa,Queensland,-16.0509,141.8062
+Y94,Kuku Mini,Queensland,-16.0533,143.4613
+Y95,Kutjal,Queensland,-17.312,143.221
+Y97,Muluridji,Queensland,-17.1186,145.3498
+Y98,Kuku Waldja / Wulpura,Queensland,-16.2263,145.0767
+S62,Kuringgai,New South Wales,-33.4065,151.3342

@@ -1,0 +1,22 @@
+place_id,name,type,first_inscribed,all_inscriptions,states,parts,hectares,on_main_map,lon,lat
+105107,Willandra Lakes Region,Mixed,1981,1981,NSW,1,239184,true,143.018,-33.727
+105060,Great Barrier Reef,Natural,1981,1981,QLD,1,34893405,true,146.6376,-17.5906
+105041,Kakadu National Park,Mixed,1981,1981;1987;1992;2011,NT,1,1911122,true,132.5362,-13.0395
+105086,Tasmanian Wilderness,Mixed,1982,1982;1989;2010;2012;2013,TAS,1,1585523,true,145.86,-42.5863
+105085,Lord Howe Island Group,Natural,1982,1982,NSW,2,146080,false,159.1665,-31.6245
+105135,Gondwana Rainforests of Australia,Natural,1986,1986;1994,NSW/QLD,2,368725,true,151.5663,-32.1027
+105040,Uluru-Kata Tjuta National Park,Mixed,1987,1987;1994,NT,1,133995,true,130.7096,-25.2456
+105080,Wet Tropics of Queensland,Natural,1988,1988,QLD,1,894818,true,146.2853,-19.0496
+105020,"Shark Bay, Western Australia",Natural,1991,1991,WA,1,2204297,true,113.6103,-25.9809
+105087,K'gari,Natural,1992,1992,QLD,1,181838,true,153.147,-25.2471
+105089,Australian Fossil Mammal Sites,Natural,1994,1994,QLD/SA,2,10319,true,138.6312,-19.0326
+105142,Heard and McDonald Islands,Natural,1997,1997,EXT,2,658903,false,73.2193,-53.0479
+105129,Macquarie Island,Natural,1997,1997,TAS,2,557204,false,158.82,-54.7408
+105127,Greater Blue Mountains Area,Natural,2000,2000,NSW,1,1043826,true,150.1639,-34.0035
+105128,Purnululu National Park,Natural,2003,2003,WA,1,243831,true,128.5337,-17.4619
+105143,Royal Exhibition Building and Carlton Gardens,Cultural,2004,2004,VIC,1,25,true,144.9716,-37.8042
+105914,Sydney Opera House,Cultural,2007,2007,NSW,1,4,true,151.2148,-33.8576
+106209,Australian Convict Sites,Cultural,2010,2010,EXT/NSW/TAS/WA,11,1575,true,148.0692,-42.5825
+106208,Ningaloo Coast,Natural,2011,2011,WA,1,604554,true,113.6622,-22.8038
+106357,Budj Bim Cultural Landscape,Cultural,2019,2019,VIC,1,9935,true,141.8565,-38.0737
+106396,Murujuga Cultural Landscape,Cultural,2025,2025,WA,1,99880,true,116.5814,-20.5188
