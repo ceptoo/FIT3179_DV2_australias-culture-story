@@ -262,7 +262,14 @@
       "orient": "top",
       "direction": "horizontal",
       "columnPadding": 22,
-      "labelLimit": 260
+      "labelLimit": 260,
+      "layout": {
+        "top": {
+          "anchor": "start",
+          "direction": "horizontal",
+          "margin": 48
+        }
+      }
     },
     "text": {
       "font": "Source Sans 3",

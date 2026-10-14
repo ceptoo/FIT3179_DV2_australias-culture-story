@@ -89,11 +89,10 @@ p  { margin: 0 0 14px; }
   padding-block: 88px 56px;
 }
 .lede {
-  font-family: "Fraunces", Georgia, serif;
   font-size: 23px;
   line-height: 1.45;
   color: var(--ink);
-  max-width: 44ch;
+  max-width: 54ch;
   margin-top: 18px;
 }
 .byline { font-size: 15px; color: var(--muted); margin-top: 24px; }
@@ -148,7 +147,15 @@ main > section.intro { border-top: none; }
 .section-head h2 { margin-bottom: 14px; }
 .section-head .lead { font-size: 20px; max-width: var(--measure); color: var(--ink); }
 
-.row { margin-bottom: 36px; align-items: start; }
+/* Each row has two shared tracks: charts, then source lines. Figures span both tracks via
+   subgrid, so captions in the same row always start on the same line, however long they are. */
+.row {
+  margin-bottom: 36px;
+  grid-template-rows: auto auto;
+  row-gap: 0;
+}
+.row > * { grid-row: span 2; }
+.row > figure { display: grid; grid-template-rows: subgrid; }
 
 .side {
   border-top: 3px solid var(--ink);
@@ -168,12 +175,12 @@ main > section.intro { border-top: none; }
 
 /* ---------- Charts ---------- */
 figure { margin: 0; min-width: 0; }
-.chart { width: 100%; min-width: 0; overflow-x: auto; }
+.chart { width: 100%; min-width: 0; overflow-x: auto; margin-bottom: 10px; }
 figcaption {
+  align-self: start;
   font-size: 13px;
   line-height: 1.45;
   color: var(--muted);
-  margin-top: 10px;
   padding-top: 8px;
   border-top: 1px solid var(--rule);
 }
@@ -197,8 +204,8 @@ figcaption {
 .takeaways li { border-top: 3px solid var(--ink); padding-top: 14px; font-size: 17px; }
 .takeaways li:first-child { border-top-color: var(--indigenous); }
 .closing {
-  font-family: "Fraunces", Georgia, serif;
   font-size: 22px;
+  font-weight: 500;
   line-height: 1.5;
   max-width: 52ch;
 }
@@ -215,6 +222,7 @@ code { font-size: 14px; background: var(--panel); padding: 1px 5px; border-radiu
 /* ---------- Smaller screens: stack every column ---------- */
 @media (max-width: 960px) {
   .grid > [class*="col-"] { grid-column: span 12; }
+  .row > * + * { margin-top: 32px; }   /* space between stacked charts */
   .stats .col-3 { grid-column: span 6; }
   .toc { border-left: none; padding-left: 0; }
   .conclusion { padding-inline: 24px; }

@@ -25,8 +25,9 @@ const charts = {
 async function embed(el, url) {
   const spec = await (await fetch(url)).json();
   // Full Vega specs (the treemap) have no "container" width, so size them to their column.
+  // Their autosize is "fit", so this width includes the title, legend and padding.
   if (spec.$schema.includes("/vega/")) {
-    spec.width = Math.max(320, document.querySelector(el).clientWidth - 8);
+    spec.width = Math.max(320, document.querySelector(el).clientWidth);
   }
   return vegaEmbed(el, spec, opts);
 }

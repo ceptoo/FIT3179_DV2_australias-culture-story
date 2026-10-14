@@ -19,7 +19,10 @@
   "width": 480,
   "height": 420,
   "padding": 4,
-  "autosize": "pad",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": [
     {
       "name": "cats",
