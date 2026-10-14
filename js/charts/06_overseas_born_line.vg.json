@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Almost one in three Australians was born overseas",
-    "subtitle": "Share of the population born overseas, census years 1901–2021"
+    "subtitle": "Share of the population born overseas, 1901–2021. Census counts to 1996, population estimates from 2001."
   },
   "data": {
     "url": "data/overseas_born_1901_2021.csv"

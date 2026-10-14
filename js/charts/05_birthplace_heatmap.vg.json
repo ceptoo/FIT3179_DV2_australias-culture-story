@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "From Britain to the world",
-    "subtitle": "Share of Australia's population born in each country, census years 1901–2021 (blank = not recorded separately)"
+    "subtitle": "Share of Australia's population born in each country, 1901–2021 (blank = not recorded separately). Census counts to 1996, population estimates from 2001."
   },
   "data": {
     "url": "data/birthplace_heatmap_1901_2021.csv"

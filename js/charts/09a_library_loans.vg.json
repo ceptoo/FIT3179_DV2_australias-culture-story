@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Australians are borrowing more than ever, and a third of it is digital",
+    "text": "Library borrowing hit a five-year high, and almost a third of it is digital",
     "subtitle": "Public library loans and downloads per year, physical vs digital"
   },
   "data": {

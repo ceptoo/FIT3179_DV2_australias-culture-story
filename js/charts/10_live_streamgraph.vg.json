@@ -146,12 +146,41 @@
         "values": [
           {
             "year": 2020,
-            "y": 29.2,
+            "y": 31.3,
+            "y2": 22.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#2b2622",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "y": 34.6,
             "t": "2020: COVID shutdowns,"
           },
           {
             "year": 2020,
-            "y": 27.6,
+            "y": 33.0,
             "t": "tickets down 67%"
           }
         ]
