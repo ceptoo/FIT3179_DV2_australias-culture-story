@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Only 139 of 217 languages were passed on to children in 2021",
+    "subtitle": "Each square is one Aboriginal or Torres Strait Islander language in the ABS classification"
+  },
+  "data": {
+    "url": "data/indigenous_languages_2021.csv"
+  },
+  "transform": [
+    {
+      "calculate": "(datum.rank - 1) % 20",
+      "as": "col"
+    },
+    {
+      "calculate": "floor((datum.rank - 1) / 20)",
+      "as": "row"
+    }
+  ],
+  "width": 560,
+  "height": 308,
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2,
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "status_2021",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Used by children",
+          "Used by adults only",
+          "No users recorded"
+        ],
+        "range": [
+          "#4f7d5c",
+          "#b5651d",
+          "#c9b79c"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "language",
+        "title": "Language"
+      },
+      {
+        "field": "total_users",
+        "type": "quantitative",
+        "title": "People using it at home",
+        "format": ","
+      },
+      {
+        "field": "children_0_14",
+        "type": "quantitative",
+        "title": "Of whom children (0–14)",
+        "format": ","
+      },
+      {
+        "field": "status_2021",
+        "title": "2021 status"
+      }
+    ]
+  },
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

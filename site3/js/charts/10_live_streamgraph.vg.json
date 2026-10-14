@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The night the music stopped, and came back louder",
+    "subtitle": "Tickets issued for live performances in Australia by category, 2010–2024. Hover a band to see it."
+  },
+  "data": {
+    "url": "data/live_by_category_2010_2024.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "attendance": "number",
+        "year": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.attendance / 1e6",
+      "as": "tickets_m"
+    },
+    {
+      "calculate": "indexof(['Contemporary Music','Musical Theatre','Comedy','Festivals (Multi-Category)','Festivals (Contemporary Music)','Children\\'s/Family','Classical Music','Theatre','Ballet and Dance','Circus and Physical Theatre','Opera','Special Events'], datum.category)",
+      "as": "ord"
+    }
+  ],
+  "width": 620,
+  "height": 320,
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "category"
+            ],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "format": "d",
+            "tickCount": 8
+          }
+        },
+        "y": {
+          "field": "tickets_m",
+          "type": "quantitative",
+          "stack": "center",
+          "title": "Tickets (millions)",
+          "axis": {
+            "labels": false,
+            "grid": false,
+            "ticks": false
+          }
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": null,
+          "sort": {
+            "field": "ord"
+          },
+          "scale": {
+            "domain": [
+              "Contemporary Music",
+              "Musical Theatre",
+              "Comedy",
+              "Festivals (Multi-Category)",
+              "Festivals (Contemporary Music)",
+              "Children's/Family",
+              "Classical Music",
+              "Theatre",
+              "Ballet and Dance",
+              "Circus and Physical Theatre",
+              "Opera",
+              "Special Events"
+            ],
+            "range": [
+              "#b5651d",
+              "#4a5a78",
+              "#4f7d5c",
+              "#c98a3a",
+              "#d4a76a",
+              "#7a8f6a",
+              "#6b7fa3",
+              "#9b6b8e",
+              "#c9b79c",
+              "#8c7b6b",
+              "#5b4a6e",
+              "#a8a29a"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "columns": 1,
+            "symbolType": "square"
+          }
+        },
+        "order": {
+          "field": "ord"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.25
+        },
+        "tooltip": [
+          {
+            "field": "category",
+            "title": "Category"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "tickets_m",
+            "type": "quantitative",
+            "title": "Tickets (millions)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2020,
+            "y": 29.2,
+            "t": "2020: COVID shutdowns,"
+          },
+          {
+            "year": 2020,
+            "y": 27.6,
+            "t": "tickets down 67%"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

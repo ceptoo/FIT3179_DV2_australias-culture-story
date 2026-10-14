@@ -1,0 +1,1061 @@
+year,area,population
+1901,New South Wales,1375455
+1902,New South Wales,1401943
+1903,New South Wales,1425183
+1904,New South Wales,1455458
+1905,New South Wales,1487884
+1906,New South Wales,1521618
+1907,New South Wales,1561572
+1908,New South Wales,1583923
+1909,New South Wales,1613899
+1910,New South Wales,1643855
+1911,New South Wales,1699376
+1912,New South Wales,1785412
+1913,New South Wales,1844727
+1914,New South Wales,1880241
+1915,New South Wales,1893449
+1916,New South Wales,1885051
+1917,New South Wales,1920043
+1918,New South Wales,1961967
+1919,New South Wales,2038747
+1920,New South Wales,2091722
+1921,New South Wales,2131690
+1922,New South Wales,2181517
+1923,New South Wales,2222879
+1924,New South Wales,2273023
+1925,New South Wales,2322340
+1926,New South Wales,2376678
+1927,New South Wales,2433655
+1928,New South Wales,2483129
+1929,New South Wales,2519693
+1930,New South Wales,2546353
+1931,New South Wales,2566314
+1932,New South Wales,2591731
+1933,New South Wales,2613604
+1934,New South Wales,2636463
+1935,New South Wales,2658072
+1936,New South Wales,2682320
+1937,New South Wales,2711543
+1938,New South Wales,2737191
+1939,New South Wales,2766415
+1940,New South Wales,2790948
+1941,New South Wales,2813056
+1942,New South Wales,2848140
+1943,New South Wales,2870711
+1944,New South Wales,2901039
+1945,New South Wales,2932998
+1946,New South Wales,2962392
+1947,New South Wales,3002634
+1948,New South Wales,3048306
+1949,New South Wales,3149806
+1950,New South Wales,3241057
+1951,New South Wales,3314672
+1952,New South Wales,3367986
+1953,New South Wales,3409009
+1954,New South Wales,3462532
+1955,New South Wales,3526534
+1956,New South Wales,3589371
+1957,New South Wales,3662904
+1958,New South Wales,3728800
+1959,New South Wales,3794077
+1960,New South Wales,3877261
+1961,New South Wales,3951651
+1962,New South Wales,4022361
+1963,New South Wales,4077743
+1964,New South Wales,4142121
+1965,New South Wales,4211049
+1966,New South Wales,4267452
+1967,New South Wales,4329913
+1968,New South Wales,4401212
+1969,New South Wales,4490765
+1970,New South Wales,4573735
+1971,New South Wales,4766619
+1972,New South Wales,4820846
+1973,New South Wales,4868118
+1974,New South Wales,4925995
+1975,New South Wales,4947441
+1976,New South Wales,4978461
+1977,New South Wales,5028960
+1978,New South Wales,5079392
+1979,New South Wales,5140192
+1980,New South Wales,5205380
+1981,New South Wales,5266894
+1982,New South Wales,5328221
+1983,New South Wales,5374915
+1984,New South Wales,5431752
+1985,New South Wales,5496467
+1986,New South Wales,5574251
+1987,New South Wales,5666219
+1988,New South Wales,5752254
+1989,New South Wales,5803079
+1990,New South Wales,5862497
+1991,New South Wales,5928072
+1992,New South Wales,5977823
+1993,New South Wales,6020171
+1994,New South Wales,6071872
+1995,New South Wales,6143971
+1996,New South Wales,6214548
+1997,New South Wales,6274966
+1998,New South Wales,6338790
+1999,New South Wales,6409971
+2000,New South Wales,6485081
+2001,New South Wales,6558484
+2002,New South Wales,6599441
+2003,New South Wales,6634509
+2004,New South Wales,6669206
+2005,New South Wales,6718023
+2006,New South Wales,6786160
+2007,New South Wales,6883852
+2008,New South Wales,7001782
+2009,New South Wales,7101504
+2010,New South Wales,7179891
+2011,New South Wales,7258722
+2012,New South Wales,7353189
+2013,New South Wales,7454938
+2014,New South Wales,7562171
+2015,New South Wales,7671401
+2016,New South Wales,7795625
+2017,New South Wales,7900946
+2018,New South Wales,8003564
+2019,New South Wales,8088361
+2020,New South Wales,8094300
+1901,Victoria,1209900
+1902,Victoria,1208231
+1903,Victoria,1204742
+1904,Victoria,1205608
+1905,Victoria,1210421
+1906,Victoria,1219832
+1907,Victoria,1232807
+1908,Victoria,1250449
+1909,Victoria,1277022
+1910,Victoria,1301408
+1911,Victoria,1339893
+1912,Victoria,1382553
+1913,Victoria,1415416
+1914,Victoria,1435188
+1915,Victoria,1424445
+1916,Victoria,1404663
+1917,Victoria,1417060
+1918,Victoria,1437245
+1919,Victoria,1503035
+1920,Victoria,1527909
+1921,Victoria,1550727
+1922,Victoria,1590273
+1923,Victoria,1625455
+1924,Victoria,1657151
+1925,Victoria,1684051
+1926,Victoria,1711987
+1927,Victoria,1741832
+1928,Victoria,1761746
+1929,Victoria,1778269
+1930,Victoria,1792605
+1931,Victoria,1803570
+1932,Victoria,1813387
+1933,Victoria,1824217
+1934,Victoria,1836660
+1935,Victoria,1841595
+1936,Victoria,1849607
+1937,Victoria,1856991
+1938,Victoria,1871099
+1939,Victoria,1883133
+1940,Victoria,1914918
+1941,Victoria,1946425
+1942,Victoria,1962558
+1943,Victoria,1981616
+1944,Victoria,1997954
+1945,Victoria,2015107
+1946,Victoria,2039769
+1947,Victoria,2062709
+1948,Victoria,2108125
+1949,Victoria,2168884
+1950,Victoria,2237182
+1951,Victoria,2299538
+1952,Victoria,2366719
+1953,Victoria,2416035
+1954,Victoria,2477986
+1955,Victoria,2546332
+1956,Victoria,2618112
+1957,Victoria,2680555
+1958,Victoria,2745165
+1959,Victoria,2811429
+1960,Victoria,2888290
+1961,Victoria,2955299
+1962,Victoria,3011043
+1963,Victoria,3071046
+1964,Victoria,3137921
+1965,Victoria,3195860
+1966,Victoria,3249843
+1967,Victoria,3303606
+1968,Victoria,3356827
+1969,Victoria,3421178
+1970,Victoria,3482031
+1971,Victoria,3633843
+1972,Victoria,3686136
+1973,Victoria,3730824
+1974,Victoria,3779587
+1975,Victoria,3800656
+1976,Victoria,3823941
+1977,Victoria,3852589
+1978,Victoria,3874501
+1979,Victoria,3899993
+1980,Victoria,3930655
+1981,Victoria,3968398
+1982,Victoria,4012687
+1983,Victoria,4054498
+1984,Victoria,4097640
+1985,Victoria,4140421
+1986,Victoria,4183842
+1987,Victoria,4234945
+1988,Victoria,4295300
+1989,Victoria,4348225
+1990,Victoria,4400707
+1991,Victoria,4435083
+1992,Victoria,4458219
+1993,Victoria,4466738
+1994,Victoria,4483205
+1995,Victoria,4517353
+1996,Victoria,4552904
+1997,Victoria,4586156
+1998,Victoria,4629345
+1999,Victoria,4677581
+2000,Victoria,4730855
+2001,Victoria,4790212
+2002,Victoria,4845024
+2003,Victoria,4900176
+2004,Victoria,4957147
+2005,Victoria,5023203
+2006,Victoria,5103965
+2007,Victoria,5199503
+2008,Victoria,5313285
+2009,Victoria,5419249
+2010,Victoria,5495711
+2011,Victoria,5591818
+2012,Victoria,5709586
+2013,Victoria,5832585
+2014,Victoria,5957512
+2015,Victoria,6093049
+2016,Victoria,6235781
+2017,Victoria,6358210
+2018,Victoria,6479695
+2019,Victoria,6590050
+2020,Victoria,6567195
+1901,Queensland,506721
+1902,Queensland,512240
+1903,Queensland,517728
+1904,Queensland,524935
+1905,Queensland,531482
+1906,Queensland,538973
+1907,Queensland,545805
+1908,Queensland,557099
+1909,Queensland,577845
+1910,Queensland,599016
+1911,Queensland,623123
+1912,Queensland,638753
+1913,Queensland,663811
+1914,Queensland,681799
+1915,Queensland,685067
+1916,Queensland,677026
+1917,Queensland,686504
+1918,Queensland,704251
+1919,Queensland,736138
+1920,Queensland,750624
+1921,Queensland,765724
+1922,Queensland,782379
+1923,Queensland,801844
+1924,Queensland,822084
+1925,Queensland,844842
+1926,Queensland,862486
+1927,Queensland,876385
+1928,Queensland,890877
+1929,Queensland,902136
+1930,Queensland,916736
+1931,Queensland,929726
+1932,Queensland,939097
+1933,Queensland,949144
+1934,Queensland,959844
+1935,Queensland,971297
+1936,Queensland,982978
+1937,Queensland,994580
+1938,Queensland,1005523
+1939,Queensland,1020095
+1940,Queensland,1031452
+1941,Queensland,1038471
+1942,Queensland,1037925
+1943,Queensland,1054584
+1944,Queensland,1068255
+1945,Queensland,1084864
+1946,Queensland,1096831
+1947,Queensland,1112818
+1948,Queensland,1138544
+1949,Queensland,1170319
+1950,Queensland,1205418
+1951,Queensland,1238278
+1952,Queensland,1271256
+1953,Queensland,1298420
+1954,Queensland,1325481
+1955,Queensland,1358858
+1956,Queensland,1392573
+1957,Queensland,1420501
+1958,Queensland,1449337
+1959,Queensland,1477161
+1960,Queensland,1502286
+1961,Queensland,1540251
+1962,Queensland,1562845
+1963,Queensland,1595446
+1964,Queensland,1626525
+1965,Queensland,1659423
+1966,Queensland,1687062
+1967,Queensland,1715803
+1968,Queensland,1747724
+1969,Queensland,1779690
+1970,Queensland,1812784
+1971,Queensland,1874930
+1972,Queensland,1924658
+1973,Queensland,1981634
+1974,Queensland,2032973
+1975,Queensland,2072325
+1976,Queensland,2110431
+1977,Queensland,2151026
+1978,Queensland,2191586
+1979,Queensland,2239699
+1980,Queensland,2301702
+1981,Queensland,2387943
+1982,Queensland,2456475
+1983,Queensland,2503285
+1984,Queensland,2547078
+1985,Queensland,2597100
+1986,Queensland,2648778
+1987,Queensland,2703516
+1988,Queensland,2780869
+1989,Queensland,2864007
+1990,Queensland,2928713
+1991,Queensland,2990441
+1992,Queensland,3057138
+1993,Queensland,3130986
+1994,Queensland,3198877
+1995,Queensland,3271743
+1996,Queensland,3330579
+1997,Queensland,3380394
+1998,Queensland,3427505
+1999,Queensland,3481034
+2000,Queensland,3537670
+2001,Queensland,3611203
+2002,Queensland,3700791
+2003,Queensland,3788560
+2004,Queensland,3872351
+2005,Queensland,3964175
+2006,Queensland,4055845
+2007,Queensland,4159990
+2008,Queensland,4275551
+2009,Queensland,4367454
+2010,Queensland,4436882
+2011,Queensland,4518649
+2012,Queensland,4611304
+2013,Queensland,4685439
+2014,Queensland,4747263
+2015,Queensland,4804933
+2016,Queensland,4882939
+2017,Queensland,4960965
+2018,Queensland,5046434
+2019,Queensland,5129741
+2020,Queensland,5184329
+1901,South Australia,364003
+1902,South Australia,361481
+1903,South Australia,361267
+1904,South Australia,363574
+1905,South Australia,366667
+1906,South Australia,370417
+1907,South Australia,377400
+1908,South Australia,389403
+1909,South Australia,396400
+1910,South Australia,410169
+1911,South Australia,419392
+1912,South Australia,432947
+1913,South Australia,444573
+1914,South Australia,447896
+1915,South Australia,445985
+1916,South Australia,441838
+1917,South Australia,446707
+1918,South Australia,457552
+1919,South Australia,481463
+1920,South Australia,491006
+1921,South Australia,501742
+1922,South Australia,511602
+1923,South Australia,522212
+1924,South Australia,534946
+1925,South Australia,547048
+1926,South Australia,560925
+1927,South Australia,569630
+1928,South Australia,572587
+1929,South Australia,572973
+1930,South Australia,574467
+1931,South Australia,577079
+1932,South Australia,579293
+1933,South Australia,582746
+1934,South Australia,584489
+1935,South Australia,586762
+1936,South Australia,589770
+1937,South Australia,591797
+1938,South Australia,595842
+1939,South Australia,599313
+1940,South Australia,599056
+1941,South Australia,606366
+1942,South Australia,610978
+1943,South Australia,616027
+1944,South Australia,623030
+1945,South Australia,630882
+1946,South Australia,640418
+1947,South Australia,654632
+1948,South Australia,670615
+1949,South Australia,695618
+1950,South Australia,722843
+1951,South Australia,743785
+1952,South Australia,768570
+1953,South Australia,785665
+1954,South Australia,808250
+1955,South Australia,834661
+1956,South Australia,861952
+1957,South Australia,886252
+1958,South Australia,908053
+1959,South Australia,934497
+1960,South Australia,957022
+1961,South Australia,979351
+1962,South Australia,998245
+1963,South Australia,1022387
+1964,South Australia,1051954
+1965,South Australia,1082958
+1966,South Australia,1103740
+1967,South Australia,1115926
+1968,South Australia,1132137
+1969,South Australia,1149375
+1970,South Australia,1170230
+1971,South Australia,1208712
+1972,South Australia,1222148
+1973,South Australia,1235582
+1974,South Australia,1259758
+1975,South Australia,1270654
+1976,South Australia,1280157
+1977,South Australia,1292265
+1978,South Australia,1298634
+1979,South Australia,1304609
+1980,South Australia,1312623
+1981,South Australia,1325176
+1982,South Australia,1337783
+1983,South Australia,1353208
+1984,South Australia,1365333
+1985,South Australia,1376838
+1986,South Australia,1387499
+1987,South Australia,1398959
+1988,South Australia,1412323
+1989,South Australia,1425461
+1990,South Australia,1438882
+1991,South Australia,1450862
+1992,South Australia,1457241
+1993,South Australia,1461102
+1994,South Australia,1463977
+1995,South Australia,1466605
+1996,South Australia,1471997
+1997,South Australia,1479003
+1998,South Australia,1487042
+1999,South Australia,1495218
+2000,South Australia,1500129
+2001,South Australia,1507825
+2002,South Australia,1515723
+2003,South Australia,1524727
+2004,South Australia,1532562
+2005,South Australia,1544852
+2006,South Australia,1561300
+2007,South Australia,1578489
+2008,South Australia,1597880
+2009,South Australia,1618578
+2010,South Australia,1632482
+2011,South Australia,1647183
+2012,South Australia,1663082
+2013,South Australia,1678052
+2014,South Australia,1693107
+2015,South Australia,1705937
+2016,South Australia,1719580
+2017,South Australia,1735654
+2018,South Australia,1755715
+2019,South Australia,1778928
+2020,South Australia,1794514
+1901,Western Australia,193601
+1902,Western Australia,211973
+1903,Western Australia,224748
+1904,Western Australia,239408
+1905,Western Australia,250138
+1906,Western Australia,255173
+1907,Western Australia,254540
+1908,Western Australia,259671
+1909,Western Australia,265675
+1910,Western Australia,276832
+1911,Western Australia,293923
+1912,Western Australia,305621
+1913,Western Australia,319935
+1914,Western Australia,322089
+1915,Western Australia,316663
+1916,Western Australia,306880
+1917,Western Australia,306838
+1918,Western Australia,310183
+1919,Western Australia,327860
+1920,Western Australia,331323
+1921,Western Australia,336548
+1922,Western Australia,345544
+1923,Western Australia,356859
+1924,Western Australia,368324
+1925,Western Australia,377527
+1926,Western Australia,385233
+1927,Western Australia,399897
+1928,Western Australia,414621
+1929,Western Australia,426637
+1930,Western Australia,431610
+1931,Western Australia,433686
+1932,Western Australia,436320
+1933,Western Australia,440642
+1934,Western Australia,443729
+1935,Western Australia,449623
+1936,Western Australia,454200
+1937,Western Australia,460542
+1938,Western Australia,466684
+1939,Western Australia,472380
+1940,Western Australia,474076
+1941,Western Australia,473213
+1942,Western Australia,476655
+1943,Western Australia,478264
+1944,Western Australia,484775
+1945,Western Australia,490088
+1946,Western Australia,496973
+1947,Western Australia,508762
+1948,Western Australia,521999
+1949,Western Australia,544184
+1950,Western Australia,572649
+1951,Western Australia,590339
+1952,Western Australia,612935
+1953,Western Australia,631743
+1954,Western Australia,648707
+1955,Western Australia,668609
+1956,Western Australia,681268
+1957,Western Australia,695234
+1958,Western Australia,707196
+1959,Western Australia,718691
+1960,Western Australia,731033
+1961,Western Australia,755213
+1962,Western Australia,777248
+1963,Western Australia,798895
+1964,Western Australia,818121
+1965,Western Australia,838248
+1966,Western Australia,864093
+1967,Western Australia,896988
+1968,Western Australia,937800
+1969,Western Australia,976620
+1970,Western Australia,1014052
+1971,Western Australia,1070347
+1972,Western Australia,1092604
+1973,Western Australia,1113982
+1974,Western Australia,1145991
+1975,Western Australia,1167403
+1976,Western Australia,1191680
+1977,Western Australia,1217216
+1978,Western Australia,1236401
+1979,Western Australia,1257092
+1980,Western Australia,1283505
+1981,Western Australia,1320221
+1982,Western Australia,1354971
+1983,Western Australia,1381011
+1984,Western Australia,1403032
+1985,Western Australia,1436900
+1986,Western Australia,1477398
+1987,Western Australia,1513355
+1988,Western Australia,1558914
+1989,Western Australia,1596225
+1990,Western Australia,1624390
+1991,Western Australia,1647408
+1992,Western Australia,1668515
+1993,Western Australia,1690348
+1994,Western Australia,1718549
+1995,Western Australia,1751933
+1996,Western Australia,1783556
+1997,Western Australia,1810928
+1998,Western Australia,1840078
+1999,Western Australia,1866265
+2000,Western Australia,1892531
+2001,Western Australia,1917752
+2002,Western Australia,1938610
+2003,Western Australia,1966130
+2004,Western Australia,1994241
+2005,Western Australia,2029936
+2006,Western Australia,2076867
+2007,Western Australia,2135006
+2008,Western Australia,2208928
+2009,Western Australia,2263747
+2010,Western Australia,2319063
+2011,Western Australia,2385947
+2012,Western Australia,2457489
+2013,Western Australia,2502188
+2014,Western Australia,2528619
+2015,Western Australia,2547745
+2016,Western Australia,2569606
+2017,Western Australia,2599928
+2018,Western Australia,2636404
+2019,Western Australia,2688799
+2020,Western Australia,2728187
+1901,Tasmania,175233
+1902,Tasmania,179450
+1903,Tasmania,182924
+1904,Tasmania,185167
+1905,Tasmania,186385
+1906,Tasmania,185472
+1907,Tasmania,189598
+1908,Tasmania,191733
+1909,Tasmania,193119
+1910,Tasmania,193803
+1911,Tasmania,192925
+1912,Tasmania,195927
+1913,Tasmania,199675
+1914,Tasmania,198703
+1915,Tasmania,197536
+1916,Tasmania,195603
+1917,Tasmania,198005
+1918,Tasmania,202843
+1919,Tasmania,209867
+1920,Tasmania,212752
+1921,Tasmania,218676
+1922,Tasmania,219768
+1923,Tasmania,220411
+1924,Tasmania,219672
+1925,Tasmania,219364
+1926,Tasmania,217575
+1927,Tasmania,219151
+1928,Tasmania,220319
+1929,Tasmania,223278
+1930,Tasmania,225297
+1931,Tasmania,228464
+1932,Tasmania,230607
+1933,Tasmania,232175
+1934,Tasmania,231638
+1935,Tasmania,233423
+1936,Tasmania,235773
+1937,Tasmania,239570
+1938,Tasmania,242119
+1939,Tasmania,243256
+1940,Tasmania,244002
+1941,Tasmania,242135
+1942,Tasmania,242437
+1943,Tasmania,244253
+1944,Tasmania,246889
+1945,Tasmania,250280
+1946,Tasmania,254570
+1947,Tasmania,267936
+1948,Tasmania,273401
+1949,Tasmania,281343
+1950,Tasmania,290333
+1951,Tasmania,301787
+1952,Tasmania,309558
+1953,Tasmania,316465
+1954,Tasmania,319218
+1955,Tasmania,324919
+1956,Tasmania,331340
+1957,Tasmania,338807
+1958,Tasmania,343898
+1959,Tasmania,351349
+1960,Tasmania,355969
+1961,Tasmania,353258
+1962,Tasmania,358087
+1963,Tasmania,362799
+1964,Tasmania,366508
+1965,Tasmania,369608
+1966,Tasmania,373309
+1967,Tasmania,377841
+1968,Tasmania,383055
+1969,Tasmania,386998
+1970,Tasmania,390253
+1971,Tasmania,399450
+1972,Tasmania,401886
+1973,Tasmania,404625
+1974,Tasmania,408826
+1975,Tasmania,411457
+1976,Tasmania,413702
+1977,Tasmania,416549
+1978,Tasmania,419124
+1979,Tasmania,422235
+1980,Tasmania,425202
+1981,Tasmania,428283
+1982,Tasmania,430974
+1983,Tasmania,435100
+1984,Tasmania,440070
+1985,Tasmania,444576
+1986,Tasmania,448235
+1987,Tasmania,449820
+1988,Tasmania,452781
+1989,Tasmania,458410
+1990,Tasmania,464520
+1991,Tasmania,468549
+1992,Tasmania,471258
+1993,Tasmania,472983
+1994,Tasmania,474076
+1995,Tasmania,475148
+1996,Tasmania,475529
+1997,Tasmania,474215
+1998,Tasmania,473450
+1999,Tasmania,473294
+2000,Tasmania,473200
+2001,Tasmania,473890
+2002,Tasmania,475998
+2003,Tasmania,481411
+2004,Tasmania,484778
+2005,Tasmania,488098
+2006,Tasmania,491515
+2007,Tasmania,495858
+2008,Tasmania,501774
+2009,Tasmania,506461
+2010,Tasmania,510219
+2011,Tasmania,511739
+2012,Tasmania,511813
+2013,Tasmania,513015
+2014,Tasmania,514040
+2015,Tasmania,515694
+2016,Tasmania,521981
+2017,Tasmania,531561
+2018,Tasmania,542927
+2019,Tasmania,553340
+2020,Tasmania,561881
+1911,Northern Territory,3233
+1912,Northern Territory,3436
+1913,Northern Territory,3616
+1914,Northern Territory,3903
+1915,Northern Territory,4483
+1916,Northern Territory,4665
+1917,Northern Territory,4802
+1918,Northern Territory,4639
+1919,Northern Territory,4545
+1920,Northern Territory,3989
+1921,Northern Territory,3759
+1922,Northern Territory,3612
+1923,Northern Territory,3650
+1924,Northern Territory,3728
+1925,Northern Territory,3821
+1926,Northern Territory,4097
+1927,Northern Territory,4596
+1928,Northern Territory,4254
+1929,Northern Territory,4780
+1930,Northern Territory,4964
+1931,Northern Territory,4846
+1932,Northern Territory,4786
+1933,Northern Territory,4827
+1934,Northern Territory,4968
+1935,Northern Territory,5130
+1936,Northern Territory,5361
+1937,Northern Territory,5426
+1938,Northern Territory,5730
+1939,Northern Territory,7287
+1940,Northern Territory,8974
+1941,Northern Territory,9769
+1942,Northern Territory,8291
+1943,Northern Territory,10405
+1944,Northern Territory,10477
+1945,Northern Territory,10546
+1946,Northern Territory,10642
+1947,Northern Territory,10892
+1948,Northern Territory,12185
+1949,Northern Territory,13339
+1950,Northern Territory,14420
+1951,Northern Territory,14614
+1952,Northern Territory,14771
+1953,Northern Territory,15635
+1954,Northern Territory,16456
+1955,Northern Territory,17952
+1956,Northern Territory,19427
+1957,Northern Territory,20720
+1958,Northern Territory,21956
+1959,Northern Territory,23814
+1960,Northern Territory,24787
+1961,Northern Territory,45299
+1962,Northern Territory,46684
+1963,Northern Territory,49891
+1964,Northern Territory,52754
+1965,Northern Territory,55464
+1966,Northern Territory,59352
+1967,Northern Territory,64399
+1968,Northern Territory,70223
+1969,Northern Territory,75831
+1970,Northern Territory,82822
+1971,Northern Territory,88899
+1972,Northern Territory,94626
+1973,Northern Territory,99884
+1974,Northern Territory,85217
+1975,Northern Territory,95488
+1976,Northern Territory,101135
+1977,Northern Territory,106879
+1978,Northern Territory,111904
+1979,Northern Territory,116081
+1980,Northern Territory,121686
+1981,Northern Territory,127718
+1982,Northern Territory,132784
+1983,Northern Territory,139519
+1984,Northern Territory,145293
+1985,Northern Territory,152356
+1986,Northern Territory,156578
+1987,Northern Territory,159040
+1988,Northern Territory,160536
+1989,Northern Territory,162097
+1990,Northern Territory,165047
+1991,Northern Territory,167043
+1992,Northern Territory,170420
+1993,Northern Territory,173590
+1994,Northern Territory,176761
+1995,Northern Territory,182829
+1996,Northern Territory,187342
+1997,Northern Territory,191259
+1998,Northern Territory,194390
+1999,Northern Territory,197757
+2000,Northern Territory,200045
+2001,Northern Territory,201751
+2002,Northern Territory,201549
+2003,Northern Territory,201708
+2004,Northern Territory,203857
+2005,Northern Territory,207385
+2006,Northern Territory,211029
+2007,Northern Territory,216618
+2008,Northern Territory,222526
+2009,Northern Territory,227783
+2010,Northern Territory,230299
+2011,Northern Territory,232952
+2012,Northern Territory,238728
+2013,Northern Territory,242304
+2014,Northern Territory,242753
+2015,Northern Territory,244090
+2016,Northern Territory,246065
+2017,Northern Territory,246862
+2018,Northern Territory,245920
+2019,Northern Territory,246213
+2020,Northern Territory,247819
+1911,Australian Capital Territory,1921
+1912,Australian Capital Territory,1940
+1913,Australian Capital Territory,1988
+1914,Australian Capital Territory,1959
+1915,Australian Capital Territory,1829
+1916,Australian Capital Territory,2223
+1917,Australian Capital Territory,2104
+1918,Australian Capital Territory,2232
+1919,Australian Capital Territory,1919
+1920,Australian Capital Territory,1972
+1921,Australian Capital Territory,2078
+1922,Australian Capital Territory,2591
+1923,Australian Capital Territory,2676
+1924,Australian Capital Territory,3074
+1925,Australian Capital Territory,4034
+1926,Australian Capital Territory,5039
+1927,Australian Capital Territory,5870
+1928,Australian Capital Territory,8237
+1929,Australian Capital Territory,8447
+1930,Australian Capital Territory,8719
+1931,Australian Capital Territory,8921
+1932,Australian Capital Territory,8564
+1933,Australian Capital Territory,9340
+1934,Australian Capital Territory,9456
+1935,Australian Capital Territory,9760
+1936,Australian Capital Territory,10404
+1937,Australian Capital Territory,11043
+1938,Australian Capital Territory,11721
+1939,Australian Capital Territory,13033
+1940,Australian Capital Territory,14160
+1941,Australian Capital Territory,14163
+1942,Australian Capital Territory,14112
+1943,Australian Capital Territory,13798
+1944,Australian Capital Territory,14605
+1945,Australian Capital Territory,15432
+1946,Australian Capital Territory,16386
+1947,Australian Capital Territory,17580
+1948,Australian Capital Territory,19290
+1949,Australian Capital Territory,22077
+1950,Australian Capital Territory,23579
+1951,Australian Capital Territory,24894
+1952,Australian Capital Territory,27774
+1953,Australian Capital Territory,29714
+1954,Australian Capital Territory,31306
+1955,Australian Capital Territory,33960
+1956,Australian Capital Territory,36828
+1957,Australian Capital Territory,39114
+1958,Australian Capital Territory,42953
+1959,Australian Capital Territory,49950
+1960,Australian Capital Territory,55272
+1961,Australian Capital Territory,62332
+1962,Australian Capital Territory,69546
+1963,Australian Capital Territory,77275
+1964,Australian Capital Territory,84525
+1965,Australian Capital Territory,92798
+1966,Australian Capital Territory,99992
+1967,Australian Capital Territory,107777
+1968,Australian Capital Territory,116604
+1969,Australian Capital Territory,126760
+1970,Australian Capital Territory,137562
+1971,Australian Capital Territory,155580
+1972,Australian Capital Territory,166384
+1973,Australian Capital Territory,179695
+1974,Australian Capital Territory,193631
+1975,Australian Capital Territory,203457
+1976,Australian Capital Territory,210600
+1977,Australian Capital Territory,216049
+1978,Australian Capital Territory,219288
+1979,Australian Capital Territory,222580
+1980,Australian Capital Territory,226617
+1981,Australian Capital Territory,229484
+1982,Australian Capital Territory,234996
+1983,Australian Capital Territory,241960
+1984,Australian Capital Territory,247084
+1985,Australian Capital Territory,255908
+1986,Australian Capital Territory,262188
+1987,Australian Capital Territory,268787
+1988,Australian Capital Territory,274105
+1989,Australian Capital Territory,279219
+1990,Australian Capital Territory,285012
+1991,Australian Capital Territory,291523
+1992,Australian Capital Territory,296519
+1993,Australian Capital Territory,300490
+1994,Australian Capital Territory,303289
+1995,Australian Capital Territory,307022
+1996,Australian Capital Territory,310655
+1997,Australian Capital Territory,310281
+1998,Australian Capital Territory,312300
+1999,Australian Capital Territory,315431
+2000,Australian Capital Territory,318941
+2001,Australian Capital Territory,322874
+2002,Australian Capital Territory,325950
+2003,Australian Capital Territory,327596
+2004,Australian Capital Territory,329498
+2005,Australian Capital Territory,333505
+2006,Australian Capital Territory,338381
+2007,Australian Capital Territory,344176
+2008,Australian Capital Territory,351101
+2009,Australian Capital Territory,357859
+2010,Australian Capital Territory,364833
+2011,Australian Capital Territory,372070
+2012,Australian Capital Territory,379812
+2013,Australian Capital Territory,386318
+2014,Australian Capital Territory,391981
+2015,Australian Capital Territory,398874
+2016,Australian Capital Territory,408878
+2017,Australian Capital Territory,420226
+2018,Australian Capital Territory,430758
+2019,Australian Capital Territory,440267
+2020,Australian Capital Territory,447650
+1901,Australia,3824913
+1902,Australia,3875318
+1903,Australia,3916592
+1904,Australia,3974150
+1905,Australia,4032977
+1906,Australia,4091485
+1907,Australia,4161722
+1908,Australia,4232278
+1909,Australia,4323960
+1910,Australia,4425083
+1911,Australia,4573786
+1912,Australia,4746589
+1913,Australia,4893741
+1914,Australia,4971778
+1915,Australia,4969457
+1916,Australia,4917949
+1917,Australia,4982063
+1918,Australia,5080912
+1919,Australia,5303574
+1920,Australia,5411297
+1921,Australia,5510944
+1922,Australia,5637286
+1923,Australia,5755986
+1924,Australia,5882002
+1925,Australia,6003027
+1926,Australia,6124020
+1927,Australia,6251016
+1928,Australia,6355770
+1929,Australia,6436213
+1930,Australia,6500751
+1931,Australia,6552606
+1932,Australia,6603785
+1933,Australia,6656695
+1934,Australia,6707247
+1935,Australia,6755662
+1936,Australia,6810413
+1937,Australia,6871492
+1938,Australia,6935909
+1939,Australia,7004912
+1940,Australia,7077586
+1941,Australia,7143598
+1942,Australia,7201096
+1943,Australia,7269658
+1944,Australia,7347024
+1945,Australia,7430197
+1946,Australia,7517981
+1947,Australia,7637963
+1948,Australia,7792465
+1949,Australia,8045570
+1950,Australia,8307481
+1951,Australia,8527907
+1952,Australia,8739569
+1953,Australia,8902686
+1954,Australia,9089936
+1955,Australia,9311825
+1956,Australia,9530871
+1957,Australia,9744087
+1958,Australia,9947358
+1959,Australia,10160968
+1960,Australia,10391920
+1961,Australia,10642654
+1962,Australia,10846059
+1963,Australia,11055482
+1964,Australia,11280429
+1965,Australia,11505408
+1966,Australia,11704843
+1967,Australia,11912253
+1968,Australia,12145582
+1969,Australia,12407217
+1970,Australia,12663469
+1971,Australia,13198380
+1972,Australia,13409288
+1973,Australia,13614344
+1974,Australia,13831978
+1975,Australia,13968881
+1976,Australia,14110107
+1977,Australia,14281533
+1978,Australia,14430830
+1979,Australia,14602481
+1980,Australia,14807370
+1981,Australia,15054117
+1982,Australia,15288891
+1983,Australia,15483496
+1984,Australia,15677282
+1985,Australia,15900566
+1986,Australia,16138769
+1987,Australia,16394641
+1988,Australia,16687082
+1989,Australia,16936723
+1990,Australia,17169768
+1991,Australia,17378981
+1992,Australia,17557133
+1993,Australia,17719090
+1994,Australia,17893433
+1995,Australia,18119616
+1996,Australia,18330079
+1997,Australia,18510004
+1998,Australia,18705620
+1999,Australia,18919210
+2000,Australia,19141036
+2001,Australia,19386461
+2002,Australia,19605441
+2003,Australia,19827155
+2004,Australia,20046003
+2005,Australia,20311543
+2006,Australia,20627547
+2007,Australia,21016121
+2008,Australia,21475625
+2009,Australia,21865623
+2010,Australia,22172469
+2011,Australia,22522197
+2012,Australia,22928023
+2013,Australia,23297777
+2014,Australia,23640331
+2015,Australia,23984581
+2016,Australia,24385064
+2017,Australia,24759018
+2018,Australia,25146140
+2019,Australia,25520468
+2020,Australia,25630698

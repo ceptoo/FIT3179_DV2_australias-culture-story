@@ -1,0 +1,208 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Hundreds of languages, one continent",
+    "subtitle": "Approximate locations of 834 Aboriginal and Torres Strait Islander languages"
+  },
+  "width": 600,
+  "height": 500,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ece6da",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "data/austlang.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 18,
+        "opacity": 0.75,
+        "color": "#b5651d",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Language"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 144.6,
+            "lat": -12.6
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "fontWeight": 500,
+        "dx": 4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Cape York and"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 144.6,
+            "lat": -13.8
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "fontWeight": 500,
+        "dx": 4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Torres Strait:"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 144.6,
+            "lat": -15.0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#6b625a",
+        "fontWeight": 400,
+        "dx": 4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "densest cluster"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

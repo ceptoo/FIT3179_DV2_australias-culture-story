@@ -1,0 +1,249 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Libraries are doing more with less",
+    "subtitle": "Change since 2019–20 (2019–20 = 100). Spending is per person, adjusted for inflation."
+  },
+  "data": {
+    "url": "data/libraries_national_2019_2024.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "loans_per_capita": "number",
+        "expenditure_per_capita_2023_24_dollars": "number",
+        "visits_per_capita": "number",
+        "year_end": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "loans_per_capita",
+        "visits_per_capita",
+        "expenditure_per_capita_2023_24_dollars"
+      ],
+      "as": [
+        "key",
+        "value"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "argmin",
+          "field": "year_end",
+          "as": "first"
+        }
+      ],
+      "groupby": [
+        "key"
+      ]
+    },
+    {
+      "calculate": "round(1000 * datum.value / datum.first.value) / 10",
+      "as": "index"
+    },
+    {
+      "calculate": "{'loans_per_capita': 'Loans per person', 'visits_per_capita': 'Visits per person', 'expenditure_per_capita_2023_24_dollars': 'Spending per person (real)'}[datum.key]",
+      "as": "Measure"
+    }
+  ],
+  "width": 520,
+  "height": 280,
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#d9d1c3",
+        "strokeDash": [
+          4,
+          3
+        ]
+      },
+      "encoding": {
+        "y": {
+          "datum": 100
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 40
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "index",
+          "type": "quantitative",
+          "title": "Index (2019–20 = 100)",
+          "scale": {
+            "domain": [
+              60,
+              125
+            ]
+          }
+        },
+        "color": {
+          "field": "Measure",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Loans per person",
+              "Visits per person",
+              "Spending per person (real)"
+            ],
+            "range": [
+              "#4f7d5c",
+              "#4a5a78",
+              "#b5651d"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Measure"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Value",
+            "format": ".2f"
+          },
+          {
+            "field": "index",
+            "type": "quantitative",
+            "title": "Index",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#b5651d",
+        "dx": -6,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "datum": "2023-24",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 85
+        },
+        "text": {
+          "value": "Real spending −12%"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#4f7d5c",
+        "dx": -6,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "datum": "2023-24",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 121
+        },
+        "text": {
+          "value": "Loans +18%"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#6b625a"
+      },
+      "encoding": {
+        "x": {
+          "datum": "2020-21",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 63
+        },
+        "text": {
+          "value": "COVID closures"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

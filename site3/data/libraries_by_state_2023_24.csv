@@ -1,0 +1,9 @@
+state,state_abbr,outlets,onsite_visits_m,loans_total_m,loans_physical_m,loans_digital_m,population_dec2023,visits_per_person,loans_per_person
+Australian Capital Territory,ACT,10.0,1.46,2.58,1.53,1.05,469992,3.11,5.49
+New South Wales,NSW,459.0,26.54,50.83,36.99,13.84,8422043,3.15,6.04
+Northern Territory,NT,36.0,0.76,0.94,0.65,0.29,253909,2.99,3.7
+Queensland,QLD,343.0,17.02,41.4,25.64,15.76,5526677,3.08,7.49
+South Australia,SA,166.0,7.96,13.23,7.5,5.73,1866388,4.26,7.09
+Tasmania,TAS,50.0,2.26,3.34,2.22,1.12,574543,3.93,5.81
+Victoria,VIC,408.0,22.3,45.43,33.51,11.92,6900490,3.23,6.58
+Western Australia,WA,245.0,8.58,16.21,10.73,5.48,2928807,2.93,5.53

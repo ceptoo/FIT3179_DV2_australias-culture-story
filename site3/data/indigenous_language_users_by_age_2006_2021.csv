@@ -1,0 +1,21 @@
+year,age_group,users,pct_of_age_group_using
+2006,Children (0-14 years),16958,9.9
+2011,Children (0-14 years),19090,9.7
+2016,Children (0-14 years),18720,8.5
+2021,Children (0-14 years),21592,8.1
+2006,Young adults (15-24 years),10123,11.8
+2011,Young adults (15-24 years),11505,10.9
+2016,Young adults (15-24 years),11651,9.4
+2021,Young adults (15-24 years),13936,9.3
+2006,Adults (25-44 years),15287,12.7
+2011,Adults (25-44 years),17885,12.8
+2016,Adults (25-44 years),18740,11.6
+2021,Adults (25-44 years),22972,11.2
+2006,Adults (45-64 years),7369,11.8
+2011,Adults (45-64 years),9504,11.1
+2016,Adults (45-64 years),11699,10.4
+2021,Adults (45-64 years),14595,10.2
+2006,Adults (65 years and over),2251,14.9
+2011,Adults (65 years and over),2569,12.4
+2016,Adults (65 years and over),2934,9.5
+2021,Adults (65 years and over),3883,8.1

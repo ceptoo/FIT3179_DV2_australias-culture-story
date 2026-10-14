@@ -1,0 +1,174 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australians came back to the arts",
+    "subtitle": "Share of Australians aged 15+ who took part in the past year, 2022 vs 2025 (National Arts Participation Survey)"
+  },
+  "data": {
+    "url": "data/naps_2022_vs_2025.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "pct": "number",
+        "year": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "dom",
+      "value": "Attended live arts",
+      "bind": {
+        "input": "select",
+        "name": "Show: ",
+        "options": [
+          "Attended live arts",
+          "Created art themselves",
+          "Arts of own cultural background"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.domain == dom"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "pct",
+          "as": "max_pct"
+        }
+      ],
+      "groupby": [
+        "measure"
+      ]
+    }
+  ],
+  "width": 560,
+  "height": 280,
+  "encoding": {
+    "y": {
+      "field": "measure",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "max_pct",
+        "op": "max",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#d9d1c3",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "pct",
+          "type": "quantitative"
+        },
+        "detail": {
+          "field": "measure"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "% of Australians aged 15+",
+          "scale": {
+            "domain": [
+              0,
+              80
+            ]
+          }
+        },
+        "color": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {
+            "domain": [
+              2022,
+              2025
+            ],
+            "range": [
+              "#c9b79c",
+              "#4f7d5c"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "measure",
+            "title": "Activity"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "%",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

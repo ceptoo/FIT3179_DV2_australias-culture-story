@@ -1,0 +1,174 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australians are borrowing more than ever, and a third of it is digital",
+    "subtitle": "Public library loans and downloads per year, physical vs digital"
+  },
+  "data": {
+    "url": "data/libraries_national_2019_2024.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "loans_physical": "number",
+        "loans_digital": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "loans_physical",
+        "loans_digital"
+      ],
+      "as": [
+        "format",
+        "loans"
+      ]
+    },
+    {
+      "calculate": "datum.format == 'loans_digital' ? 'Digital (ebooks, audiobooks, streaming)' : 'Physical items'",
+      "as": "Format"
+    },
+    {
+      "calculate": "datum.loans / 1e6",
+      "as": "loans_m"
+    }
+  ],
+  "width": 520,
+  "height": 280,
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.6
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "loans_m",
+          "type": "quantitative",
+          "title": "Loans (millions)"
+        },
+        "color": {
+          "field": "Format",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Physical items",
+              "Digital (ebooks, audiobooks, streaming)"
+            ],
+            "range": [
+              "#4a5a78",
+              "#b5651d"
+            ]
+          }
+        },
+        "order": {
+          "field": "format",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "Format"
+          },
+          {
+            "field": "loans_m",
+            "type": "quantitative",
+            "title": "Loans (millions)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/libraries_national_2019_2024.csv"
+      },
+      "transform": [
+        {
+          "calculate": "(toNumber(datum.loans_physical) + toNumber(datum.loans_digital)) / 1e6",
+          "as": "total_m"
+        },
+        {
+          "calculate": "toNumber(datum.digital_share_of_loans_pct) + '% digital'",
+          "as": "lab"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -8,
+        "fontSize": 12,
+        "color": "#6b625a"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "total_m",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lab"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

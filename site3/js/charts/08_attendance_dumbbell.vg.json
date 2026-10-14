@@ -1,0 +1,179 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "COVID emptied the venues",
+    "subtitle": "Share of people who went at least once in the past year, 2017–18 vs 2021–22"
+  },
+  "data": {
+    "url": "data/attendance_2017_vs_2021.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "rate_pct": "number",
+        "people_000": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "who",
+      "value": "Adults (15+)",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "Adults (15+)",
+          "Children (5-14)"
+        ],
+        "name": "Show: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.audience == who && datum.group != 'Total'"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "rate_pct",
+          "as": "max_rate"
+        }
+      ],
+      "groupby": [
+        "venue"
+      ]
+    }
+  ],
+  "width": 560,
+  "height": 300,
+  "encoding": {
+    "y": {
+      "field": "venue",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "max_rate",
+        "op": "max",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#d9d1c3",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "x": {
+          "field": "rate_pct",
+          "type": "quantitative"
+        },
+        "detail": {
+          "field": "venue"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 110,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "rate_pct",
+          "type": "quantitative",
+          "title": "% who attended",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          }
+        },
+        "color": {
+          "field": "period",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "2017-18",
+              "2021-22"
+            ],
+            "range": [
+              "#c9b79c",
+              "#b5651d"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "venue",
+            "title": "Venue or event"
+          },
+          {
+            "field": "period",
+            "title": "Year"
+          },
+          {
+            "field": "rate_pct",
+            "type": "quantitative",
+            "title": "% attended",
+            "format": ".1f"
+          },
+          {
+            "field": "people_000",
+            "type": "quantitative",
+            "title": "People ('000)",
+            "format": ",.0f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

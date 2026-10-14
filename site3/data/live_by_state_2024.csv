@@ -1,0 +1,9 @@
+state,state_abbr,revenue,attendance,avg_ticket_price,population_dec2023,attendance_per_person,revenue_per_person
+New South Wales,NSW,1214354137.0,10199919.0,119.06,8422043,1.21,144.19
+Victoria,VIC,1131368510.0,9878697.0,114.53,6900490,1.43,163.95
+Queensland,QLD,514021690.0,4943876.0,103.97,5526677,0.89,93.01
+Western Australia,WA,249584175.0,2900898.0,86.04,2928807,0.99,85.22
+South Australia,SA,175555898.0,2530561.0,69.37,1866388,1.36,94.06
+Tasmania,TAS,30338299.0,402036.0,75.46,574543,0.7,52.8
+Australian Capital Territory,ACT,30209717.0,379036.0,79.7,469992,0.81,64.28
+Northern Territory,NT,8401785.0,214956.0,39.09,253909,0.85,33.09

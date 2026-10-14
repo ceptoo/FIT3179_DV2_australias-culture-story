@@ -1,1 +1,0 @@
-vegaEmbed('#map-funding', 'js/charts/13_funding_choropleth.vg.json', { actions: false });

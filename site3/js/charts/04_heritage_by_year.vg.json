@@ -1,0 +1,183 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Most national heritage listings happened in the first four years",
+    "subtitle": "Places added to the National Heritage List each year, by type (list began in 2004)"
+  },
+  "width": 600,
+  "height": 260,
+  "layer": [
+    {
+      "data": {
+        "url": "data/nhl_by_year.csv"
+      },
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 2,
+        "cornerRadiusTopRight": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "2004",
+              "2005",
+              "2006",
+              "2007",
+              "2008",
+              "2009",
+              "2010",
+              "2011",
+              "2012",
+              "2013",
+              "2014",
+              "2015",
+              "2016",
+              "2017",
+              "2018",
+              "2019",
+              "2020",
+              "2021",
+              "2022",
+              "2023",
+              "2024",
+              "2025",
+              "2026"
+            ]
+          },
+          "axis": {
+            "labelAngle": 0,
+            "values": [
+              "2004",
+              "2006",
+              "2008",
+              "2010",
+              "2012",
+              "2014",
+              "2016",
+              "2018",
+              "2020",
+              "2022",
+              "2024",
+              "2026"
+            ]
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "places",
+          "type": "quantitative",
+          "title": "Places listed"
+        },
+        "color": {
+          "field": "class",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Indigenous",
+              "Natural",
+              "Historic"
+            ],
+            "range": [
+              "#b5651d",
+              "#4f7d5c",
+              "#4a5a78"
+            ]
+          }
+        },
+        "order": {
+          "field": "class",
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "class",
+            "title": "Type"
+          },
+          {
+            "aggregate": "sum",
+            "field": "places",
+            "title": "Places"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "dx": 18
+      },
+      "encoding": {
+        "x": {
+          "datum": "2007",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 36
+        },
+        "text": {
+          "value": "2007: 36 places, half of them natural sites"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

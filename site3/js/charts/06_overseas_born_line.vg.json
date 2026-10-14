@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Almost one in three Australians was born overseas",
+    "subtitle": "Share of the population born overseas, census years 1901–2021"
+  },
+  "data": {
+    "url": "data/overseas_born_1901_2021.csv"
+  },
+  "width": 600,
+  "height": 280,
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#b5651d",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 40,
+          "color": "#b5651d"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "format": "d",
+            "tickCount": 7
+          }
+        },
+        "y": {
+          "field": "overseas_pct",
+          "type": "quantitative",
+          "title": "% born overseas",
+          "scale": {
+            "domain": [
+              0,
+              35
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "overseas_pct",
+            "type": "quantitative",
+            "title": "% born overseas",
+            "format": ".1f"
+          },
+          {
+            "field": "overseas_born",
+            "type": "quantitative",
+            "title": "People born overseas",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "dy": 18,
+        "dx": -8
+      },
+      "encoding": {
+        "x": {
+          "datum": 1947
+        },
+        "y": {
+          "datum": 9.8
+        },
+        "text": {
+          "value": "1947: low of 9.8%, just before post-war migration"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "dy": -14
+      },
+      "encoding": {
+        "x": {
+          "datum": 2021
+        },
+        "y": {
+          "datum": 29.3
+        },
+        "text": {
+          "value": "2021: 29.3%"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "dy": -14
+      },
+      "encoding": {
+        "x": {
+          "datum": 1901
+        },
+        "y": {
+          "datum": 22.7
+        },
+        "text": {
+          "value": "1901: 22.7%"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

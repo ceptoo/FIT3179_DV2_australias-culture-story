@@ -1,0 +1,97 @@
+category,state_abbr,state,attendance,revenue
+Ballet and Dance,ACT,Australian Capital Territory,15436.0,1482265.0
+Ballet and Dance,NSW,New South Wales,281675.0,31970461.0
+Ballet and Dance,NT,Northern Territory,8649.0,323923.0
+Ballet and Dance,QLD,Queensland,132536.0,12206035.0
+Ballet and Dance,SA,South Australia,24797.0,2475966.0
+Ballet and Dance,TAS,Tasmania,9590.0,707280.0
+Ballet and Dance,VIC,Victoria,147660.0,15298612.0
+Ballet and Dance,WA,Western Australia,103786.0,8558837.0
+Children's/Family,ACT,Australian Capital Territory,50206.0,1848861.0
+Children's/Family,NSW,New South Wales,651927.0,26911254.0
+Children's/Family,NT,Northern Territory,15096.0,170072.0
+Children's/Family,QLD,Queensland,343830.0,14521685.0
+Children's/Family,SA,South Australia,152455.0,6632658.0
+Children's/Family,TAS,Tasmania,24353.0,779639.0
+Children's/Family,VIC,Victoria,441243.0,18914381.0
+Children's/Family,WA,Western Australia,217159.0,7370020.0
+Circus and Physical Theatre,ACT,Australian Capital Territory,28869.0,1898777.0
+Circus and Physical Theatre,NSW,New South Wales,114811.0,7270972.0
+Circus and Physical Theatre,NT,Northern Territory,4037.0,355070.0
+Circus and Physical Theatre,QLD,Queensland,44170.0,2770223.0
+Circus and Physical Theatre,SA,South Australia,15967.0,859160.0
+Circus and Physical Theatre,TAS,Tasmania,21028.0,2038366.0
+Circus and Physical Theatre,VIC,Victoria,113983.0,7309670.0
+Circus and Physical Theatre,WA,Western Australia,43904.0,2410887.0
+Classical Music,ACT,Australian Capital Territory,15977.0,1303586.0
+Classical Music,NSW,New South Wales,486111.0,41582243.0
+Classical Music,NT,Northern Territory,8692.0,109125.0
+Classical Music,QLD,Queensland,163403.0,12015738.0
+Classical Music,SA,South Australia,76280.0,5759555.0
+Classical Music,TAS,Tasmania,32327.0,1841330.0
+Classical Music,VIC,Victoria,420045.0,27424463.0
+Classical Music,WA,Western Australia,188191.0,13458682.0
+Comedy,ACT,Australian Capital Territory,59631.0,4630003.0
+Comedy,NSW,New South Wales,433629.0,42266508.0
+Comedy,NT,Northern Territory,9277.0,618617.0
+Comedy,QLD,Queensland,403323.0,27943382.0
+Comedy,SA,South Australia,69715.0,8086525.0
+Comedy,TAS,Tasmania,41480.0,3248462.0
+Comedy,VIC,Victoria,1255733.0,67917778.0
+Comedy,WA,Western Australia,163873.0,16151381.0
+Contemporary Music,ACT,Australian Capital Territory,106424.0,9321365.0
+Contemporary Music,NSW,New South Wales,4958291.0,693947853.0
+Contemporary Music,NT,Northern Territory,19439.0,817294.0
+Contemporary Music,QLD,Queensland,2338205.0,266004181.0
+Contemporary Music,SA,South Australia,642763.0,66577141.0
+Contemporary Music,TAS,Tasmania,176920.0,12564448.0
+Contemporary Music,VIC,Victoria,4665123.0,642466864.0
+Contemporary Music,WA,Western Australia,1171122.0,119229289.0
+Festivals (Contemporary Music),ACT,Australian Capital Territory,367.0,20341.0
+Festivals (Contemporary Music),NSW,New South Wales,669708.0,107691022.0
+Festivals (Contemporary Music),NT,Northern Territory,23077.0,2526269.0
+Festivals (Contemporary Music),QLD,Queensland,446373.0,74815443.0
+Festivals (Contemporary Music),SA,South Australia,144618.0,21031596.0
+Festivals (Contemporary Music),TAS,Tasmania,69273.0,7806480.0
+Festivals (Contemporary Music),VIC,Victoria,500931.0,93170095.0
+Festivals (Contemporary Music),WA,Western Australia,156737.0,24230446.0
+Festivals (Multi-Category),ACT,Australian Capital Territory,5156.0,259557.0
+Festivals (Multi-Category),NSW,New South Wales,226525.0,13853471.0
+Festivals (Multi-Category),NT,Northern Territory,92424.0,3063718.0
+Festivals (Multi-Category),QLD,Queensland,223476.0,11547202.0
+Festivals (Multi-Category),SA,South Australia,1099086.0,31268392.0
+Festivals (Multi-Category),TAS,Tasmania,2496.0,59678.0
+Festivals (Multi-Category),VIC,Victoria,185971.0,9519203.0
+Festivals (Multi-Category),WA,Western Australia,395667.0,14523202.0
+Musical Theatre,ACT,Australian Capital Territory,41650.0,5093392.0
+Musical Theatre,NSW,New South Wales,1516385.0,176127148.0
+Musical Theatre,NT,Northern Territory,1610.0,114760.0
+Musical Theatre,QLD,Queensland,668002.0,82822260.0
+Musical Theatre,SA,South Australia,240393.0,28096510.0
+Musical Theatre,TAS,Tasmania,5133.0,280142.0
+Musical Theatre,VIC,Victoria,1584262.0,204655652.0
+Musical Theatre,WA,Western Australia,321880.0,34397877.0
+Opera,ACT,Australian Capital Territory,0.0,0.0
+Opera,NSW,New South Wales,177497.0,23493870.0
+Opera,NT,Northern Territory,0.0,0.0
+Opera,QLD,Queensland,13922.0,816492.0
+Opera,SA,South Australia,14026.0,1408798.0
+Opera,TAS,Tasmania,477.0,26652.0
+Opera,VIC,Victoria,47220.0,3885891.0
+Opera,WA,Western Australia,14351.0,1447339.0
+Special Events,ACT,Australian Capital Territory,4472.0,406507.0
+Special Events,NSW,New South Wales,60763.0,3012702.0
+Special Events,NT,Northern Territory,27530.0,30860.0
+Special Events,QLD,Queensland,67164.0,1960452.0
+Special Events,SA,South Australia,4651.0,355157.0
+Special Events,TAS,Tasmania,7433.0,214989.0
+Special Events,VIC,Victoria,62030.0,3117246.0
+Special Events,WA,Western Australia,28113.0,866907.0
+Theatre,ACT,Australian Capital Territory,50847.0,3945063.0
+Theatre,NSW,New South Wales,622597.0,46226631.0
+Theatre,NT,Northern Territory,5125.0,272079.0
+Theatre,QLD,Queensland,99473.0,6598597.0
+Theatre,SA,South Australia,45810.0,3004439.0
+Theatre,TAS,Tasmania,11526.0,770833.0
+Theatre,VIC,Victoria,454496.0,37688657.0
+Theatre,WA,Western Australia,96115.0,6939307.0

@@ -1,0 +1,229 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Australia goes to see a show",
+    "subtitle": "Live performance tickets issued in 2024 by state (circle size), and tickets per resident (colour)"
+  },
+  "width": 600,
+  "height": 500,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ece6da",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_centroids.csv"
+      },
+      "transform": [
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance",
+              "revenue",
+              "attendance_per_person",
+              "revenue_per_person"
+            ]
+          }
+        },
+        {
+          "calculate": "toNumber(datum.attendance) / 1e6",
+          "as": "tickets_m"
+        },
+        {
+          "calculate": "toNumber(datum.attendance_per_person)",
+          "as": "per_person"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "stroke": "white",
+        "strokeWidth": 1.5,
+        "opacity": 0.9
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "tickets_m",
+          "type": "quantitative",
+          "title": "Tickets (millions)",
+          "scale": {
+            "range": [
+              40,
+              3200
+            ]
+          },
+          "legend": {
+            "values": [
+              1,
+              3,
+              5,
+              10
+            ]
+          }
+        },
+        "color": {
+          "field": "per_person",
+          "type": "quantitative",
+          "title": "Tickets per resident",
+          "scale": {
+            "scheme": "goldorange",
+            "domain": [
+              0.6,
+              1.5
+            ]
+          },
+          "legend": {
+            "gradientLength": 160
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state_name",
+            "title": "State"
+          },
+          {
+            "field": "attendance",
+            "type": "quantitative",
+            "title": "Tickets 2024",
+            "format": ","
+          },
+          {
+            "field": "per_person",
+            "type": "quantitative",
+            "title": "Tickets per resident",
+            "format": ".2f"
+          },
+          {
+            "field": "revenue",
+            "type": "quantitative",
+            "title": "Ticket revenue",
+            "format": "$,.0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_centroids.csv"
+      },
+      "transform": [
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
+          "as": "label"
+        },
+        {
+          "filter": "toNumber(datum.attendance) > 2e6"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "dy": 0
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "right",
+      "direction": "vertical",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

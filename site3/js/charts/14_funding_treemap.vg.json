@@ -1,0 +1,279 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "title": {
+    "text": "Where $8.6 billion of culture funding went in 2023–24",
+    "subtitle": [
+      "Government cultural spending by level and category. Box size = dollars.",
+      "Darker boxes = heritage, lighter = arts. Local government isn't split by category."
+    ],
+    "anchor": "start",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "color": "#2b2622",
+    "font": "Source Sans 3",
+    "subtitleFontSize": 13,
+    "subtitleColor": "#6b625a",
+    "subtitleFont": "Source Sans 3",
+    "offset": 12
+  },
+  "width": 640,
+  "height": 420,
+  "padding": 4,
+  "autosize": "pad",
+  "data": [
+    {
+      "name": "cats",
+      "url": "data/funding_by_category.csv",
+      "format": {
+        "type": "csv",
+        "parse": "auto"
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.year == '2023-24' && datum.amount_m > 0"
+        }
+      ]
+    },
+    {
+      "name": "local",
+      "url": "data/funding_by_level.csv",
+      "format": {
+        "type": "csv",
+        "parse": "auto"
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.year == '2023-24' && datum.level == 'Local government'"
+        },
+        {
+          "type": "formula",
+          "as": "domain",
+          "expr": "'All local'"
+        },
+        {
+          "type": "formula",
+          "as": "category",
+          "expr": "'Local government (all categories)'"
+        }
+      ]
+    },
+    {
+      "name": "tree",
+      "source": [
+        "cats",
+        "local"
+      ],
+      "transform": [
+        {
+          "type": "nest",
+          "keys": [
+            "level",
+            "domain"
+          ],
+          "generate": true
+        },
+        {
+          "type": "treemap",
+          "field": "amount_m",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "round": true,
+          "method": "squarify",
+          "ratio": 1.4,
+          "paddingInner": 1,
+          "paddingOuter": 0,
+          "paddingTop": 0,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!datum.children"
+        }
+      ]
+    },
+    {
+      "name": "levels",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.depth == 1"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": [
+        "Australian Government",
+        "State and territory government",
+        "Local government"
+      ],
+      "range": [
+        "#4a5a78",
+        "#b5651d",
+        "#4f7d5c"
+      ]
+    },
+    {
+      "name": "shade",
+      "type": "ordinal",
+      "domain": [
+        "Heritage",
+        "Arts",
+        "All local"
+      ],
+      "range": [
+        1,
+        0.72,
+        0.9
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "orient": "top",
+      "direction": "horizontal",
+      "labelFont": "Source Sans 3",
+      "labelFontSize": 12,
+      "symbolType": "square",
+      "labelColor": "#2b2622",
+      "labelLimit": 320
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "enter": {
+          "stroke": {
+            "value": "white"
+          },
+          "strokeWidth": {
+            "value": 1
+          }
+        },
+        "update": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "level"
+          },
+          "fillOpacity": {
+            "scale": "shade",
+            "field": "domain"
+          },
+          "tooltip": {
+            "signal": "{'Level': datum.level, 'Area': datum.domain, 'Category': datum.category, 'Spending': format(datum.amount_m, '$,.1f') + 'm'}"
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 0.55
+          }
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {
+        "data": "levels"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "value": "transparent"
+          },
+          "stroke": {
+            "value": "white"
+          },
+          "strokeWidth": {
+            "value": 4
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "datum.x0 + 6"
+          },
+          "y": {
+            "signal": "datum.y0 + 16"
+          },
+          "text": {
+            "signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 34 ? [datum.category, format(datum.amount_m, '$,.0f') + 'm'] : ''"
+          },
+          "limit": {
+            "signal": "datum.x1 - datum.x0 - 10"
+          },
+          "fill": {
+            "value": "white"
+          },
+          "font": {
+            "value": "Source Sans 3"
+          },
+          "fontSize": {
+            "value": 12
+          },
+          "lineHeight": {
+            "value": 15
+          }
+        }
+      }
+    }
+  ]
+}

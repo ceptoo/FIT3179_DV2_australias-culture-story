@@ -1,0 +1,191 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The places Australia has chosen to protect",
+    "subtitle": "National Heritage places by type, over World Heritage areas (green). Click the legend to filter."
+  },
+  "width": 600,
+  "height": 500,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ece6da",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "data/world_heritage.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "world_heritage"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#4f7d5c",
+        "fillOpacity": 0.35,
+        "stroke": "#4f7d5c",
+        "strokeWidth": 0.6
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "title": "World Heritage area"
+          },
+          {
+            "field": "properties.type",
+            "title": "Listed for"
+          },
+          {
+            "field": "properties.first_inscribed",
+            "title": "Inscribed"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/nhl_places.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.on_main_map == 'true' || datum.on_main_map === true"
+        }
+      ],
+      "params": [
+        {
+          "name": "cls",
+          "select": {
+            "type": "point",
+            "fields": [
+              "class"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "class",
+          "type": "nominal",
+          "title": "National Heritage place",
+          "scale": {
+            "domain": [
+              "Indigenous",
+              "Natural",
+              "Historic"
+            ],
+            "range": [
+              "#b5651d",
+              "#4f7d5c",
+              "#4a5a78"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "cls",
+            "value": 0.9
+          },
+          "value": 0.08
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Place"
+          },
+          {
+            "field": "class",
+            "title": "Type"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "year",
+            "title": "Listed"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}
