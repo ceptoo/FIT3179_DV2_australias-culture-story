@@ -4,8 +4,12 @@
     "text": "Where Australia goes to see a show",
     "subtitle": "Live performance tickets issued in 2024 by state (circle size), and tickets per resident (colour)"
   },
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": 520,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "projection": {
     "type": "conicEqualArea",
     "parallels": [
@@ -93,7 +97,9 @@
               3,
               5,
               10
-            ]
+            ],
+            "symbolFillColor": "#b9c4d6",
+            "symbolStrokeColor": "white"
           }
         },
         "color": {
@@ -101,14 +107,20 @@
           "type": "quantitative",
           "title": "Tickets per resident",
           "scale": {
-            "scheme": "goldorange",
+            "range": [
+              "#eef1f5",
+              "#7f93b5"
+            ],
             "domain": [
               0.6,
               1.5
-            ]
+            ],
+            "interpolate": "rgb"
           },
           "legend": {
-            "gradientLength": 160
+            "gradientLength": 160,
+            "orient": "top",
+            "direction": "horizontal"
           }
         },
         "tooltip": [
@@ -159,15 +171,15 @@
           "as": "label"
         },
         {
-          "filter": "toNumber(datum.attendance) > 2e6"
+          "filter": "datum.state_abbr != 'ACT'"
         }
       ],
       "mark": {
         "type": "text",
         "fontSize": 12,
         "fontWeight": 600,
-        "color": "#2b2622",
-        "dy": 0
+        "dy": 0,
+        "color": "#2b2622"
       },
       "encoding": {
         "longitude": {
@@ -180,6 +192,38 @@
         },
         "text": {
           "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 150.6,
+            "lat": -36.3,
+            "t": "ACT 0.4m"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 4,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
         }
       }
     }
@@ -215,8 +259,8 @@
       "titleFontWeight": 500,
       "labelColor": "#2b2622",
       "titleColor": "#6b625a",
-      "orient": "right",
-      "direction": "vertical",
+      "orient": "top",
+      "direction": "horizontal",
       "columnPadding": 22,
       "labelLimit": 260
     },

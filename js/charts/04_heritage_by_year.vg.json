@@ -4,8 +4,12 @@
     "text": "Most national heritage listings happened in the first four years",
     "subtitle": "Places added to the National Heritage List each year, by type (list began in 2004)"
   },
-  "width": 600,
+  "width": "container",
   "height": 260,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "layer": [
     {
       "data": {
@@ -134,6 +138,59 @@
         },
         "text": {
           "value": "2007: 36 places, half of them natural sites"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12,
+        "color": "#b5651d",
+        "fontWeight": 600,
+        "dy": -12,
+        "dx": -14
+      },
+      "encoding": {
+        "x": {
+          "datum": "2013",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 3
+        },
+        "text": {
+          "value": "2013: all 3 Indigenous"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 12,
+        "color": "#2b2622"
+      },
+      "encoding": {
+        "x": {
+          "datum": "2020",
+          "type": "ordinal"
+        },
+        "y": {
+          "datum": 14
+        },
+        "text": {
+          "value": "Since 2012, never more than 5 places a year"
         }
       }
     }

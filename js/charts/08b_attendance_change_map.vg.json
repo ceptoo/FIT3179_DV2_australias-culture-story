@@ -2,10 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Victoria lost the most",
-    "subtitle": "Fall in share of adults who attended any cultural venue or event, 2017–18 to 2021–22 (percentage points)"
+    "subtitle": "Fall in % of adults who attended any cultural venue or event, 2017–18 to 2021–22 (points)"
   },
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": 420,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "projection": {
     "type": "conicEqualArea",
     "parallels": [
@@ -57,14 +61,19 @@
           "type": "quantitative",
           "title": "Drop (percentage points)",
           "scale": {
-            "scheme": "reds",
+            "range": [
+              "#eef1f5",
+              "#9aa9c2",
+              "#24324f"
+            ],
             "domain": [
               5,
               25
-            ]
+            ],
+            "interpolate": "rgb"
           },
           "legend": {
-            "gradientLength": 220
+            "gradientLength": 180
           }
         },
         "tooltip": [
@@ -116,6 +125,10 @@
         {
           "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.change_pts), '+.1f')",
           "as": "label"
+        },
+        {
+          "calculate": "datum.state_abbr == 'VIC' ? -39.3 : datum.lat",
+          "as": "lat"
         }
       ],
       "mark": {
@@ -137,7 +150,7 @@
         },
         "color": {
           "condition": {
-            "test": "toNumber(datum.change_pts) < -18",
+            "test": "datum.state_abbr == 'NSW'",
             "value": "white"
           },
           "value": "#2b2622"

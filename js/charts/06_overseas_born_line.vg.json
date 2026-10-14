@@ -4,21 +4,54 @@
     "text": "Almost one in three Australians was born overseas",
     "subtitle": "Share of the population born overseas, 1901–2021. Census counts to 1996, population estimates from 2001."
   },
+  "width": "container",
+  "height": 300,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": {
     "url": "data/overseas_born_1901_2021.csv"
   },
-  "width": 600,
-  "height": 280,
   "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "year": 1973
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#6b625a",
+        "strokeDash": [
+          4,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1900,
+              2022
+            ]
+          }
+        }
+      }
+    },
     {
       "mark": {
         "type": "line",
-        "color": "#b5651d",
+        "color": "#4a5a78",
         "strokeWidth": 2.5,
         "point": {
           "filled": true,
           "size": 40,
-          "color": "#b5651d"
+          "color": "#4a5a78"
         }
       },
       "encoding": {
@@ -29,6 +62,12 @@
           "axis": {
             "format": "d",
             "tickCount": 7
+          },
+          "scale": {
+            "domain": [
+              1900,
+              2022
+            ]
           }
         },
         "y": {
@@ -123,6 +162,43 @@
         },
         "text": {
           "value": "1901: 22.7%"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 1973,
+            "y": 33.5,
+            "t": "1973: White Australia policy ends"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "fontSize": 12,
+        "color": "#2b2622"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              1900,
+              2022
+            ]
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
         }
       }
     }

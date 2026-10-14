@@ -2,7 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Older Australians drove the comeback",
-    "subtitle": "Share who attended a live arts event or festival, by age, 2022 and 2025"
+    "subtitle": "% who attended a live arts event or festival, by age"
+  },
+  "width": "container",
+  "height": 320,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
   },
   "data": {
     "url": "data/naps_live_attendance_by_age.csv",
@@ -27,8 +33,6 @@
       "as": "label"
     }
   ],
-  "width": 300,
-  "height": 320,
   "encoding": {
     "x": {
       "field": "yr",
@@ -82,7 +86,7 @@
               false
             ],
             "range": [
-              "#b5651d",
+              "#4a5a78",
               "#c9b79c"
             ]
           }
@@ -106,7 +110,7 @@
               false
             ],
             "range": [
-              "#b5651d",
+              "#4a5a78",
               "#c9b79c"
             ]
           }

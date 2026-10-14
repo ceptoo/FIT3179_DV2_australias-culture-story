@@ -2,10 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The places Australia has chosen to protect",
-    "subtitle": "National Heritage places by type, over World Heritage areas (green). Click the legend to filter."
+    "subtitle": "126 National Heritage places by type; shaded areas are World Heritage properties. Click the legend to filter."
   },
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": 540,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "projection": {
     "type": "conicEqualArea",
     "parallels": [
@@ -43,9 +47,9 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#4f7d5c",
+        "fill": "#8fa99a",
         "fillOpacity": 0.35,
-        "stroke": "#4f7d5c",
+        "stroke": "#6f8c7a",
         "strokeWidth": 0.6
       },
       "encoding": {
@@ -143,6 +147,80 @@
             "title": "Listed"
           }
         ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 141.88,
+            "lat": -38.07,
+            "t": "Budj Bim"
+          },
+          {
+            "lon": 130.71,
+            "lat": -25.25,
+            "t": "Uluru–Kata Tjuta"
+          },
+          {
+            "lon": 132.54,
+            "lat": -13.04,
+            "t": "Kakadu"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "align": "right",
+        "dx": -9,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 151.21,
+            "lat": -33.86,
+            "t": "Sydney Opera House"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 9,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
       }
     }
   ],

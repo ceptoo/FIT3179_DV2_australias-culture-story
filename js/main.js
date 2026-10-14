@@ -1,9 +1,11 @@
 // Embeds every chart. To add a chart: put its .vg.json in js/charts/ and add one line below.
+// Vega-Lite charts use "width": "container", so they fill their grid column and resize with it.
 const opts = { actions: false, renderer: "svg" };
 
 const charts = {
   "#chart-01": "js/charts/01_languages_map.vg.json",
   "#chart-02": "js/charts/02_languages_waffle.vg.json",
+  "#chart-02b": "js/charts/02b_languages_connected.vg.json",
   "#chart-03": "js/charts/03_heritage_map.vg.json",
   "#chart-04": "js/charts/04_heritage_by_year.vg.json",
   "#chart-05": "js/charts/05_birthplace_heatmap.vg.json",
@@ -20,6 +22,24 @@ const charts = {
   "#chart-14": "js/charts/14_funding_treemap.vg.json",
 };
 
-for (const [el, spec] of Object.entries(charts)) {
-  vegaEmbed(el, spec, opts).catch((err) => console.error(spec, err));
+async function embed(el, url) {
+  const spec = await (await fetch(url)).json();
+  // Full Vega specs (the treemap) have no "container" width, so size them to their column.
+  if (spec.$schema.includes("/vega/")) {
+    spec.width = Math.max(320, document.querySelector(el).clientWidth - 8);
+  }
+  return vegaEmbed(el, spec, opts);
 }
+
+// Vega measures text when it draws, so wait for the web font first; otherwise labels are sized
+// for the fallback font and get clipped once Source Sans 3 arrives.
+const fontsReady = Promise.all([
+  document.fonts.load('400 12px "Source Sans 3"'),
+  document.fonts.load('600 12px "Source Sans 3"'),
+]).catch(() => {});
+
+fontsReady.then(() => {
+  for (const [el, url] of Object.entries(charts)) {
+    embed(el, url).catch((err) => console.error(url, err));
+  }
+});

@@ -4,6 +4,12 @@
     "text": "From Britain to the world",
     "subtitle": "Share of Australia's population born in each country, 1901–2021 (blank = not recorded separately). Census counts to 1996, population estimates from 2001."
   },
+  "width": "container",
+  "height": 330,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": {
     "url": "data/birthplace_heatmap_1901_2021.csv"
   },
@@ -12,76 +18,6 @@
       "filter": "datum.pct_of_population !== '' && isValid(datum.pct_of_population)"
     }
   ],
-  "width": 640,
-  "height": 300,
-  "mark": {
-    "type": "rect",
-    "stroke": "white",
-    "strokeWidth": 1
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": null,
-      "axis": {
-        "labelAngle": -45,
-        "orient": "top"
-      }
-    },
-    "y": {
-      "field": "country",
-      "type": "nominal",
-      "title": null,
-      "sort": [
-        "UK & Ireland",
-        "India",
-        "China",
-        "New Zealand",
-        "Philippines",
-        "Vietnam",
-        "Italy",
-        "Germany",
-        "Greece",
-        "Netherlands"
-      ]
-    },
-    "color": {
-      "field": "pct_of_population",
-      "type": "quantitative",
-      "title": "% of population",
-      "scale": {
-        "type": "sqrt",
-        "scheme": "goldorange"
-      },
-      "legend": {
-        "orient": "bottom",
-        "gradientLength": 260
-      }
-    },
-    "tooltip": [
-      {
-        "field": "country",
-        "title": "Born in"
-      },
-      {
-        "field": "year",
-        "title": "Year"
-      },
-      {
-        "field": "people",
-        "type": "quantitative",
-        "title": "People",
-        "format": ","
-      },
-      {
-        "field": "pct_of_population",
-        "type": "quantitative",
-        "title": "% of population",
-        "format": ".2f"
-      }
-    ]
-  },
   "config": {
     "font": "Source Sans 3",
     "background": null,
@@ -123,5 +59,130 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": -45,
+            "orient": "top"
+          }
+        },
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "UK & Ireland",
+            "India",
+            "China",
+            "New Zealand",
+            "Philippines",
+            "Vietnam",
+            "Italy",
+            "Germany",
+            "Greece",
+            "Netherlands"
+          ]
+        },
+        "color": {
+          "field": "pct_of_population",
+          "type": "quantitative",
+          "title": "% of population",
+          "scale": {
+            "type": "sqrt",
+            "range": [
+              "#eef1f5",
+              "#9aa9c2",
+              "#24324f"
+            ],
+            "interpolate": "rgb"
+          },
+          "legend": {
+            "orient": "bottom",
+            "gradientLength": 260
+          }
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "title": "Born in"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "people",
+            "type": "quantitative",
+            "title": "People",
+            "format": ","
+          },
+          {
+            "field": "pct_of_population",
+            "type": "quantitative",
+            "title": "% of population",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "(toNumber(datum.year) == 1901 && datum.country == 'UK & Ireland') || (toNumber(datum.year) == 1971 && (datum.country == 'Italy' || datum.country == 'Greece')) || (toNumber(datum.year) == 2021 && (datum.country == 'India' || datum.country == 'China' || datum.country == 'UK & Ireland'))"
+        },
+        {
+          "calculate": "format(datum.pct_of_population, '.1f') + '%'",
+          "as": "lab"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "sort": [
+            "UK & Ireland",
+            "India",
+            "China",
+            "New Zealand",
+            "Philippines",
+            "Vietnam",
+            "Italy",
+            "Germany",
+            "Greece",
+            "Netherlands"
+          ]
+        },
+        "text": {
+          "field": "lab"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.pct_of_population > 3",
+            "value": "white"
+          },
+          "value": "#2b2622"
+        }
+      }
+    }
+  ]
 }

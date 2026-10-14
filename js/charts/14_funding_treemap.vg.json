@@ -16,7 +16,7 @@
     "subtitleFont": "Source Sans 3",
     "offset": 12
   },
-  "width": 640,
+  "width": 480,
   "height": 420,
   "padding": 4,
   "autosize": "pad",
@@ -55,7 +55,7 @@
         {
           "type": "formula",
           "as": "category",
-          "expr": "'Local government (all categories)'"
+          "expr": "'All local spending'"
         }
       ]
     },
@@ -130,7 +130,7 @@
       ],
       "range": [
         "#4a5a78",
-        "#b5651d",
+        "#7b5c8a",
         "#4f7d5c"
       ]
     },
@@ -158,7 +158,8 @@
       "labelFontSize": 12,
       "symbolType": "square",
       "labelColor": "#2b2622",
-      "labelLimit": 320
+      "labelLimit": 400,
+      "columnPadding": 20
     }
   ],
   "marks": [

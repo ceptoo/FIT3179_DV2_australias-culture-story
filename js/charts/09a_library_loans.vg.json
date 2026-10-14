@@ -1,8 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Library borrowing hit a five-year high, and almost a third of it is digital",
-    "subtitle": "Public library loans and downloads per year, physical vs digital"
+    "text": "Library loans hit a five-year high",
+    "subtitle": "Public library loans and downloads per year. Almost a third are now digital."
+  },
+  "width": "container",
+  "height": 290,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
   },
   "data": {
     "url": "data/libraries_national_2019_2024.csv",
@@ -34,8 +40,6 @@
       "as": "loans_m"
     }
   ],
-  "width": 520,
-  "height": 280,
   "layer": [
     {
       "mark": {
@@ -69,7 +73,7 @@
             ],
             "range": [
               "#4a5a78",
-              "#b5651d"
+              "#4f7d5c"
             ]
           }
         },
@@ -104,7 +108,7 @@
           "as": "total_m"
         },
         {
-          "calculate": "toNumber(datum.digital_share_of_loans_pct) + '% digital'",
+          "calculate": "format(toNumber(datum.digital_share_of_loans_pct), '.0f') + '% digital'",
           "as": "lab"
         }
       ],

@@ -2,10 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Hundreds of languages, one continent",
-    "subtitle": "Approximate locations of 834 Aboriginal and Torres Strait Islander languages"
+    "subtitle": "Approximate locations of Aboriginal and Torres Strait Islander languages. Choose a state below the map."
   },
-  "width": 600,
-  "height": 500,
+  "width": "container",
+  "height": 520,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "projection": {
     "type": "conicEqualArea",
     "parallels": [
@@ -39,8 +43,7 @@
       },
       "mark": {
         "type": "circle",
-        "size": 18,
-        "opacity": 0.75,
+        "size": 20,
         "color": "#b5651d",
         "stroke": "white",
         "strokeWidth": 0.4
@@ -63,14 +66,21 @@
             "field": "state",
             "title": "State"
           }
-        ]
+        ],
+        "opacity": {
+          "condition": {
+            "test": "st == 'All states' || datum.state == st",
+            "value": 0.85
+          },
+          "value": 0.07
+        }
       }
     },
     {
       "data": {
         "values": [
           {
-            "lon": 144.6,
+            "lon": 145.4,
             "lat": -12.6
           }
         ]
@@ -102,7 +112,7 @@
       "data": {
         "values": [
           {
-            "lon": 144.6,
+            "lon": 145.4,
             "lat": -13.8
           }
         ]
@@ -134,7 +144,7 @@
       "data": {
         "values": [
           {
-            "lon": 144.6,
+            "lon": 145.4,
             "lat": -15.0
           }
         ]
@@ -159,6 +169,56 @@
         },
         "text": {
           "value": "densest cluster"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/austlang.csv"
+      },
+      "transform": [
+        {
+          "filter": "st == 'All states' || datum.state == st"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "count",
+              "as": "n"
+            }
+          ]
+        },
+        {
+          "calculate": "st == 'All states' ? format(datum.n, ',') + ' languages recorded' : datum.n + ' languages in ' + st",
+          "as": "t"
+        },
+        {
+          "calculate": "117.5",
+          "as": "lon"
+        },
+        {
+          "calculate": "-39.6",
+          "as": "lat"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 17,
+        "fontWeight": 600,
+        "color": "#b5651d"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
         }
       }
     }
@@ -204,5 +264,26 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
-  }
+  },
+  "params": [
+    {
+      "name": "st",
+      "value": "All states",
+      "bind": {
+        "input": "select",
+        "name": "State: ",
+        "options": [
+          "All states",
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ]
+      }
+    }
+  ]
 }

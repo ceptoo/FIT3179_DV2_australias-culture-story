@@ -1,0 +1,226 @@
+/* Australia's Culture Story
+   Layout: one 1100px column split into a 12-column grid, so every chart and text block
+   starts on the same vertical sight lines. Colours match the chart palette in js/charts. */
+
+:root {
+  --ink: #2b2622;
+  --muted: #6b625a;
+  --paper: #faf7f2;
+  --panel: #f2ece2;
+  --rule: #e4dccd;
+
+  /* Chart palette: terracotta is reserved for Aboriginal and Torres Strait Islander data */
+  --indigenous: #b5651d;
+  --navy: #4a5a78;
+  --green: #4f7d5c;
+  --plum: #7b5c8a;
+  --sand: #c9b79c;
+
+  --gutter: 40px;
+  --measure: 66ch;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--navy); text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+
+/* ---------- Page frame and grid ---------- */
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 24px;
+}
+.col-3  { grid-column: span 3; }
+.col-4  { grid-column: span 4; }
+.col-5  { grid-column: span 5; }
+.col-6  { grid-column: span 6; }
+.col-7  { grid-column: span 7; }
+.col-8  { grid-column: span 8; }
+.col-12 { grid-column: span 12; }
+
+/* ---------- Typography ---------- */
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+h1 { font-size: clamp(40px, 6vw, 64px); letter-spacing: -0.01em; }
+h2 { font-size: 34px; }
+h3 { font-size: 20px; margin-bottom: 8px; }
+p  { margin: 0 0 14px; }
+
+.kicker,
+.section-head .num {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigenous);
+  margin: 0 0 10px;
+}
+
+.t-indigenous { color: var(--indigenous); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: var(--panel);
+  border-bottom: 1px solid var(--rule);
+  padding-block: 88px 56px;
+}
+.lede {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 23px;
+  line-height: 1.45;
+  color: var(--ink);
+  max-width: 44ch;
+  margin-top: 18px;
+}
+.byline { font-size: 15px; color: var(--muted); margin-top: 24px; }
+
+/* ---------- Introduction ---------- */
+.intro { padding-block: 64px 24px; }
+.intro p { max-width: var(--measure); }
+.h-intro { margin-bottom: 16px; }
+
+.key-note { color: var(--muted); }
+.swatch { display: inline-block; width: 14px; height: 14px; border-radius: 3px; margin-right: 8px; vertical-align: -1px; }
+.swatch-indigenous { background: var(--indigenous); }
+
+.toc {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 28px;
+  border-left: 1px solid var(--rule);
+  align-self: start;
+}
+.toc li { margin-bottom: 8px; }
+.toc a { text-decoration: none; color: var(--ink); font-weight: 500; }
+.toc a:hover { color: var(--indigenous); }
+.toc span { display: inline-block; width: 34px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 48px 0 0;
+}
+.stats li {
+  border-top: 3px solid var(--ink);
+  padding-top: 14px;
+}
+.stats strong {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: lining-nums;
+}
+.stats span { display: block; font-size: 15px; line-height: 1.45; color: var(--muted); }
+.stats li:first-child { border-top-color: var(--indigenous); }
+
+/* ---------- Sections ---------- */
+main > section { padding-block: 72px; border-top: 1px solid var(--rule); }
+main > section.intro { border-top: none; }
+
+.section-head { margin-bottom: 36px; }
+.section-head h2 { margin-bottom: 14px; }
+.section-head .lead { font-size: 20px; max-width: var(--measure); color: var(--ink); }
+
+.row { margin-bottom: 36px; align-items: start; }
+
+.side {
+  border-top: 3px solid var(--ink);
+  padding-top: 14px;
+  font-size: 17px;
+}
+.side .note,
+.note { font-size: 15px; color: var(--muted); }
+
+.bridge {
+  max-width: var(--measure);
+  font-size: 19px;
+  margin: 0 0 40px;
+  padding-left: 18px;
+  border-left: 3px solid var(--sand);
+}
+
+/* ---------- Charts ---------- */
+figure { margin: 0; min-width: 0; }
+.chart { width: 100%; min-width: 0; overflow-x: auto; }
+figcaption {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+
+/* Menus and radio buttons that vega-embed adds under charts */
+.vega-bind { font-size: 15px; color: var(--muted); margin-top: 8px; }
+.vega-bind-name { font-weight: 600; color: var(--ink); margin-right: 6px; }
+.vega-bind label { margin-right: 14px; }
+.vega-bind select {
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 3px 8px;
+}
+
+/* ---------- Conclusion ---------- */
+.conclusion { background: var(--panel); border-radius: 6px; padding-inline: 48px; margin-block: 24px; }
+.takeaways { list-style: none; padding: 0; margin: 0 0 32px; }
+.takeaways li { border-top: 3px solid var(--ink); padding-top: 14px; font-size: 17px; }
+.takeaways li:first-child { border-top-color: var(--indigenous); }
+.closing {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 52ch;
+}
+
+/* ---------- Footer ---------- */
+footer { padding-block: 64px 80px; font-size: 15px; color: var(--muted); }
+footer h2 { font-size: 22px; color: var(--ink); margin-bottom: 14px; }
+footer strong { color: var(--ink); }
+.sources { padding-left: 18px; margin: 0; }
+.sources li { margin-bottom: 6px; }
+.small { font-size: 13px; }
+code { font-size: 14px; background: var(--panel); padding: 1px 5px; border-radius: 3px; }
+
+/* ---------- Smaller screens: stack every column ---------- */
+@media (max-width: 960px) {
+  .grid > [class*="col-"] { grid-column: span 12; }
+  .stats .col-3 { grid-column: span 6; }
+  .toc { border-left: none; padding-left: 0; }
+  .conclusion { padding-inline: 24px; }
+}
+@media (max-width: 520px) {
+  .wrap { padding-inline: 18px; }
+  .stats .col-3 { grid-column: span 12; }
+  h2 { font-size: 28px; }
+}

@@ -2,7 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The night the music stopped, and came back louder",
-    "subtitle": "Tickets issued for live performances in Australia by category, 2010–2024. Hover a band to see it."
+    "subtitle": "Tickets issued for live performances by category, 2010–2024. Band thickness = tickets. Hover a band to pick it out."
+  },
+  "width": "container",
+  "height": 340,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
   },
   "data": {
     "url": "data/live_by_category_2010_2024.csv",
@@ -16,16 +22,31 @@
   },
   "transform": [
     {
+      "calculate": "datum.category == 'Contemporary Music' ? 'Contemporary music' : datum.category == 'Musical Theatre' ? 'Musical theatre' : indexof(datum.category, 'Festivals') == 0 ? 'Festivals' : datum.category == 'Comedy' ? 'Comedy' : datum.category == \"Children's/Family\" ? \"Children's and family\" : (datum.category == 'Classical Music' || datum.category == 'Opera') ? 'Classical music and opera' : 'Other'",
+      "as": "group"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "attendance",
+          "as": "attendance"
+        }
+      ],
+      "groupby": [
+        "group",
+        "year"
+      ]
+    },
+    {
       "calculate": "datum.attendance / 1e6",
       "as": "tickets_m"
     },
     {
-      "calculate": "indexof(['Contemporary Music','Musical Theatre','Comedy','Festivals (Multi-Category)','Festivals (Contemporary Music)','Children\\'s/Family','Classical Music','Theatre','Ballet and Dance','Circus and Physical Theatre','Opera','Special Events'], datum.category)",
+      "calculate": "indexof([\"Contemporary music\", \"Musical theatre\", \"Festivals\", \"Comedy\", \"Children's and family\", \"Classical music and opera\", \"Other\"], datum.group)",
       "as": "ord"
     }
   ],
-  "width": 620,
-  "height": 320,
   "layer": [
     {
       "params": [
@@ -34,7 +55,7 @@
           "select": {
             "type": "point",
             "fields": [
-              "category"
+              "group"
             ],
             "on": "pointerover",
             "clear": "pointerout"
@@ -69,46 +90,42 @@
           }
         },
         "color": {
-          "field": "category",
+          "field": "group",
           "type": "nominal",
           "title": null,
-          "sort": {
-            "field": "ord"
-          },
+          "sort": [
+            "Contemporary music",
+            "Musical theatre",
+            "Festivals",
+            "Comedy",
+            "Children's and family",
+            "Classical music and opera",
+            "Other"
+          ],
           "scale": {
             "domain": [
-              "Contemporary Music",
-              "Musical Theatre",
+              "Contemporary music",
+              "Musical theatre",
+              "Festivals",
               "Comedy",
-              "Festivals (Multi-Category)",
-              "Festivals (Contemporary Music)",
-              "Children's/Family",
-              "Classical Music",
-              "Theatre",
-              "Ballet and Dance",
-              "Circus and Physical Theatre",
-              "Opera",
-              "Special Events"
+              "Children's and family",
+              "Classical music and opera",
+              "Other"
             ],
             "range": [
-              "#b5651d",
               "#4a5a78",
+              "#7b5c8a",
               "#4f7d5c",
-              "#c98a3a",
-              "#d4a76a",
-              "#7a8f6a",
-              "#6b7fa3",
-              "#9b6b8e",
-              "#c9b79c",
+              "#c9a227",
+              "#7d97b3",
               "#8c7b6b",
-              "#5b4a6e",
-              "#a8a29a"
+              "#cfc6b8"
             ]
           },
           "legend": {
-            "orient": "right",
-            "direction": "vertical",
-            "columns": 1,
+            "orient": "top",
+            "direction": "horizontal",
+            "columns": 4,
             "symbolType": "square"
           }
         },
@@ -125,7 +142,7 @@
         },
         "tooltip": [
           {
-            "field": "category",
+            "field": "group",
             "title": "Category"
           },
           {
@@ -190,6 +207,72 @@
         "fontSize": 12,
         "fontWeight": 600,
         "color": "#2b2622"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2010,
+            "y": 24.345558999999998,
+            "t": "17.2m tickets",
+            "a": "left"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -9,
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "align": "left"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2024,
+            "y": 31.449979,
+            "t": "31.4m tickets",
+            "a": "right"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -9,
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "align": "right"
       },
       "encoding": {
         "x": {

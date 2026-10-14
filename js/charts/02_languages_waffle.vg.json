@@ -1,8 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Only 139 of 217 languages were passed on to children in 2021",
-    "subtitle": "Each square is one Aboriginal or Torres Strait Islander language in the ABS classification"
+    "text": "Only 139 of 217 languages are being passed to children",
+    "subtitle": [
+      "Each square is one language in the ABS classification, by who used it at home in 2021.",
+      "Children are what keep a language alive."
+    ]
   },
   "data": {
     "url": "data/indigenous_languages_2021.csv"
@@ -17,8 +20,8 @@
       "as": "row"
     }
   ],
-  "width": 560,
-  "height": 308,
+  "width": 460,
+  "height": 253,
   "mark": {
     "type": "rect",
     "stroke": "white",
@@ -47,10 +50,13 @@
           "No users recorded"
         ],
         "range": [
-          "#4f7d5c",
           "#b5651d",
-          "#c9b79c"
+          "#e3b98f",
+          "#e4dccd"
         ]
+      },
+      "legend": {
+        "labelExpr": "datum.label == 'Used by children' ? 'Used by children (139)' : datum.label == 'Used by adults only' ? 'Adults only (28)' : 'No users recorded (50)'"
       }
     },
     "tooltip": [

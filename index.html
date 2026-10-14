@@ -4,94 +4,285 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Australia's Culture Story</title>
+  <meta name="description" content="How Australia's languages, heritage, people, arts participation and cultural funding have changed, told with open data.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
 </head>
 <body>
   <header class="hero">
-    <h1>Australia's Culture Story</h1>
-    <p class="lede">How the languages we speak, the places we protect, the people we are and the culture we fund have changed.</p>
-    <p class="byline">By Nigel · FIT3179 Data Visualisation 2 · October 2026</p>
+    <div class="wrap">
+      <p class="kicker">A data story in six parts</p>
+      <h1>Australia's Culture Story</h1>
+      <p class="lede">The languages we speak, the places we protect, where we were born, how we spend our nights out and who pays for it all. Open data from eleven public sources shows how Australia's cultural identity has changed, and what we are at risk of losing.</p>
+      <p class="byline">By Nigel &middot; FIT3179 Data Visualisation 2, Monash University &middot; Published October 2026</p>
+    </div>
   </header>
 
   <main>
+    <!-- Introduction: why and who -->
+    <section class="intro wrap" id="intro">
+      <div class="grid">
+        <div class="col-7">
+          <h2 class="h-intro">Why this story?</h2>
+          <p>Culture is usually described in big words: identity, heritage, community. This page tries to measure it instead. It brings together data from eleven public sources, from the Census and the National Heritage List to library loans and ticket sales, and asks one question: <em>how has Australian culture changed, and who is it changing for?</em></p>
+          <p>It is written for any Australian, with no statistics needed. Hover over any chart for exact numbers; some charts also have a menu or a legend you can click.</p>
+          <p class="key-note"><span class="swatch swatch-indigenous"></span>Throughout the page, <strong class="t-indigenous">terracotta</strong> marks Aboriginal and Torres Strait Islander languages, places and arts.</p>
+        </div>
+        <ol class="col-5 toc">
+          <li><a href="#first-cultures"><span>01</span> The first cultures</a></li>
+          <li><a href="#places"><span>02</span> The places we protect</a></li>
+          <li><a href="#who-we-became"><span>03</span> Who we became</a></li>
+          <li><a href="#taking-part"><span>04</span> How we take part</a></li>
+          <li><a href="#libraries-stage"><span>05</span> Libraries and the stage</a></li>
+          <li><a href="#who-pays"><span>06</span> Who pays for culture</a></li>
+        </ol>
+      </div>
+
+      <ul class="stats grid">
+        <li class="col-3"><strong class="t-indigenous">834</strong><span>Aboriginal and Torres Strait Islander languages with a recorded location</span></li>
+        <li class="col-3"><strong>29%</strong><span>of Australians were born overseas in 2021, up from 10% in 1947</span></li>
+        <li class="col-3"><strong>74%</strong><span>of Australians aged 15+ went to a live arts event or festival in 2025</span></li>
+        <li class="col-3"><strong>&minus;12%</strong><span>real public library spending per person since 2019&ndash;20</span></li>
+      </ul>
+    </section>
+
     <!-- 1. First cultures -->
-    <section>
-      <h2>1. The first cultures</h2>
-      <p>Long before 1788, this continent held hundreds of languages. Records of 834 of them still carry a location.</p>
-      <div id="chart-01" class="chart"></div>
-      <p>In 2021, Aboriginal and Torres Strait Islander people used 167 Indigenous languages at home. But only 139 were being used by children, which is how a language survives.</p>
-      <div id="chart-02" class="chart"></div>
+    <section class="wrap" id="first-cultures">
+      <header class="section-head">
+        <p class="num">01</p>
+        <h2>The first cultures</h2>
+        <p class="lead">Long before 1788, this continent held hundreds of languages, each tied to its own Country. Records of 834 of them still carry a location, and many are still spoken today.</p>
+      </header>
+
+      <div class="grid row">
+        <figure class="col-8">
+          <div id="chart-01" class="chart"></div>
+          <figcaption>Source: AIATSIS, AUSTLANG (CC BY 4.0). Dots are approximate centres, not boundaries.</figcaption>
+        </figure>
+        <aside class="col-4 side">
+          <h3>Every dot is a language</h3>
+          <p>Languages crowd the coasts and rivers, where most people lived. Queensland alone has 302 recorded languages, more than any other state.</p>
+          <p>Choose a state under the map to see how many languages were recorded there.</p>
+          <p class="note">Only languages with a recorded location are shown, so this undercounts the true number.</p>
+        </aside>
+      </div>
+
+      <p class="bridge">Being recorded is not the same as being spoken. A language survives when children grow up using it at home.</p>
+
+      <div class="grid row">
+        <figure class="col-6">
+          <div id="chart-02" class="chart"></div>
+          <figcaption>Source: ABS, Language Statistics for Aboriginal and Torres Strait Islander Peoples, 2021 (Census 2021).</figcaption>
+        </figure>
+        <figure class="col-6">
+          <div id="chart-02b" class="chart"></div>
+          <figcaption>Source: ABS, Language Statistics for Aboriginal and Torres Strait Islander Peoples, 2021 (Census 1991&ndash;2021).</figcaption>
+        </figure>
+      </div>
+      <p class="bridge">More Indigenous Australians speak an Indigenous language than ever before, but because the Indigenous population has grown faster, the share who speak one has fallen from one in six to fewer than one in ten. The two most-spoken today are creoles: Yumplatok in the Torres Strait and Kriol across the north.</p>
     </section>
 
     <!-- 2. Places we protect -->
-    <section>
-      <h2>2. The places we protect</h2>
-      <p>Since 2004, the National Heritage List has recognised 126 places of outstanding value to the nation: Indigenous, natural and historic.</p>
-      <div id="chart-03" class="chart"></div>
-      <div id="chart-04" class="chart"></div>
+    <section class="wrap" id="places">
+      <header class="section-head">
+        <p class="num">02</p>
+        <h2>The places we protect</h2>
+        <p class="lead">Since 2004, the National Heritage List has named 126 places of outstanding value to the nation. They tell us what Australia has decided is worth keeping.</p>
+      </header>
+
+      <div class="grid row">
+        <aside class="col-4 side">
+          <h3>Mostly historic, mostly south-east</h3>
+          <p>Seventy of the 126 places are historic sites, clustered around Sydney, Melbourne and Hobart. Only 20 are listed for their Indigenous values.</p>
+          <p>Budj Bim in Victoria, one of the first places listed in 2004, holds eel traps built by the Gunditjmara people that are thousands of years old.</p>
+          <p class="note">Click a type in the legend to show only those places. Green areas are World Heritage properties.</p>
+        </aside>
+        <figure class="col-8">
+          <div id="chart-03" class="chart"></div>
+          <figcaption>Source: DCCEEW, National Heritage List and Australia's World Heritage Areas spatial data. Places outside the mainland frame are not shown.</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid row">
+        <figure class="col-12">
+          <div id="chart-04" class="chart"></div>
+          <figcaption>Source: DCCEEW, National Heritage List. Each place counted once, in the year it was listed.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- 3. Who we became -->
-    <section>
-      <h2>3. Who we became</h2>
-      <p>In 1901 most migrants came from Britain and Ireland. Today, people born in India, China and the Philippines are reshaping who Australians are.</p>
-      <div id="chart-05" class="chart"></div>
-      <div id="chart-06" class="chart"></div>
+    <section class="wrap" id="who-we-became">
+      <header class="section-head">
+        <p class="num">03</p>
+        <h2>Who we became</h2>
+        <p class="lead">In 1901, almost one in five Australians had been born in Britain or Ireland. Today, people born in India, China and the Philippines are reshaping who Australians are.</p>
+      </header>
+
+      <div class="grid row">
+        <figure class="col-12">
+          <div id="chart-05" class="chart"></div>
+          <figcaption>Source: ABS, Historical Population, 2021: country of birth, Census 1901&ndash;1996 and estimated resident population 2001&ndash;2021. Country names harmonised over time (e.g. British India &rarr; India).</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid row">
+        <figure class="col-8">
+          <div id="chart-06" class="chart"></div>
+          <figcaption>Source: ABS, Historical Population, 2021. Share of people who stated a country of birth.</figcaption>
+        </figure>
+        <aside class="col-4 side">
+          <h3>Three waves</h3>
+          <p><strong>Shrinking:</strong> from 1901 to 1947 few new migrants arrived, and the share born overseas fell to under 10%.</p>
+          <p><strong>Europe:</strong> after the Second World War, Italians, Greeks, Dutch and Yugoslavs arrived in large numbers.</p>
+          <p><strong>Asia:</strong> once the White Australia policy ended in 1973, migration from Asia grew, and by 2021 India was the second-largest birthplace after the UK.</p>
+        </aside>
+      </div>
     </section>
 
     <!-- 4. How we take part -->
-    <section>
-      <h2>4. How we take part</h2>
-      <p>The 2021–22 survey ran during COVID-19 restrictions, so it captures a culture on pause.</p>
-      <div id="chart-08" class="chart"></div>
-      <p>Every state lost audiences, but Victoria, with the longest lockdowns, lost the most.</p>
-      <div id="chart-08b" class="chart"></div>
-      <p>By 2025, 74% of Australians had attended a live arts event or festival in the past year, the highest since the national survey began in 2009.</p>
-      <div id="chart-07a" class="chart"></div>
-      <div id="chart-07b" class="chart"></div>
+    <section class="wrap" id="taking-part">
+      <header class="section-head">
+        <p class="num">04</p>
+        <h2>How we take part</h2>
+        <p class="lead">A culture is also what people do with their weekends. The national attendance survey of 2021&ndash;22 ran during COVID-19 restrictions, so it captures a culture on pause.</p>
+      </header>
+
+      <div class="grid row">
+        <figure class="col-6">
+          <div id="chart-08" class="chart"></div>
+          <figcaption>Source: ABS, Cultural and creative activities 2021&ndash;22, and Attendance at Selected Cultural Venues and Events 2017&ndash;18.</figcaption>
+        </figure>
+        <figure class="col-6">
+          <div id="chart-08b" class="chart"></div>
+          <figcaption>Source: Office for the Arts, Cultural data by state and territory 2025 (from the ABS surveys above). Adults aged 15+.</figcaption>
+        </figure>
+      </div>
+      <p class="bridge">Every state lost audiences, but Victoria, with the longest lockdowns, lost the most. Then people came back.</p>
+
+      <div class="grid row">
+        <figure class="col-7">
+          <div id="chart-07a" class="chart"></div>
+          <figcaption>Source: Creative Australia, National Arts Participation Survey 2022 (n = 9,396) and 2025 (n = 9,065).</figcaption>
+        </figure>
+        <figure class="col-5">
+          <div id="chart-07b" class="chart"></div>
+          <figcaption>Source: Creative Australia, National Arts Participation Survey 2022 and 2025.</figcaption>
+        </figure>
+      </div>
+      <p class="bridge">By 2025, 74% of Australians had been to a live arts event or festival in the past year, up from 68% in 2022. Attendance at First Nations arts grew too, to one in three Australians. The biggest gains came from people aged 55 and over.</p>
     </section>
 
     <!-- 5. Libraries and the stage -->
-    <section>
-      <h2>5. Libraries and the stage</h2>
-      <p>Public libraries lent 174 million items in 2023–24, the most in five years, and almost a third of them were digital.</p>
-      <div id="chart-09a" class="chart"></div>
-      <p>Each Australian now borrows more, but after inflation, spending on libraries per person has fallen by 12% since 2019–20.</p>
-      <div id="chart-09b" class="chart"></div>
-      <p>Live performance collapsed in 2020, then came back bigger than before: a record 31.4 million tickets in 2024, almost half of them for contemporary music.</p>
-      <div id="chart-10" class="chart"></div>
-      <div id="chart-11" class="chart"></div>
+    <section class="wrap" id="libraries-stage">
+      <header class="section-head">
+        <p class="num">05</p>
+        <h2>Libraries and the stage</h2>
+        <p class="lead">Two very different cultural spaces, one free and one ticketed, both hit hard by COVID-19 and both back above where they were before it.</p>
+      </header>
+
+      <div class="grid row">
+        <figure class="col-6">
+          <div id="chart-09a" class="chart"></div>
+          <figcaption>Source: NSLA and ALIA, Australian Public Libraries Statistical Report 2023&ndash;24 (CC BY 4.0).</figcaption>
+        </figure>
+        <figure class="col-6">
+          <div id="chart-09b" class="chart"></div>
+          <figcaption>Source: NSLA and ALIA, Australian Public Libraries Statistical Report 2023&ndash;24. Spending in 2023&ndash;24 dollars.</figcaption>
+        </figure>
+      </div>
+      <p class="bridge">Public libraries lent 174 million items in 2023&ndash;24, the most in five years, and almost a third of them were digital. Each Australian now borrows more, yet spending per person has fallen by 12% after inflation.</p>
+
+      <div class="grid row">
+        <figure class="col-12">
+          <div id="chart-10" class="chart"></div>
+          <figcaption>Source: Live Performance Australia (prepared by EY), 2024 Live Performance Attendance and Revenue Report. Ticketed events only; the number of companies reporting has grown over time.</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid row">
+        <aside class="col-4 side">
+          <h3>A two-city industry</h3>
+          <p>Live performance collapsed in 2020, then came back bigger than before: a record 31.4 million tickets in 2024, almost half of them for contemporary music.</p>
+          <p>New South Wales and Victoria sold almost two in every three tickets. Victorians bought the most per person: 1.43 tickets each.</p>
+          <p class="note">Tickets are counted where the show was held, so interstate visitors to Sydney and Melbourne raise those states' numbers.</p>
+        </aside>
+        <figure class="col-8">
+          <div id="chart-11" class="chart"></div>
+          <figcaption>Source: Live Performance Australia, 2024 report; ABS population at December 2023.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- 6. Who pays -->
-    <section>
-      <h2>6. Who pays for culture</h2>
-      <div id="chart-13" class="chart"></div>
-      <div id="chart-14" class="chart"></div>
+    <section class="wrap" id="who-pays">
+      <header class="section-head">
+        <p class="num">06</p>
+        <h2>Who pays for culture</h2>
+        <p class="lead">Australian governments spent $8.6 billion on culture in 2023&ndash;24, 49% more than in 2015&ndash;16 before inflation. Where that money comes from, and where it goes, differs sharply between states.</p>
+      </header>
+
+      <div class="grid row">
+        <figure class="col-6">
+          <div id="chart-13" class="chart"></div>
+          <figcaption>Source: Cultural and Creative Statistics Working Group, Cultural Funding by Government 2023&ndash;24. Australian Government spending is not split by state.</figcaption>
+        </figure>
+        <figure class="col-6">
+          <div id="chart-14" class="chart"></div>
+          <figcaption>Source: Cultural Funding by Government 2023&ndash;24. Hover a box for its category and amount.</figcaption>
+        </figure>
+      </div>
+      <p class="bridge">The Northern Territory and South Australia spend the most per person, more than $300 each, while Queensland spends the least. Nationally, the largest single item is the Australian Government's $1.6 billion for radio and television, mostly the ABC and SBS. Local councils add more than $2 billion a year, including most public library funding.</p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="wrap conclusion" id="conclusion">
+      <header class="section-head">
+        <p class="num">&mdash;</p>
+        <h2>So, who are we now?</h2>
+        <p class="lead">Put the six threads together and a picture of modern Australia appears.</p>
+      </header>
+      <ul class="grid takeaways">
+        <li class="col-4"><h3 class="t-indigenous">The oldest cultures are still here</h3><p>Almost 77,000 people speak an Indigenous language at home, more than ever. But only 139 languages are being passed to children, and Indigenous places are a small part of what we protect.</p></li>
+        <li class="col-4"><h3>We are a nation of migrants</h3><p>Nearly one in three Australians was born overseas, and the main birthplaces have moved from Britain to Europe to Asia in just over a century.</p></li>
+        <li class="col-4"><h3>We came back stronger, on thinner budgets</h3><p>Ticket sales and library loans are now above pre-COVID levels and arts attendance keeps rising, while real spending on libraries per person has fallen.</p></li>
+      </ul>
+      <p class="closing">Australia's cultural identity is not fixed. It is being rewritten by each new arrival, and kept alive by the communities who still speak the first languages. The data shows both a richer culture than in 1901 and a fragile one.</p>
     </section>
   </main>
 
-  <footer>
-    <h2>Sources</h2>
-    <ul>
-      <li>AIATSIS, <a href="https://collection.aiatsis.gov.au/datasets/austlang/001">AUSTLANG dataset</a> (CC BY 4.0)</li>
-      <li>ABS, <a href="https://www.abs.gov.au/statistics/people/aboriginal-and-torres-strait-islander-peoples/language-statistics-aboriginal-and-torres-strait-islander-peoples/2021">Language Statistics for Aboriginal and Torres Strait Islander Peoples, 2021</a></li>
-      <li>DCCEEW, <a href="https://data.gov.au/data/en/dataset/d22badfa-810f-4425-a5da-54561f8c5c46">National Heritage List spatial database</a> and <a href="https://data.gov.au/data/dataset/nsw-australia-world-heritage-areas">Australia, World Heritage Areas</a></li>
-      <li>ABS, <a href="https://www.abs.gov.au/statistics/people/population/historical-population">Historical Population, 2021</a></li>
-      <li>ABS, <a href="https://www.abs.gov.au/statistics/people/people-and-communities/cultural-and-creative-activities/2021-22">Cultural and creative activities, 2021–22</a> and Attendance at Selected Cultural Venues and Events, 2017–18 (cat. 4114.0)</li>
-      <li>Creative Australia, <a href="https://creative.gov.au/research/creative-transformations-results-national-arts-participation-survey">National Arts Participation Survey</a> 2022 and 2025 data tables</li>
-      <li>National and State Libraries Australasia and ALIA, <a href="https://nla.gov.au/nla.obj-3921043747/view">Australian Public Libraries Statistical Report 2023–24</a></li>
-      <li>Live Performance Australia (prepared by EY), <a href="https://reports.liveperformance.com.au/">2024 Live Performance Attendance and Revenue Report</a></li>
-      <li>Cultural and Creative Statistics Working Group, <a href="https://www.arts.gov.au/cultural-data-online/government-cultural-funding-and-participation/cultural-funding-and-participation-national-overview">Cultural Funding by Government 2023–24</a></li>
-      <li>ABS, <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs">ASGS Edition 4 state boundaries</a> (CC BY-SA 4.0)</li>
-    </ul>
-    <p class="small">AI acknowledgement: Claude (Anthropic) assisted with finding datasets, preparing data files and drafting chart specifications.</p>
+  <footer class="wrap" id="about">
+    <div class="grid">
+      <div class="col-6">
+        <h2>About this visualisation</h2>
+        <p><strong>Who it is for:</strong> any Australian curious about how the nation's culture has changed. No statistical knowledge is needed.</p>
+        <p><strong>How to read it:</strong> hover over any mark for exact values. The language map has a state menu, the heritage map's legend can be clicked to filter, and two charts have menus to change what they show.</p>
+        <p><strong>Things to know:</strong> survey results (sections 04 and 06) are estimates from samples. Money is in dollars of the day unless marked "real". Country-of-birth figures from 2001 are population estimates rather than Census counts. The 2021 Census asked about languages "used" rather than "spoken" at home.</p>
+        <p><strong>Author:</strong> Nigel. <strong>Date:</strong> October 2026. Charts are built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://vega.github.io/vega/">Vega</a>; each chart's specification is in <code>js/charts/</code>.</p>
+        <p class="small">AI acknowledgement: Claude (Anthropic) assisted with finding datasets, preparing data files, drafting chart specifications and editing text. All data, charts and text were checked by the author.</p>
+      </div>
+      <div class="col-6">
+        <h2>Sources</h2>
+        <ul class="sources">
+          <li>AIATSIS, <a href="https://collection.aiatsis.gov.au/datasets/austlang/001">AUSTLANG dataset</a> (CC BY 4.0)</li>
+          <li>ABS, <a href="https://www.abs.gov.au/statistics/people/aboriginal-and-torres-strait-islander-peoples/language-statistics-aboriginal-and-torres-strait-islander-peoples/2021">Language Statistics for Aboriginal and Torres Strait Islander Peoples, 2021</a></li>
+          <li>DCCEEW, <a href="https://data.gov.au/data/en/dataset/d22badfa-810f-4425-a5da-54561f8c5c46">National Heritage List spatial database</a> and <a href="https://data.gov.au/data/dataset/nsw-australia-world-heritage-areas">Australia, World Heritage Areas</a></li>
+          <li>ABS, <a href="https://www.abs.gov.au/statistics/people/population/historical-population">Historical Population, 2021</a></li>
+          <li>ABS, <a href="https://www.abs.gov.au/statistics/people/people-and-communities/cultural-and-creative-activities/2021-22">Cultural and creative activities, 2021&ndash;22</a> and Attendance at Selected Cultural Venues and Events, 2017&ndash;18 (cat. 4114.0)</li>
+          <li>Office for the Arts, <a href="https://www.arts.gov.au/cultural-data-online">Cultural data by state and territory 2025</a></li>
+          <li>Creative Australia, <a href="https://creative.gov.au/research/creative-transformations-results-national-arts-participation-survey">National Arts Participation Survey</a> 2022 and 2025 data tables</li>
+          <li>National and State Libraries Australasia and ALIA, <a href="https://nla.gov.au/nla.obj-3921043747/view">Australian Public Libraries Statistical Report 2023&ndash;24</a> (CC BY 4.0)</li>
+          <li>Live Performance Australia (prepared by EY), <a href="https://reports.liveperformance.com.au/">2024 Live Performance Attendance and Revenue Report</a></li>
+          <li>Cultural and Creative Statistics Working Group, <a href="https://www.arts.gov.au/cultural-data-online/government-cultural-funding-and-participation/cultural-funding-and-participation-national-overview">Cultural Funding by Government 2023&ndash;24</a></li>
+          <li>ABS, <a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs">ASGS Edition 4 state boundaries</a> (CC BY-SA 4.0)</li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

@@ -1,0 +1,215 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "More speakers, but a smaller share",
+    "subtitle": [
+      "Indigenous Australians who use an Indigenous language at home:",
+      "number of people (across) and share of all Indigenous Australians (up), Census 1991–2021"
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "data": {
+    "url": "data/indigenous_language_at_home_1991_2021.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "year": "number",
+        "people": "number",
+        "pct": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.language_used_at_home == 'Australian Indigenous language'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "people",
+      "type": "quantitative",
+      "title": "People using an Indigenous language at home",
+      "scale": {
+        "domain": [
+          40000,
+          80000
+        ]
+      },
+      "axis": {
+        "format": "~s",
+        "tickCount": 5
+      }
+    },
+    "y": {
+      "field": "pct",
+      "type": "quantitative",
+      "title": "% of Indigenous Australians",
+      "scale": {
+        "domain": [
+          8,
+          18
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#b5651d",
+        "strokeWidth": 2,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "order": {
+          "field": "year"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "color": "#b5651d",
+        "opacity": 1,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Census"
+          },
+          {
+            "field": "people",
+            "type": "quantitative",
+            "title": "People",
+            "format": ","
+          },
+          {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "% of Indigenous Australians",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -11,
+        "fontSize": 11,
+        "color": "#6b625a"
+      },
+      "encoding": {
+        "text": {
+          "field": "year"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "people": 43499,
+            "pct": 16.4,
+            "t": "1991: about 1 in 6"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "dy": 4,
+        "fontWeight": 600,
+        "fontSize": 12,
+        "color": "#2b2622"
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "people": 76978,
+            "pct": 9.5,
+            "t": "2021: fewer than 1 in 10,"
+          },
+          {
+            "people": 76978,
+            "pct": 8.85,
+            "t": "but almost 77,000 people"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "dy": 4,
+        "fontWeight": 600,
+        "fontSize": 12,
+        "color": "#2b2622"
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "font": "Source Sans 3",
+    "background": null,
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "fontSize": 16,
+      "fontWeight": 600,
+      "color": "#2b2622",
+      "anchor": "start",
+      "subtitleFontSize": 13,
+      "subtitleColor": "#6b625a",
+      "offset": 12
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#6b625a",
+      "titleColor": "#6b625a",
+      "domainColor": "#d9d1c3",
+      "tickColor": "#d9d1c3",
+      "gridColor": "#eee8dc"
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": 500,
+      "labelColor": "#2b2622",
+      "titleColor": "#6b625a",
+      "orient": "top",
+      "direction": "horizontal",
+      "columnPadding": 22,
+      "labelLimit": 260
+    },
+    "text": {
+      "font": "Source Sans 3",
+      "fontSize": 12,
+      "color": "#2b2622"
+    }
+  }
+}

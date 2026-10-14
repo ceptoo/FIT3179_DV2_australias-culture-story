@@ -2,7 +2,16 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Australians came back to the arts",
-    "subtitle": "Share of Australians aged 15+ who took part in the past year, 2022 vs 2025 (National Arts Participation Survey)"
+    "subtitle": [
+      "% of Australians aged 15+ who took part in the past year, 2022 vs 2025.",
+      "Labels show the change in percentage points."
+    ]
+  },
+  "width": "container",
+  "height": 300,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
   },
   "data": {
     "url": "data/naps_2022_vs_2025.csv",
@@ -46,8 +55,6 @@
       ]
     }
   ],
-  "width": 560,
-  "height": 280,
   "encoding": {
     "y": {
       "field": "measure",
@@ -57,6 +64,22 @@
         "field": "max_pct",
         "op": "max",
         "order": "descending"
+      },
+      "axis": {
+        "labelColor": {
+          "condition": {
+            "test": "datum.value == 'First Nations arts or festivals'",
+            "value": "#b5651d"
+          },
+          "value": "#6b625a"
+        },
+        "labelFontWeight": {
+          "condition": {
+            "test": "datum.value == 'First Nations arts or festivals'",
+            "value": 600
+          },
+          "value": 400
+        }
       }
     }
   },
@@ -106,7 +129,7 @@
             ],
             "range": [
               "#c9b79c",
-              "#4f7d5c"
+              "#4a5a78"
             ]
           }
         },
@@ -126,6 +149,49 @@
             "format": ".1f"
           }
         ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "pivot": "year",
+          "value": "pct",
+          "groupby": [
+            "measure",
+            "max_pct"
+          ]
+        },
+        {
+          "calculate": "datum['2025'] - datum['2022']",
+          "as": "diff"
+        },
+        {
+          "calculate": "(datum.diff >= 0 ? '+' : '−') + format(abs(datum.diff), '.1f')",
+          "as": "lab"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 11,
+        "fontSize": 12,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "2025",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lab"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.measure == 'First Nations arts or festivals'",
+            "value": "#b5651d"
+          },
+          "value": "#4a5a78"
+        }
       }
     }
   ],
@@ -170,5 +236,11 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
+  },
+  "padding": {
+    "left": 24,
+    "right": 8,
+    "top": 5,
+    "bottom": 5
   }
 }
