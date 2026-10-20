@@ -112,7 +112,7 @@
             ],
             "range": [
               "#5e3c99",
-              "#c98200",
+              "#2c7fb8",
               "#5f7022"
             ]
           }
@@ -192,7 +192,7 @@
         "align": "center",
         "baseline": "middle",
         "fontSize": 12,
-        "color": "#c98200"
+        "color": "#2c7fb8"
       },
       "encoding": {
         "x": {

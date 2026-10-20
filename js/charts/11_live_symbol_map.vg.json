@@ -154,6 +154,9 @@
       },
       "transform": [
         {
+          "filter": "datum.state_abbr == 'NSW'"
+        },
+        {
           "lookup": "state_name",
           "from": {
             "data": {
@@ -168,16 +171,15 @@
         {
           "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
           "as": "label"
-        },
-        {
-          "filter": "datum.state_abbr != 'ACT'"
         }
       ],
       "mark": {
         "type": "text",
         "fontSize": 12,
         "fontWeight": 600,
-        "dy": 0
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 36
       },
       "encoding": {
         "longitude": {
@@ -190,33 +192,41 @@
         },
         "text": {
           "field": "label"
-        },
-        "color": {
-          "condition": {
-            "test": "datum.state_abbr == 'VIC' || datum.state_abbr == 'SA' || datum.state_abbr == 'NSW'",
-            "value": "white"
-          },
-          "value": "#2b2622"
         }
       }
     },
     {
       "data": {
-        "values": [
-          {
-            "lon": 150.6,
-            "lat": -36.3,
-            "t": "ACT 0.4m"
-          }
-        ]
+        "url": "data/state_centroids.csv"
       },
+      "transform": [
+        {
+          "filter": "datum.state_abbr == 'VIC'"
+        },
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
+          "as": "label"
+        }
+      ],
       "mark": {
         "type": "text",
-        "fontSize": 11,
+        "fontSize": 12,
+        "fontWeight": 600,
         "color": "#2b2622",
-        "align": "left",
-        "dx": 4,
-        "fontWeight": 600
+        "align": "right",
+        "dx": -35
       },
       "encoding": {
         "longitude": {
@@ -228,7 +238,148 @@
           "type": "quantitative"
         },
         "text": {
-          "field": "t"
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_centroids.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.state_abbr == 'QLD'"
+        },
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 26
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_centroids.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.state_abbr == 'WA' || datum.state_abbr == 'SA'"
+        },
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 20
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_centroids.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.state_abbr == 'NT' || datum.state_abbr == 'TAS' || datum.state_abbr == 'ACT'"
+        },
+        {
+          "lookup": "state_name",
+          "from": {
+            "data": {
+              "url": "data/live_by_state_2024.csv"
+            },
+            "key": "state",
+            "fields": [
+              "attendance"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.state_abbr + ' ' + format(toNumber(datum.attendance) / 1e6, '.1f') + 'm'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#2b2622",
+        "align": "left",
+        "dx": 9
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
         }
       }
     }

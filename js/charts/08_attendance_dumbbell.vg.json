@@ -5,7 +5,7 @@
     "subtitle": "% who attended, 2017–18 vs 2021–22 (labels = fall)"
   },
   "width": "container",
-  "height": 320,
+  "height": 400,
   "autosize": {
     "type": "fit",
     "contains": "padding"

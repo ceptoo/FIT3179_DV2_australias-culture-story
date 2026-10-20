@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "title": {
     "text": "Where $8.6 billion of culture funding went in 2023–24",
-    "subtitle": "Box size = dollars, colour = level of government. Hover for details.",
+    "subtitle": "Box size = dollars. Colour = level of government; solid = heritage, lighter = arts. Local government is not split.",
     "anchor": "start",
     "fontSize": 16,
     "fontWeight": 600,
@@ -139,9 +139,21 @@
         "Local government"
       ],
       "range": [
-        "#3f4d12",
-        "#7d8f2e",
-        "#b3c063"
+        "#3e6f94",
+        "#7a4a7f",
+        "#5f7022"
+      ]
+    },
+    {
+      "name": "split",
+      "type": "ordinal",
+      "domain": [
+        "Heritage",
+        "Arts"
+      ],
+      "range": [
+        1,
+        0.55
       ]
     }
   ],
@@ -150,12 +162,25 @@
       "fill": "color",
       "orient": "top",
       "direction": "horizontal",
+      "symbolType": "square",
       "labelFont": "Source Sans 3",
       "labelFontSize": 12,
-      "symbolType": "square",
       "labelColor": "#2b2622",
       "labelLimit": 400,
       "columnPadding": 20
+    },
+    {
+      "opacity": "split",
+      "orient": "top",
+      "direction": "horizontal",
+      "symbolType": "square",
+      "symbolFillColor": "#6b625a",
+      "symbolStrokeColor": "#6b625a",
+      "labelFont": "Source Sans 3",
+      "labelFontSize": 12,
+      "labelColor": "#2b2622",
+      "columnPadding": 20,
+      "labelExpr": "datum.label == 'Heritage' ? 'Heritage (solid)' : 'Arts (lighter)'"
     }
   ],
   "marks": [
@@ -194,12 +219,12 @@
             "signal": "{'Level': datum.level, 'Area': datum.domain, 'Category': datum.category, 'Spending': format(datum.amount_m, '$,.1f') + 'm'}"
           },
           "fillOpacity": {
-            "value": 1
+            "signal": "datum.domain == 'Arts' ? 0.55 : 1"
           }
         },
         "hover": {
           "fillOpacity": {
-            "value": 0.75
+            "signal": "datum.domain == 'Arts' ? 0.4 : 0.8"
           }
         }
       }
@@ -257,7 +282,7 @@
             "signal": "datum.x1 - datum.x0 - 10"
           },
           "fill": {
-            "signal": "datum.level == 'Local government' ? '#2b2622' : 'white'"
+            "signal": "datum.domain == 'Arts' ? '#2b2622' : 'white'"
           },
           "font": {
             "value": "Source Sans 3"

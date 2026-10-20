@@ -39,66 +39,6 @@
     },
     {
       "data": {
-        "values": [
-          {
-            "lon": 122.0,
-            "lat": -26.0,
-            "t": "WA"
-          },
-          {
-            "lon": 133.4,
-            "lat": -20.5,
-            "t": "NT"
-          },
-          {
-            "lon": 135.8,
-            "lat": -30.0,
-            "t": "SA"
-          },
-          {
-            "lon": 144.5,
-            "lat": -24.0,
-            "t": "QLD"
-          },
-          {
-            "lon": 146.5,
-            "lat": -32.3,
-            "t": "NSW"
-          },
-          {
-            "lon": 143.6,
-            "lat": -37.2,
-            "t": "VIC"
-          },
-          {
-            "lon": 146.6,
-            "lat": -42.1,
-            "t": "TAS"
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "fontSize": 13,
-        "color": "#b7ad9e",
-        "fontWeight": 600
-      },
-      "encoding": {
-        "longitude": {
-          "field": "lon",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "lat",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "t"
-        }
-      }
-    },
-    {
-      "data": {
         "url": "data/world_heritage.topojson",
         "format": {
           "type": "topojson",
@@ -287,6 +227,66 @@
         "color": "#2b2622",
         "fontWeight": 600,
         "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 121.5,
+            "lat": -27.5,
+            "t": "WA"
+          },
+          {
+            "lon": 133.4,
+            "lat": -21.5,
+            "t": "NT"
+          },
+          {
+            "lon": 135.0,
+            "lat": -28.0,
+            "t": "SA"
+          },
+          {
+            "lon": 143.0,
+            "lat": -26.0,
+            "t": "QLD"
+          },
+          {
+            "lon": 145.0,
+            "lat": -31.8,
+            "t": "NSW"
+          },
+          {
+            "lon": 140.4,
+            "lat": -40.3,
+            "t": "VIC"
+          },
+          {
+            "lon": 150.8,
+            "lat": -42.3,
+            "t": "TAS"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#a89d8c",
+        "fontWeight": 700
       },
       "encoding": {
         "longitude": {
