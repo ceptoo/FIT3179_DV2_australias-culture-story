@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Victoria lost the most",
-    "subtitle": "Fall in % of adults who attended any cultural venue or event, 2017–18 to 2021–22 (points)"
+    "subtitle": "Fall in % of adults attending, 2017–18 to 2021–22 (points)"
   },
   "width": "container",
   "height": 420,
@@ -62,15 +62,13 @@
           "title": "Drop (percentage points)",
           "scale": {
             "range": [
-              "#eef1f5",
-              "#9aa9c2",
-              "#24324f"
+              "#fde4e1",
+              "#9b1c2c"
             ],
             "domain": [
               5,
               25
-            ],
-            "interpolate": "rgb"
+            ]
           },
           "legend": {
             "gradientLength": 180

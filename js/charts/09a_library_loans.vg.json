@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Library loans hit a five-year high",
-    "subtitle": "Public library loans and downloads per year. Almost a third are now digital."
+    "subtitle": "Loans per year, millions. Labels = digital share."
   },
   "width": "container",
   "height": 290,
@@ -72,8 +72,8 @@
               "Digital (ebooks, audiobooks, streaming)"
             ],
             "range": [
-              "#4a5a78",
-              "#4f7d5c"
+              "#5e3c99",
+              "#b9a6dd"
             ]
           }
         },

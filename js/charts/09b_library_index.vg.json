@@ -111,9 +111,9 @@
               "Spending per person (real)"
             ],
             "range": [
-              "#4f7d5c",
-              "#4a5a78",
-              "#7b5c8a"
+              "#5e3c99",
+              "#c98200",
+              "#5f7022"
             ]
           }
         },
@@ -146,7 +146,7 @@
         "align": "right",
         "baseline": "middle",
         "fontSize": 12,
-        "color": "#7b5c8a",
+        "color": "#5f7022",
         "dx": -6,
         "fontWeight": 600
       },
@@ -169,7 +169,7 @@
         "align": "right",
         "baseline": "middle",
         "fontSize": 12,
-        "color": "#4f7d5c",
+        "color": "#5e3c99",
         "dx": -6,
         "fontWeight": 600
       },
@@ -192,7 +192,7 @@
         "align": "center",
         "baseline": "middle",
         "fontSize": 12,
-        "color": "#6b625a"
+        "color": "#c98200"
       },
       "encoding": {
         "x": {
@@ -203,7 +203,7 @@
           "datum": 63
         },
         "text": {
-          "value": "COVID closures"
+          "value": "Visits: COVID closures"
         }
       }
     }

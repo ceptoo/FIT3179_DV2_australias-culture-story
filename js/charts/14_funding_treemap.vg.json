@@ -2,10 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "title": {
     "text": "Where $8.6 billion of culture funding went in 2023–24",
-    "subtitle": [
-      "Government cultural spending by level and category. Box size = dollars.",
-      "Darker boxes = heritage, lighter = arts. Local government isn't split by category."
-    ],
+    "subtitle": "Box size = dollars, colour = level of government. Hover for details.",
     "anchor": "start",
     "fontSize": 16,
     "fontWeight": 600,
@@ -17,7 +14,7 @@
     "offset": 12
   },
   "width": 480,
-  "height": 420,
+  "height": 560,
   "padding": 4,
   "autosize": {
     "type": "fit",
@@ -35,6 +32,11 @@
         {
           "type": "filter",
           "expr": "datum.year == '2023-24' && datum.amount_m > 0"
+        },
+        {
+          "type": "formula",
+          "as": "label",
+          "expr": "{'Other museums and cultural heritage': 'Other heritage','Film and video production and distribution': 'Film & video','Radio and television services': 'Radio & TV','Community arts and cultural development': 'Community arts','Performing arts venues': 'Performing arts venues','Music theatre and opera': 'Music theatre & opera','Visual arts and crafts': 'Visual arts','Literature and writing': 'Literature & writing','Circus and physical theatre': 'Circus','Interactive arts content': 'Interactive arts','Arts administration': 'Arts admin','Local government (all categories)': 'All local spending'}[datum.category] || datum.category"
         }
       ]
     },
@@ -58,6 +60,11 @@
         {
           "type": "formula",
           "as": "category",
+          "expr": "'All local spending'"
+        },
+        {
+          "type": "formula",
+          "as": "label",
           "expr": "'All local spending'"
         }
       ]
@@ -132,23 +139,9 @@
         "Local government"
       ],
       "range": [
-        "#4a5a78",
-        "#7b5c8a",
-        "#4f7d5c"
-      ]
-    },
-    {
-      "name": "shade",
-      "type": "ordinal",
-      "domain": [
-        "Heritage",
-        "Arts",
-        "All local"
-      ],
-      "range": [
-        1,
-        0.72,
-        0.9
+        "#3f4d12",
+        "#7d8f2e",
+        "#b3c063"
       ]
     }
   ],
@@ -197,17 +190,16 @@
             "scale": "color",
             "field": "level"
           },
-          "fillOpacity": {
-            "scale": "shade",
-            "field": "domain"
-          },
           "tooltip": {
             "signal": "{'Level': datum.level, 'Area': datum.domain, 'Category': datum.category, 'Spending': format(datum.amount_m, '$,.1f') + 'm'}"
+          },
+          "fillOpacity": {
+            "value": 1
           }
         },
         "hover": {
           "fillOpacity": {
-            "value": 0.55
+            "value": 0.75
           }
         }
       }
@@ -259,22 +251,25 @@
             "signal": "datum.y0 + 16"
           },
           "text": {
-            "signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 34 ? [datum.category, format(datum.amount_m, '$,.0f') + 'm'] : ''"
+            "signal": "(datum.x1 - datum.x0) > 60 && (length(datum.label) * 7 > (datum.x1 - datum.x0) - 12 ? length(split(datum.label, ' ')) + 1 : 2) * 15 + 14 < (datum.y1 - datum.y0) ? (length(datum.label) * 7 > (datum.x1 - datum.x0) - 12 ? replace(datum.label, regexp(' (?!&)', 'g'), '|') : datum.label) + '|' + format(datum.amount_m, '$,.0f') + 'm' : ''"
           },
           "limit": {
             "signal": "datum.x1 - datum.x0 - 10"
           },
           "fill": {
-            "value": "white"
+            "signal": "datum.level == 'Local government' ? '#2b2622' : 'white'"
           },
           "font": {
             "value": "Source Sans 3"
           },
           "fontSize": {
-            "value": 12
+            "value": 13
           },
           "lineHeight": {
             "value": 15
+          },
+          "lineBreak": {
+            "value": "|"
           }
         }
       }

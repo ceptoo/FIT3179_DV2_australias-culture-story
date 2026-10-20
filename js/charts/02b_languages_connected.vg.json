@@ -2,10 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "More speakers, but a smaller share",
-    "subtitle": [
-      "Indigenous Australians who use an Indigenous language at home:",
-      "number of people (across) and share of all Indigenous Australians (up), Census 1991–2021"
-    ]
+    "subtitle": "Indigenous language speakers: number (across) vs share (up), 1991–2021"
   },
   "width": "container",
   "height": 300,

@@ -2,10 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Only 139 of 217 languages are being passed to children",
-    "subtitle": [
-      "Each square is one language in the ABS classification, by who used it at home in 2021.",
-      "Children are what keep a language alive."
-    ]
+    "subtitle": "One square = one language, by who used it at home (2021)"
   },
   "data": {
     "url": "data/indigenous_languages_2021.csv"

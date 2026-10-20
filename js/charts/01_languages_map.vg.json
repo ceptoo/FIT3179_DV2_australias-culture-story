@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Hundreds of languages, one continent",
-    "subtitle": "Approximate locations of Aboriginal and Torres Strait Islander languages. Choose a state below the map."
+    "subtitle": "Approximate locations of 834 languages. Choose a state below."
   },
   "width": "container",
   "height": 520,
@@ -35,6 +35,66 @@
         "fill": "#ece6da",
         "stroke": "white",
         "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 122.0,
+            "lat": -26.0,
+            "t": "WA"
+          },
+          {
+            "lon": 133.4,
+            "lat": -20.5,
+            "t": "NT"
+          },
+          {
+            "lon": 135.8,
+            "lat": -30.0,
+            "t": "SA"
+          },
+          {
+            "lon": 144.5,
+            "lat": -24.0,
+            "t": "QLD"
+          },
+          {
+            "lon": 146.5,
+            "lat": -32.3,
+            "t": "NSW"
+          },
+          {
+            "lon": 143.6,
+            "lat": -37.2,
+            "t": "VIC"
+          },
+          {
+            "lon": 146.6,
+            "lat": -42.1,
+            "t": "TAS"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#b7ad9e",
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
       }
     },
     {
@@ -207,6 +267,101 @@
         "fontSize": 17,
         "fontWeight": 600,
         "color": "#b5651d"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 134.6,
+            "lat": -10.9,
+            "t": "Arnhem Land"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "fontWeight": 600,
+        "align": "center",
+        "dy": -6
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 125.4,
+            "lat": -15.2,
+            "t": "Kimberley"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "fontWeight": 600,
+        "align": "right",
+        "dx": -12
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 125.0,
+            "lat": -24.6,
+            "t": "Desert: sparse"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#6b625a",
+        "fontWeight": 600,
+        "align": "center"
       },
       "encoding": {
         "longitude": {

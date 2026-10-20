@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The night the music stopped, and came back louder",
-    "subtitle": "Tickets issued for live performances by category, 2010–2024. Band thickness = tickets. Hover a band to pick it out."
+    "subtitle": "Tickets by category, 2010–2024. Hover a band."
   },
   "width": "container",
   "height": 340,
@@ -113,13 +113,13 @@
               "Other"
             ],
             "range": [
-              "#4a5a78",
-              "#7b5c8a",
-              "#4f7d5c",
-              "#c9a227",
-              "#7d97b3",
-              "#8c7b6b",
-              "#cfc6b8"
+              "#8e1b52",
+              "#c2477c",
+              "#e597b8",
+              "#7d756b",
+              "#9d958a",
+              "#bdb6ab",
+              "#dbd5cb"
             ]
           },
           "legend": {

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Where Australia goes to see a show",
-    "subtitle": "Live performance tickets issued in 2024 by state (circle size), and tickets per resident (colour)"
+    "subtitle": "2024 tickets: size = total, colour = per resident"
   },
   "width": "container",
   "height": 520,
@@ -98,7 +98,7 @@
               5,
               10
             ],
-            "symbolFillColor": "#b9c4d6",
+            "symbolFillColor": "#e9b6cb",
             "symbolStrokeColor": "white"
           }
         },
@@ -108,14 +108,13 @@
           "title": "Tickets per resident",
           "scale": {
             "range": [
-              "#eef1f5",
-              "#7f93b5"
+              "#fbe8ef",
+              "#8e1b52"
             ],
             "domain": [
               0.6,
               1.5
-            ],
-            "interpolate": "rgb"
+            ]
           },
           "legend": {
             "gradientLength": 160,
@@ -178,8 +177,7 @@
         "type": "text",
         "fontSize": 12,
         "fontWeight": 600,
-        "dy": 0,
-        "color": "#2b2622"
+        "dy": 0
       },
       "encoding": {
         "longitude": {
@@ -192,6 +190,13 @@
         },
         "text": {
           "field": "label"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.state_abbr == 'VIC' || datum.state_abbr == 'SA' || datum.state_abbr == 'NSW'",
+            "value": "white"
+          },
+          "value": "#2b2622"
         }
       }
     },

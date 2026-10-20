@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Who spends most on culture, per person?",
-    "subtitle": "State/territory plus local government cultural spending per resident, 2023–24"
+    "subtitle": "State + local government spending per resident, 2023–24"
   },
   "width": "container",
   "height": 420,
@@ -62,15 +62,13 @@
           "title": "$ per person",
           "scale": {
             "range": [
-              "#eef1f5",
-              "#9aa9c2",
-              "#24324f"
+              "#f1f3e0",
+              "#3f4d12"
             ],
             "domain": [
               150,
               330
-            ],
-            "interpolate": "rgb"
+            ]
           },
           "legend": {
             "format": "$.0f",
@@ -149,7 +147,7 @@
         },
         "color": {
           "condition": {
-            "test": "datum.state_plus_local_pp > 260",
+            "test": "datum.state_plus_local_pp > 250",
             "value": "white"
           },
           "value": "#2b2622"

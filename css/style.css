@@ -232,3 +232,19 @@ code { font-size: 14px; background: var(--panel); padding: 1px 5px; border-radiu
   .stats .col-3 { grid-column: span 12; }
   h2 { font-size: 28px; }
 }
+
+/* ---------- Short bullet points ---------- */
+.points { list-style: none; padding: 0; margin: 0 0 14px; }
+.points li { position: relative; padding-left: 18px; margin-bottom: 8px; }
+.points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sand);
+}
+.bridge.points { padding-left: 18px; }
+.bridge.points li { margin-bottom: 4px; }

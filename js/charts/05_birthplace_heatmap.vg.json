@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "From Britain to the world",
-    "subtitle": "Share of Australia's population born in each country, 1901–2021 (blank = not recorded separately). Census counts to 1996, population estimates from 2001."
+    "subtitle": "% of population born in each country, 1901–2021. Blank = not recorded."
   },
   "width": "container",
   "height": 330,
@@ -16,6 +16,10 @@
   "transform": [
     {
       "filter": "datum.pct_of_population !== '' && isValid(datum.pct_of_population)"
+    },
+    {
+      "calculate": "datum.pct_of_population < 0.25 ? 'Under 0.25%' : datum.pct_of_population < 0.5 ? '0.25–0.5%' : datum.pct_of_population < 1 ? '0.5–1%' : datum.pct_of_population < 2 ? '1–2%' : datum.pct_of_population < 4 ? '2–4%' : datum.pct_of_population < 8 ? '4–8%' : datum.pct_of_population < 12 ? '8–12%' : '12% +'",
+      "as": "band"
     }
   ],
   "config": {
@@ -95,21 +99,41 @@
           ]
         },
         "color": {
-          "field": "pct_of_population",
-          "type": "quantitative",
-          "title": "% of population",
+          "field": "band",
+          "type": "ordinal",
+          "title": "% of population born there",
           "scale": {
-            "type": "sqrt",
-            "range": [
-              "#eef1f5",
-              "#9aa9c2",
-              "#24324f"
+            "domain": [
+              "Under 0.25%",
+              "0.25–0.5%",
+              "0.5–1%",
+              "1–2%",
+              "2–4%",
+              "4–8%",
+              "8–12%",
+              "12% +"
             ],
-            "interpolate": "rgb"
+            "range": [
+              "#f2f6fb",
+              "#d6e4f1",
+              "#b3cde5",
+              "#86afd6",
+              "#5a8fc2",
+              "#3a70a8",
+              "#22528a",
+              "#0f3563"
+            ]
           },
           "legend": {
             "orient": "bottom",
-            "gradientLength": 260
+            "direction": "horizontal",
+            "columns": 8,
+            "symbolType": "square",
+            "symbolSize": 200,
+            "columnPadding": 14,
+            "labelLimit": 120,
+            "symbolStrokeColor": "#b7ad9e",
+            "symbolStrokeWidth": 1
           }
         },
         "tooltip": [
@@ -177,7 +201,7 @@
         },
         "color": {
           "condition": {
-            "test": "datum.pct_of_population > 3",
+            "test": "datum.pct_of_population >= 2",
             "value": "white"
           },
           "value": "#2b2622"

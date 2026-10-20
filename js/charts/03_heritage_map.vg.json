@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The places Australia has chosen to protect",
-    "subtitle": "126 National Heritage places by type; shaded areas are World Heritage properties. Click the legend to filter."
+    "subtitle": "126 National Heritage places by type. Grey shapes = World Heritage areas."
   },
   "width": "container",
   "height": 540,
@@ -39,6 +39,66 @@
     },
     {
       "data": {
+        "values": [
+          {
+            "lon": 122.0,
+            "lat": -26.0,
+            "t": "WA"
+          },
+          {
+            "lon": 133.4,
+            "lat": -20.5,
+            "t": "NT"
+          },
+          {
+            "lon": 135.8,
+            "lat": -30.0,
+            "t": "SA"
+          },
+          {
+            "lon": 144.5,
+            "lat": -24.0,
+            "t": "QLD"
+          },
+          {
+            "lon": 146.5,
+            "lat": -32.3,
+            "t": "NSW"
+          },
+          {
+            "lon": 143.6,
+            "lat": -37.2,
+            "t": "VIC"
+          },
+          {
+            "lon": 146.6,
+            "lat": -42.1,
+            "t": "TAS"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#b7ad9e",
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
         "url": "data/world_heritage.topojson",
         "format": {
           "type": "topojson",
@@ -47,9 +107,9 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#8fa99a",
-        "fillOpacity": 0.35,
-        "stroke": "#6f8c7a",
+        "fill": "#d9d2c3",
+        "fillOpacity": 0.7,
+        "stroke": "#a3998a",
         "strokeWidth": 0.6
       },
       "encoding": {
@@ -76,18 +136,6 @@
       "transform": [
         {
           "filter": "datum.on_main_map == 'true' || datum.on_main_map === true"
-        }
-      ],
-      "params": [
-        {
-          "name": "cls",
-          "select": {
-            "type": "point",
-            "fields": [
-              "class"
-            ]
-          },
-          "bind": "legend"
         }
       ],
       "mark": {
@@ -117,17 +165,17 @@
             ],
             "range": [
               "#b5651d",
-              "#4f7d5c",
-              "#4a5a78"
+              "#3a7d44",
+              "#3b4a6b"
             ]
           }
         },
         "opacity": {
           "condition": {
-            "param": "cls",
-            "value": 0.9
+            "test": "type == 'All' || datum.class == type",
+            "value": 0.95
           },
-          "value": 0.08
+          "value": 0.06
         },
         "tooltip": [
           {
@@ -222,6 +270,37 @@
           "field": "t"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 150.2,
+            "lat": -39.6,
+            "t": "South-east: densest cluster"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "#2b2622",
+        "fontWeight": 600,
+        "align": "left"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
     }
   ],
   "config": {
@@ -265,5 +344,21 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
-  }
+  },
+  "params": [
+    {
+      "name": "type",
+      "value": "All",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "All",
+          "Indigenous",
+          "Natural",
+          "Historic"
+        ],
+        "name": "Show: "
+      }
+    }
+  ]
 }
