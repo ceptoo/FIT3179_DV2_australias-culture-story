@@ -39,8 +39,6 @@ A narrative data visualisation of how Australia's culture has changed: Indigenou
 | 13 | Cultural spending per person | Choropleth map |
 | 14 | Where funding went | Treemap |
 
-then open http://localhost:8000.
-
 ## Data sources
 
 AIATSIS (AUSTLANG); ABS (Language Statistics for Aboriginal and Torres Strait Islander Peoples 2021, Historical Population 2021, Cultural and creative activities 2021–22, ASGS boundaries); DCCEEW (National Heritage List, World Heritage Areas); Office for the Arts (Cultural data by state and territory 2025, Cultural Funding by Government 2023–24); Creative Australia (National Arts Participation Survey 2022 and 2025); NSLA and ALIA (Australian Public Libraries Statistical Report 2023–24); Live Performance Australia (2024 Attendance and Revenue Report). Full links are in the page footer.

@@ -1,7 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Only 139 of 217 languages are being passed to children",
+    "text": [
+      "Only 139 of 217 languages are",
+      "being passed to children"
+    ],
     "subtitle": "One square = one language, by who used it at home (2021)"
   },
   "data": {
@@ -17,7 +20,7 @@
       "as": "row"
     }
   ],
-  "width": 460,
+  "width": "container",
   "height": 253,
   "mark": {
     "type": "rect",
@@ -53,7 +56,8 @@
         ]
       },
       "legend": {
-        "labelExpr": "datum.label == 'Used by children' ? 'Used by children (139)' : datum.label == 'Used by adults only' ? 'Adults only (28)' : 'No users recorded (50)'"
+        "labelExpr": "datum.label == 'Used by children' ? 'Used by children (139)' : datum.label == 'Used by adults only' ? 'Adults only (28)' : 'No users recorded (50)'",
+        "columns": 2
       }
     },
     "tooltip": [
@@ -120,5 +124,9 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
   }
 }
