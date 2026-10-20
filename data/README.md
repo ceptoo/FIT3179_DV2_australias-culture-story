@@ -1,7 +1,7 @@
-# Australia's Culture Story — data (batches 1–4)
+# Australia's Culture Story — data
 
-Vega-Lite-ready files for FIT3179 DV2. Copy `data/` into your GitHub Pages repo.
-Total size: about 200 KB. Every file can be rebuilt from the raw downloads with `scripts/`.
+The data files behind *Australia's Culture Story*. Every chart in `js/charts/` loads its data from here.
+Each file below lists its source, how it was prepared and the caveats shown on the page.
 
 ## Files
 
@@ -114,7 +114,8 @@ Every table was cross-checked against the report's own totals. **Problems found 
 - **LPA, Circus and Physical Theatre:** excludes Cirque du Soleil's *Luzia* in 2024 (the report's own footnote).
 - **LPA vs ABS:** LPA counts tickets issued for events held in each state, so interstate visitors count where the show is. It is not a survey of residents, so don't compare it directly with ABS or NAPS attendance rates.
 
-## Scripts
+## Preparation scripts (kept outside this repo)
+The raw downloads are 139 MB, so they and the scripts that process them are not published here. The commands were:
 ```
 bash   scripts/prepare_basemap.sh            raw/STE_2026_AUST_GDA2020.shp data
 python scripts/prepare_austlang.py           raw/AustLang.csv raw/STE_2026_AUST_GDA2020.shp data/austlang.csv

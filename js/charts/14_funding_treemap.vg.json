@@ -15,7 +15,12 @@
   },
   "width": 480,
   "height": 560,
-  "padding": 4,
+  "padding": {
+    "left": 4,
+    "right": 4,
+    "top": 4,
+    "bottom": 24
+  },
   "autosize": {
     "type": "fit",
     "contains": "padding"
@@ -171,7 +176,7 @@
     },
     {
       "opacity": "split",
-      "orient": "top",
+      "orient": "bottom",
       "direction": "horizontal",
       "symbolType": "square",
       "symbolFillColor": "#6b625a",

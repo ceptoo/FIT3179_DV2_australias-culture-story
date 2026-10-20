@@ -248,6 +248,9 @@
       "font": "Source Sans 3",
       "fontSize": 12,
       "color": "#2b2622"
+    },
+    "scale": {
+      "zero": false
     }
   }
 }

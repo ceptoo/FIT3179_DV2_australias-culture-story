@@ -76,7 +76,7 @@ p  { margin: 0 0 14px; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--indigenous);
+  color: var(--muted);
   margin: 0 0 10px;
 }
 
@@ -115,7 +115,7 @@ p  { margin: 0 0 14px; }
 }
 .toc li { margin-bottom: 8px; }
 .toc a { text-decoration: none; color: var(--ink); font-weight: 500; }
-.toc a:hover { color: var(--indigenous); }
+.toc a:hover { color: var(--ink); }
 .toc span { display: inline-block; width: 34px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .stats {
@@ -228,6 +228,7 @@ code { font-size: 14px; background: var(--panel); padding: 1px 5px; border-radiu
   .conclusion { padding-inline: 24px; }
 }
 @media (max-width: 520px) {
+  :root { --gutter: 16px; }
   .wrap { padding-inline: 18px; }
   .stats .col-3 { grid-column: span 12; }
   h2 { font-size: 28px; }

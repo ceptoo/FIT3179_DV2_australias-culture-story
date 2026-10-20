@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Older Australians grew the most",
+    "text": "Attendance grew most among older Australians",
     "subtitle": "% who attended a live arts event or festival, by age"
   },
   "width": "container",
