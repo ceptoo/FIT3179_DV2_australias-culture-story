@@ -249,3 +249,17 @@ code { font-size: 14px; background: var(--panel); padding: 1px 5px; border-radiu
 }
 .bridge.points { padding-left: 18px; }
 .bridge.points li { margin-bottom: 4px; }
+/* Marker rule: max 10 words per line */
+.lede, .byline, .section-head .lead, .bridge, .note,
+.side p, .side li, .closing, .takeaways p,
+.intro p, .intro li, figcaption, footer p, footer li {
+  max-width: 42ch;
+}
+
+/* Key words in the text take the colour of the matching chart mark */
+.c-red    { color: #9b1c2c; font-weight: 600; }  /* 08b: attendance drop */
+.c-teal   { color: #0f6e73; font-weight: 600; }  /* 07a: 2025 */
+.c-purple { color: #5e3c99; font-weight: 600; }  /* 09a/09b: loans */
+.c-olive  { color: #5f7022; font-weight: 600; }  /* 09b: real spending; 14: local government */
+.c-blue   { color: #3e6f94; font-weight: 600; }  /* 14: Australian Government */
+.c-ink    { color: var(--ink); font-weight: 600; } /* 07b: older groups */

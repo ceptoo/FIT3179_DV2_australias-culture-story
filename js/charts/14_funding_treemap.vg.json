@@ -2,7 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "title": {
     "text": "Where $8.6 billion of culture funding went in 2023–24",
-    "subtitle": "Box size = dollars. Colour = level of government; solid = heritage, lighter = arts. Local government is not split.",
+    "subtitle": [
+      "Box size = dollars. Colour = level of government;",
+      "solid = heritage, lighter = arts.",
+      "Local government is not split."
+    ],
     "anchor": "start",
     "fontSize": 16,
     "fontWeight": 600,
@@ -172,7 +176,7 @@
       "labelFontSize": 12,
       "labelColor": "#2b2622",
       "labelLimit": 400,
-      "columnPadding": 20
+      "columnPadding": 36
     },
     {
       "opacity": "split",

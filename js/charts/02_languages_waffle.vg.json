@@ -5,7 +5,10 @@
       "Only 139 of 217 languages are",
       "being passed to children"
     ],
-    "subtitle": "One square = one language, by who used it at home (2021)"
+    "subtitle": [
+      "One square = one language,",
+      "by who used it at home (2021)"
+    ]
   },
   "data": {
     "url": "data/indigenous_languages_2021.csv"
@@ -20,8 +23,12 @@
       "as": "row"
     }
   ],
-  "width": "container",
-  "height": 253,
+  "width": {
+    "step": 17
+  },
+  "height": {
+    "step": 17
+  },
   "mark": {
     "type": "rect",
     "stroke": "white",
@@ -124,9 +131,5 @@
       "fontSize": 12,
       "color": "#2b2622"
     }
-  },
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
   }
 }

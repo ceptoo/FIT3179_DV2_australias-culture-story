@@ -2,7 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The places Australia has chosen to protect",
-    "subtitle": "126 National Heritage places by type. Grey shapes = World Heritage areas."
+    "subtitle": [
+      "126 National Heritage places by type.",
+      "Grey shapes = World Heritage areas."
+    ]
   },
   "width": "container",
   "height": 540,

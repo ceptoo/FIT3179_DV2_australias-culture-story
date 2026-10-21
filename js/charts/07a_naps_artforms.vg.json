@@ -4,7 +4,10 @@
     "text": {
       "expr": "dom == 'Attended live arts' ? 'Arts attendance has grown since 2022' : dom == 'Created art themselves' ? 'Making art held steady' : 'More Australians attend arts of their own culture'"
     },
-    "subtitle": "% of Australians aged 15+, 2022 vs 2025 (labels = change)"
+    "subtitle": [
+      "% of Australians aged 15+, 2022 vs 2025",
+      "(labels = change)"
+    ]
   },
   "width": "container",
   "height": 300,

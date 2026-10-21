@@ -2,7 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Most national heritage listings happened in the first four years",
-    "subtitle": "Places added to the National Heritage List each year, by type (list began in 2004)"
+    "subtitle": [
+      "Places added to the National Heritage List each year,",
+      "by type (list began in 2004)"
+    ]
   },
   "width": "container",
   "height": 260,

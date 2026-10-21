@@ -2,7 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "From Britain to the world",
-    "subtitle": "% of population born in each country, 1901–2021. Blank = not recorded."
+    "subtitle": [
+      "% of population born in each country, 1901–2021.",
+      "Blank = not recorded."
+    ]
   },
   "width": "container",
   "height": 330,
