@@ -4,7 +4,7 @@
     "text": "Where $8.6 billion of culture funding went in 2023–24",
     "subtitle": [
       "Box size = dollars. Colour = level of government;",
-      "solid = heritage, lighter = arts.",
+      "darker = heritage, lighter = arts.",
       "Local government is not split."
     ],
     "anchor": "start",
@@ -19,12 +19,7 @@
   },
   "width": 480,
   "height": 560,
-  "padding": {
-    "left": 4,
-    "right": 4,
-    "top": 4,
-    "bottom": 24
-  },
+  "padding": 4,
   "autosize": {
     "type": "fit",
     "contains": "padding"
@@ -140,35 +135,27 @@
   ],
   "scales": [
     {
-      "name": "color",
+      "name": "key",
       "type": "ordinal",
       "domain": [
-        "Australian Government",
-        "State and territory government",
+        "Australian Govt: heritage",
+        "Australian Govt: arts",
+        "State/territory: heritage",
+        "State/territory: arts",
         "Local government"
       ],
       "range": [
         "#3e6f94",
+        "#93acbe",
         "#7a4a7f",
+        "#b498b3",
         "#5f7022"
-      ]
-    },
-    {
-      "name": "split",
-      "type": "ordinal",
-      "domain": [
-        "Heritage",
-        "Arts"
-      ],
-      "range": [
-        1,
-        0.55
       ]
     }
   ],
   "legends": [
     {
-      "fill": "color",
+      "fill": "key",
       "orient": "top",
       "direction": "horizontal",
       "symbolType": "square",
@@ -176,20 +163,7 @@
       "labelFontSize": 12,
       "labelColor": "#2b2622",
       "labelLimit": 400,
-      "columnPadding": 36
-    },
-    {
-      "opacity": "split",
-      "orient": "bottom",
-      "direction": "horizontal",
-      "symbolType": "square",
-      "symbolFillColor": "#6b625a",
-      "symbolStrokeColor": "#6b625a",
-      "labelFont": "Source Sans 3",
-      "labelFontSize": 12,
-      "labelColor": "#2b2622",
-      "columnPadding": 20,
-      "labelExpr": "datum.label == 'Heritage' ? 'Heritage (solid)' : 'Arts (lighter)'"
+      "columnPadding": 30
     }
   ],
   "marks": [
@@ -221,19 +195,19 @@
             "field": "y1"
           },
           "fill": {
-            "scale": "color",
-            "field": "level"
+            "scale": "key",
+            "signal": "datum.level == 'Local government' ? 'Local government' : (datum.level == 'Australian Government' ? 'Australian Govt' : 'State/territory') + ': ' + (datum.domain == 'Arts' ? 'arts' : 'heritage')"
           },
           "tooltip": {
             "signal": "{'Level': datum.level, 'Area': datum.domain, 'Category': datum.category, 'Spending': format(datum.amount_m, '$,.1f') + 'm'}"
           },
           "fillOpacity": {
-            "signal": "datum.domain == 'Arts' ? 0.55 : 1"
+            "value": 1
           }
         },
         "hover": {
           "fillOpacity": {
-            "signal": "datum.domain == 'Arts' ? 0.4 : 0.8"
+            "value": 0.8
           }
         }
       }

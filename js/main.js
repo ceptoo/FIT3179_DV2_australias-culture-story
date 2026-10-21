@@ -28,6 +28,8 @@ async function embed(el, url) {
   // Their autosize is "fit", so this width includes the title, legend and padding.
   if (spec.$schema.includes("/vega/")) {
     spec.width = Math.max(320, document.querySelector(el).clientWidth);
+    // On narrow screens the one-row legend is too wide, so wrap it into two columns.
+    if (spec.width < 640 && spec.legends) spec.legends.forEach((l) => (l.columns = 2));
   }
   return vegaEmbed(el, spec, opts);
 }
